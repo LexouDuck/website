@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Lexou Duck</title>
+	<meta name="description" content="Index/home page of this website">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="assets/_favicon.ico" />
+	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
+	<link rel="stylesheet" href="assets/main.css">
+
+	<script type="text/javascript" src="assets/mustache.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div id="template_header"></div>
+
+	<div id="template_navigation"></div>
+
+	<div id="template_footer"></div>
+
+</body>
+
+<script>
+    $(document).ready(function()
+    {
+		$("#template_header").load("_templates.html #header", function()
+		{
+			var template = document.getElementById("#header").innerHTML;
+			var data = { page: "Home" };
+			var output = Mustache.render(template, data);
+			$("#template_header").html(output);
+		});
+		$("#template_navigation").load("_templates.html #navigation", function()
+		{
+			var template = document.getElementById("#navigation").innerHTML;
+			var data = JSON.parse($("#data").val());
+			var output = Mustache.render(template, data);
+			$("#template_navigation").html(output);
+		});
+		$("#template_footer").load("_templates.html #footer", function()
+		{
+			var template = document.getElementById("#footer").innerHTML;
+			var data = JSON.parse($("#data").val());
+			var output = Mustache.render(template, data);
+			$("#template_footer").html(output);
+		});
+	});
+</script>
+
+</html>
