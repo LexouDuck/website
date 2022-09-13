@@ -1,7 +1,7 @@
 ---
 lang: 'en-US'
-title: Lexou | Tools
-description: Programming projects I worked on
+title: Lexou | Art
+description: Visual art works
 ---
 
 ::: {#template_navbar}

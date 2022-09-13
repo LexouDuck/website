@@ -1,7 +1,6 @@
 ---
 lang: 'en-US'
-title: Lexou | Tools
-description: Programming projects I worked on
+title: Lexou | Originals
 ---
 
 ::: {#template_navbar}
@@ -11,6 +10,8 @@ description: Programming projects I worked on
 :::
 
 ------------------------------------------------------------------------
+
+# TODO
 
 ------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 ---
 lang: 'en-US'
-title: Lexou | Tools
-description: Programming projects I worked on
+title: Lexou | Maths
+description: Mathematical projects I worked on
 ---
 
 ::: {#template_navbar}

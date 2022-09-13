@@ -1,13 +1,11 @@
----
-lang: 'en-US'
----
+<!-- This file holds HTML templates, for easy reuse across different pages -->
 
 
 
 ::: {#header}
-==========
-LEXOU DUCK
-==========
+=================
+LEXOU - {{title}}
+=================
 :::
 
 
@@ -17,9 +15,9 @@ NAVIGATION
 ----------
 - [Games](                 pages/games/index.html)
 	- [Personal Projects]( pages/games/personal/index.html)
-	- [Team Projects](     pages/games/teamprojects/index.html)
-	- [Game Jams](         pages/games/gamejams/index.html)
 	- [Fan Games](         pages/games/fangames/index.html)
+	- [Game Jams](         pages/games/gamejams/index.html)
+	- [Team Projects](     pages/games/teamprojects/index.html)
 - [Tools](                 pages/tools/index.html)
 	- [++C](               pages/tools/ccc/index.html)
 	- [bmp2nam](           pages/tools/bmp2nam/index.html)
@@ -27,14 +25,15 @@ NAVIGATION
 	- [Emblem Magic](      pages/tools/emblem_magic/index.html)
 - [Maths](                 pages/maths/index.html)
 	- [BNNN](              pages/maths/bnnn/index.html)
-	- [++Clean](           pages/maths/clean/index.html)
-	- [Mathophilie](       pages/maths/mathophilie/index.html)
+	- [Mathophilia](       pages/maths/mathophilia/index.html)
 	- [Property Table](    pages/maths/property_table/index.html)
+	- [++Clean](           pages/maths/ccclean/index.html)
 - [Music](                 pages/music/index.html)
 	- [Originals](         pages/music/originals/index.html)
 	- [Chiptune Covers](   pages/music/chiptunes/index.html)
-	- [Covers](            pages/music/chiptunes/index.html)
 	- [Parody Music](      pages/music/parodies/index.html)
+	- [Covers](            pages/music/covers/index.html)
+	- [Bands](             pages/music/bands/index.html)
 - [Art](                   pages/art/index.html)
 	- [Sketches](          pages/art/sketches/index.html)
 	- [Color Art](         pages/art/colorart/index.html)
