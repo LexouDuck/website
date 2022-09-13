@@ -6,11 +6,11 @@ $(document).ready(function()
 		var output = Mustache.render($("#header").html(), data);
 		$("#template_header").html(output);
 	});
-	$("#template_navigation").load("_templates.html #navigation", function()
+	$("#template_navbar").load("_templates.html #navbar", function()
 	{
 		var data = JSON.parse($("#data").val());
-		var output = Mustache.render($("#navigation").html(), data);
-		$("#template_navigation").html(output);
+		var output = Mustache.render($("#navbar").html(), data);
+		$("#template_navbar").html(output);
 	});
 	$("#template_footer").load("_templates.html #footer", function()
 	{

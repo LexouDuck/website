@@ -28,7 +28,7 @@
 
 	<div id="template_header"></div>
 
-	<div id="template_navigation"></div>
+	<div id="template_navbar"></div>
 
 	<div id="template_footer"></div>
 
@@ -37,19 +37,19 @@
 <script>
     $(document).ready(function()
     {
+		$("#template_navbar").load("_templates.html #navbar", function()
+		{
+			var template = document.getElementById("#navbar").innerHTML;
+			var data = JSON.parse($("#data").val());
+			var output = Mustache.render(template, data);
+			$("#template_navbar").html(output);
+		});
 		$("#template_header").load("_templates.html #header", function()
 		{
 			var template = document.getElementById("#header").innerHTML;
 			var data = { page: "Home" };
 			var output = Mustache.render(template, data);
 			$("#template_header").html(output);
-		});
-		$("#template_navigation").load("_templates.html #navigation", function()
-		{
-			var template = document.getElementById("#navigation").innerHTML;
-			var data = JSON.parse($("#data").val());
-			var output = Mustache.render(template, data);
-			$("#template_navigation").html(output);
 		});
 		$("#template_footer").load("_templates.html #footer", function()
 		{

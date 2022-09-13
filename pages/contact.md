@@ -1,14 +1,13 @@
 ---
 description: Index/home page of this website
 lang: 'en-US'
-title: Lexou Duck
-viewport: 'width=device-width, initial-scale=1'
+title: Lexou | Contact
 ---
 
-::: {#template_header}
+::: {#template_navbar}
 :::
 
-::: {#template_navigation}
+::: {#template_header}
 :::
 
 ::: {#template_footer}

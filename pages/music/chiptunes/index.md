@@ -5,10 +5,10 @@ title: Lexou Duck
 viewport: 'width=device-width, initial-scale=1'
 ---
 
-::: {#template_header}
+::: {#template_navbar}
 :::
 
-::: {#template_navigation}
+::: {#template_header}
 :::
 
 ------------------------------------------------------------------------
