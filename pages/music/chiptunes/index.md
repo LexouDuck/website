@@ -14,6 +14,8 @@ description: Index/home page of this website
 
 ### Chiptunes
 
+I have been making chiptunes since quite a young age - I have always found the practice of making chiptunes to be fascinating, since you must create your own instruments, writing your own volume-over-time curves, etc. Not to mention, the large amount of crazy and interesting techniques that are possible within chiptune limitations - to list a few: single-channel chords via arpeggios, single-channel echo, periodic-noise percussion, multi-pitch N163 waves, and many more...
+
 ------------------------------------------------------------------------
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Cwsuib-Kr1c"></iframe>
