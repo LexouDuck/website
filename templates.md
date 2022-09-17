@@ -2,6 +2,35 @@
 
 
 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+::: {#head}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- website info -->
+	<title>{{title}}</title>
+	<meta name="description" content="{{description}}">
+	<!-- website icon -->
+	<link rel="icon" href="assets/_favicon.ico" />
+	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
+	<!-- website font -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
+	<link rel="stylesheet" href="assets/main.css">
+	<!-- website code -->
+	<script type="text/javascript" src="assets/mustache.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<script>var current_page = "Home";</script>
+	<script type="text/javascript" src="_templates.js"></script>
+:::
+
+
+
 ::: {#header}
 =================
 LEXOU - {{title}}
