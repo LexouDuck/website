@@ -34,9 +34,9 @@ The NES is not a very powerful system, it has many limitations, in terms of powe
 Here are some mockups I made at the very start, to have an idea of what it might look like:
 
 ::: {#screenshot}
-![](mockup-1.png){width="256" height="224"}
-![](mockup-2.png){width="256" height="224"}
-![](mockup-3.png){width="256" height="224"}
+![](mockup-1.png){.screencap width="256" height="224"}
+![](mockup-2.png){.screencap width="256" height="224"}
+![](mockup-3.png){.screencap width="256" height="224"}
 :::
 
 Originally, for the high school exam, I just implemented the battle against the first boss
@@ -46,7 +46,7 @@ pixelart sprite work, just a couple of small distinct parts of its body - and in
 making the body parts follow the head of the snake was a fun programming challenge in and of itself.
 
 ::: {#screenshot}
-![](mockup-4.gif){width="256" height="224"}
+![](mockup-4.gif){.screencap width="256" height="224"}
 :::
 
 Of course, this first game engine I had built had several bugs (including some that made the boss trivial),
