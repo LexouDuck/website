@@ -2,22 +2,29 @@
 // navigation treeview logic
 function logic_treeview()
 {
-	var pathname = window.location.pathname;
-	console.log("checking pathname:", pathname);
+	let pathname = window.location.pathname;
 	$("ul.treeview").find("a").each(function(index, element)
 	{
-		console.log("against:", element.pathname);
 		if (element.pathname === pathname)
 		{
-			console.log("found match!");
 			$(element).addClass("current");
+			let elem = element.parentElement;
+			while (elem != null && (
+				elem.nodeName === "UL" ||
+				elem.nodeName === "LI"))
+			{
+				if (elem.nodeName === "LI")
+				{
+					elem.classList.toggle("open");
+				}
+				elem = elem.parentElement;
+			}
 			return;
 		}
 	});
-	$("span.treeview_toggle").on("click", function(event)
+	$("span.treeview_node").on("click", function(event)
 	{
-		this.parentElement.querySelector(".nested").classList.toggle("active");
-		this.classList.toggle("treeview_toggle_open");
+		this.parentElement.classList.toggle("open");
 	});
 }
 
