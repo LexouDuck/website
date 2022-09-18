@@ -29,25 +29,3 @@ $(document).ready(function()
 		$("#template_footer").html(output);
 	});
 });
-
-// image viewer
-$(document).ready(function()
-{
-	$("#book_controls").on('click', 'span', function()
-	{
-		$("#book img").removeClass("opaque");
-		$("#book_controls span").removeClass("selected");
-		$("#book p.caption").animate({right:"-1000px"});
-		
-		
-		let newImage = $(this).index();
-		$("#book img").eq(newImage).addClass("opaque");
-		$("#book p").eq(newImage).addClass("caption");
-		$("#book p").eq(newImage).animate({right:"-120px"});
-		$(this).addClass("selected");
-	});
-	if ($("#book p.caption").css("right") == "-1000px")
-	{
-		$("#book p").removeClass("caption");
-	}
-});

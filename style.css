@@ -1,7 +1,6 @@
 *
 {
-	margin:5px;
-	color:#FFFFFF;
+	margin: 0px;
 }
 
 html, body
@@ -12,38 +11,49 @@ html, body
 body
 {
 	font-family: "Myriad", "Sarpanch", sans-serif;
-	font-size:100%;
-	line-height:145%;
-	background-color:#1F1B1F;
-	margin:0;
-	margin-left:200px;
-	padding:0;
-	height:100%;
+	font-size: 100%;
+	line-height: 145%;
+	background-color: #1F1B1F;
+	margin: 0;
+	margin-left: 200px;
+	padding: 0;
+	height: 100%;
+}
+
+section
+{
+	padding: 20px 12% 30px 12%;
+}
+
+hr
+{
+	margin-top: 30px;
+	color: #4C404C;
 }
 
 h1
 {
-	color:#4C404C;
+	color: #4C404C !important;
 	font-size:200%;
 	font-weight:bolder;
 	line-height:125%;
 }
 h2
 {
-	color:#4C404C;
+	color: #4C404C !important;
 	font-size:120%;
 	font-weight:normal;
 	margin: 0 0 5px 0;
 }
 h3
 {
-	color:#FFFFFF;
+	color: white;
 	font-size:150%;
 	font-weight:bolder;
 	margin: 10px 0 30px 0px;
 }
 h4
-{ color:#FFFFFF;
+{ color: white;
 	font-size:90%;
 	font-weight:bold;
 	text-align:center;
@@ -51,45 +61,39 @@ h4
 }
 h5
 {
-	color:#4C404C;
+	color: #4C404C;
 	font-size:90%;
 	font-weight:bold;
 	text-align:center;
 	line-height:15px;
 }
 
-
-
-section
-{
-	padding: 20px 12% 30px 12%;
-}
-
-
-ul
-{
-	margin: 10px 0 0 -20px;
-}
-li
-{
-	color:#4C404C;
-	margin: 5px 0 5px -2px;
-	text-align:left;
-}
-
 p
 {
-	color:#FFFFFF;
+	color: white;
 	text-align:left;
 }
 a, a:link
 {
-	text-decoration:underline;
+	color: white;
+	text-decoration: underline;
 }
 a:hover
 {
-	text-decoration:underline;
-	color:#1F5CFF;
+	color: white;
+	text-decoration: underline;
+	color: #1F5CFF;
+}
+
+ul
+{
+	/* margin: 10px 0 0 -20px; */
+}
+li
+{
+	color: #4C404C;
+	text-align:left;
+	/* margin: 5px 0 5px -2px; */
 }
 
 #navbar
@@ -97,11 +101,34 @@ a:hover
 	position:fixed;
 	top: 10px;
 	left: 10px;
-	line-height: 13px;
 }
 
-hr
+.treeview
 {
-	margin-top: 30px;
-	color:#4C404C;
+	user-select: none; /* Prevent text selection */
+	list-style-type: : none;
+	margin: 0;
+	padding: 0;
+}
+.treeview_toggle
+{
+	color: white;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+/* Rotate the treeview arrow icon when clicked on (using JavaScript) */
+.treeview_toggle_open
+{
+	transform: rotate(90deg);
+}
+/* Hide the nested list */
+.nested
+{
+  display: none;
+}
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active
+{
+  display: block;
 }
