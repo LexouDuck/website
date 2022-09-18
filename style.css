@@ -4,7 +4,7 @@
 	padding: 0;
 }
 
-html, body
+html
 {
 	width: 100%;
 	height: 100%;
@@ -28,8 +28,8 @@ section
 
 hr
 {
-	margin-top: 30px;
 	color: #4C404C;
+	margin: 30px 0;
 }
 
 h1
@@ -55,66 +55,72 @@ h3
 }
 h4
 { color: white;
-	font-size:90%;
-	font-weight:bold;
-	text-align:center;
-	line-height:15px;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
 }
 h5
 {
 	color: #4C404C;
-	font-size:90%;
-	font-weight:bold;
-	text-align:center;
-	line-height:15px;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
 }
 
 p
 {
 	color: white;
-	text-align:left;
+	text-align: left;
 }
 a, a:link
 {
 	color: white;
-	text-decoration: underline;
+	text-decoration: none;
+}
+a.current
+{
+	color: #4C404C;
+	text-decoration: none;
+	pointer-events: none;
 }
 a:hover
 {
-	color: white;
 	text-decoration: underline;
-	color: #1F5CFF;
+	color: #4F8CFF;
 }
 
 ul
 {
-	/* margin: 10px 0 0 -20px; */
+	margin: 0 0 0 0;
 }
 li
 {
+	margin: 0 0 0 10px;
 	color: #4C404C;
-	text-align:left;
-	/* margin: 5px 0 5px -2px; */
+	text-align: left;
 }
 
 #navbar, #template_navbar
 {
 	position:fixed;
-	top: 10px;
-	left: 10px;
-	width: 20%;
+	top: 0;
+	left: 0;
+	width: calc(20% - 10px);
+	height: 100%;
+	padding: 10px;
 }
 
 .treeview
 {
 	user-select: none; /* Prevent text selection */
-	list-style-type: : none;
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 .treeview_toggle
 {
 	color: white;
+	font-size: 80%;
 	display: inline-block;
 	margin-right: 5px;
 	cursor: pointer;
@@ -127,10 +133,10 @@ li
 /* Hide the nested list */
 .nested
 {
-  display: none;
+	display: none;
 }
 /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
 .active
 {
-  display: block;
+	display: block;
 }

@@ -56,7 +56,7 @@ LEXOU — {{title}}
 <li> <span class="treeview_toggle">▶</span> <a href="/pages/art/colorart/index.html"         >Color Art         </a> </li>
 <li> <span class="treeview_toggle">▶</span> <a href="/pages/art/pixelart/index.html"         >Pixel Art         </a> </li>
 <li> <span class="treeview_toggle">▶</span> <a href="/pages/art/algorithm/index.html"        >Algorithm         </a> </li>
-<li> <span class="treeview_toggle">▶</span> <a href="/pages/art/models/index.html"           >3D Models         </a> </li>
-<li> <span class="treeview_toggle">▶</span> <a href="/pages/contact.html"                    >Contact           </a> </li> </ul> </li>
+<li> <span class="treeview_toggle">▶</span> <a href="/pages/art/models/index.html"           >3D Models         </a> </li> </ul> </li>
+<li> <span class="treeview_toggle">▶</span> <a href="/pages/contact.html"                    >Contact           </a> </li>
 </ul>
 :::
