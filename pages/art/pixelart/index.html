@@ -6,64 +6,67 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Lexou Duck</title>
-	<meta name="description" content="Index/home page of this website">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" href="assets/_favicon.ico" />
-	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
-	<link rel="stylesheet" href="assets/main.css">
-
-	<script type="text/javascript" src="assets/mustache.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-
-	<script>var current_page = "Pixel Art";</script>
-	<script type="text/javascript" src="_templates.js"></script>
+	<!-- website code -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<script>var current_page = "Home";</script>
+	<script type="text/javascript" src="/templates.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/_favicon.ico" />
+	<link rel="icon" href="/assets/_favicon.jpg" type="image/jpeg" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
 </head>
-
 <body>
-
-	<div id="template_header"></div>
-
 	<div id="template_navbar"></div>
 
-	<hr>
-	<div id="category">
-		<img src="assets/pixelart/gambit.png">
-		<img src="assets/pixelart/sunset.png">
-		<img src="assets/pixelart/mantador.png">
-	</div>
+	<header>
+		<div id="template_header"></div>
+	</header>
 
-	<hr>
-	<div id="category">
-		<h3>Demake Mockups</h3>
-		<img src="assets/pixelart/pokemon-critique.png">
-		<img src="assets/pixelart/demake-starfox.png">
-		<img src="assets/pixelart/demake-ff4.png">
-		<img src="assets/pixelart/demake-ff7.png">
-	</div>
+<div id="template_navbar">
 
-	<hr>
-	<div id="category">
-		<h3>Fire Emblem</h3>
-		<img src="assets/pixelart/fe_balrog.gif">
-		<img src="assets/pixelart/fe_adri.png">
-		<img src="assets/pixelart/fe_shanoa.png">
-		<img src="assets/pixelart/fe_horace.png">
-		<img src="assets/pixelart/fe_hero-bern.png">
-		<img src="assets/pixelart/fe_hero-elimine.png">
-		<img src="assets/pixelart/fe_marth.png">
-		<img src="assets/pixelart/fe_fe4.png">
-	</div>
+</div>
+<div id="template_header">
 
-	<div id="template_footer"></div>
+</div>
+<hr />
+<div id="category">
+<p><img src="assets/pixelart/gambit.png" /> <img
+src="assets/pixelart/sunset.png" /> <img
+src="assets/pixelart/mantador.png" /></p>
+</div>
+<hr />
+<div id="category">
+<h3 id="demake-mockups">Demake Mockups</h3>
+<p><img src="assets/pixelart/pokemon-critique.png" /> <img
+src="assets/pixelart/demake-starfox.png" /> <img
+src="assets/pixelart/demake-ff4.png" /> <img
+src="assets/pixelart/demake-ff7.png" /></p>
+</div>
+<hr />
+<div id="category">
+<h3 id="fire-emblem">Fire Emblem</h3>
+<p><img src="assets/pixelart/fe_balrog.gif" /> <img
+src="assets/pixelart/fe_adri.png" /> <img
+src="assets/pixelart/fe_shanoa.png" /> <img
+src="assets/pixelart/fe_horace.png" /> <img
+src="assets/pixelart/fe_hero-bern.png" /> <img
+src="assets/pixelart/fe_hero-elimine.png" /> <img
+src="assets/pixelart/fe_marth.png" /> <img
+src="assets/pixelart/fe_fe4.png" /></p>
+</div>
+<div id="template_footer">
 
+</div>
+
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
 </body>
 
 </html>

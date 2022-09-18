@@ -3,66 +3,100 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
-
-
-
-<div id="head">
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- website info -->
-	<title>{{title}}</title>
-	<meta name="description" content="{{description}}">
-	<!-- website icon -->
-	<link rel="icon" href="assets/_favicon.ico" />
-	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
-	<!-- website font -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
-	<link rel="stylesheet" href="assets/main.css">
 	<!-- website code -->
-	<script type="text/javascript" src="assets/mustache.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 	<script>var current_page = "Home";</script>
-	<script type="text/javascript" src="_templates.js"></script>
-</div id="head">
+	<script type="text/javascript" src="/templates.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/_favicon.ico" />
+	<link rel="icon" href="/assets/_favicon.jpg" type="image/jpeg" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
+</head>
+<body>
+	<div id="template_navbar"></div>
 
-
-
-<div id="navbar">
-	<h2>NAVIGATION</h2>
-	<nav>
-		<ul>
-			<li> <a style="text-decoration:none;" href="sketches.html">Sketches</a> </li>
-			<li> <a style="text-decoration:none;" href="pixelart.html">Pixel Art</a> </li>
-			<li> <a style="text-decoration:none;" href="models.html">3D Models</a> </li>
-			<li> <a style="text-decoration:none;" href="music.html">Music</a> </li>
-			<li> <a style="text-decoration:none;" href="games.html">Video Games</a> </li>
-			<li> <a style="text-decoration:none;" href="software.html">Software</a> </li>
-			<li> <a style="text-decoration:none;" href="contact.html">Contact</a> </li>
-		</ul>
-	</nav>
-</div>
-
-
-
-<div id="header">
 	<header>
-		<h1>LEXOU<h1 style="color:#FFFFFF; font-size:120%;"> | {{title}}</h1></h1>
+		<div id="template_header"></div>
 	</header>
+
+<!-- This file holds HTML templates, for easy reuse across different pages -->
+::: {#head} <!-- website info -->
+<title>
+{{title}}
+</title>
+<meta name="description" content="{{description}}">
+<p>:::</p>
+<div id="header">
+<p>================= LEXOU - {{title}} =================</p>
 </div>
-
-
-
+<div id="navbar">
+<h2 id="navigation">NAVIGATION</h2>
+<ul>
+<li><a href="/pages/games/index.html">Games</a>
+<ul>
+<li><a href="/pages/games/personal/index.html">Personal
+Projects</a></li>
+<li><a href="/pages/games/fangames/index.html">Fan Games</a></li>
+<li><a href="/pages/games/gamejams/index.html">Game Jams</a></li>
+<li><a href="/pages/games/teamprojects/index.html">Team
+Projects</a></li>
+</ul></li>
+<li><a href="/pages/tools/index.html">Tools</a>
+<ul>
+<li><a href="/pages/tools/ccc/index.html">++C</a></li>
+<li><a href="/pages/tools/bmp2nam/index.html">bmp2nam</a></li>
+<li><a href="/pages/tools/glyphind/index.html">Glyphind</a></li>
+<li><a href="/pages/tools/emblem_magic/index.html">Emblem Magic</a></li>
+</ul></li>
+<li><a href="/pages/maths/index.html">Maths</a>
+<ul>
+<li><a href="/pages/maths/bnnn/index.html">BNNN</a></li>
+<li><a href="/pages/maths/mathophilia/index.html">Mathophilia</a></li>
+<li><a href="/pages/maths/property_table/index.html">Property
+Table</a></li>
+<li><a href="/pages/maths/ccclean/index.html">++Clean</a></li>
+</ul></li>
+<li><a href="/pages/music/index.html">Music</a>
+<ul>
+<li><a href="/pages/music/originals/index.html">Originals</a></li>
+<li><a href="/pages/music/chiptunes/index.html">Chiptune Covers</a></li>
+<li><a href="/pages/music/parodies/index.html">Parody Music</a></li>
+<li><a href="/pages/music/covers/index.html">Covers</a></li>
+<li><a href="/pages/music/bands/index.html">Bands</a></li>
+</ul></li>
+<li><a href="/pages/art/index.html">Art</a>
+<ul>
+<li><a href="/pages/art/sketches/index.html">Sketches</a></li>
+<li><a href="/pages/art/colorart/index.html">Color Art</a></li>
+<li><a href="/pages/art/pixelart/index.html">Pixel Art</a></li>
+<li><a href="/pages/art/algorithm/index.html">Algorithm</a></li>
+<li><a href="/pages/art/models/index.html">3D Models</a></li>
+</ul></li>
+<li><a href="/pages/contact.html">Contact</a></li>
+</ul>
+</div>
 <div id="footer">
-	<footer>
-		<hr></hr>
-		<h5>All works presented on this website are made by myself, unless specified.</h5>
-		<h5>Please do not use any of my work, without prior written permission.</h5>
-	</footer>
+<hr />
+<h5
+id="all-works-presented-on-this-website-were-made-by-myself-unless-specified-otherwise.">All
+works presented on this website were made by myself, unless specified
+otherwise.</h5>
+<h5 id="please-ask-for-permission-before-using-any-of-my-work.">Please
+ask for permission before using any of my work.</h5>
 </div>
 
-
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
+</body>
 
 </html>

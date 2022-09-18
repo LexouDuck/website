@@ -1,21 +1,31 @@
 $(document).ready(function()
 {
-	$("#template_header").load("_templates.html #header", function()
+	$("#template_head").load("/templates.html #head", function()
 	{
-		var data = { page: current_page };
-		var output = Mustache.render($("#header").html(), data);
+		let data = {}; // { page: current_page };
+		let template = Mustache.parse($("#head").html())
+		let output = Mustache.render(template, data);
+		$("#template_head").html(output);
+	});
+	$("#template_header").load("/templates.html #header", function()
+	{
+		let data = {}; // { page: current_page };
+		let template = Mustache.parse($("#header").html())
+		let output = Mustache.render(template, data);
 		$("#template_header").html(output);
 	});
-	$("#template_navbar").load("_templates.html #navbar", function()
+	$("#template_navbar").load("/templates.html #navbar", function()
 	{
-		var data = JSON.parse($("#data").val());
-		var output = Mustache.render($("#navbar").html(), data);
+		let data = {}; // JSON.parse($("#data").val());
+		let template = Mustache.parse($("#navbar").html())
+		let output = Mustache.render(template, data);
 		$("#template_navbar").html(output);
 	});
-	$("#template_footer").load("_templates.html #footer", function()
+	$("#template_footer").load("/templates.html #footer", function()
 	{
-		var data = JSON.parse($("#data").val());
-		var output = Mustache.render($("#footer").html(), data);
+		let data = {}; // JSON.parse($("#data").val());
+		let template = Mustache.parse($("#footer").html())
+		let output = Mustache.render(template, data);
 		$("#template_footer").html(output);
 	});
 });
@@ -30,7 +40,7 @@ $(document).ready(function()
 		$("#book p.caption").animate({right:"-1000px"});
 		
 		
-		var newImage = $(this).index();
+		let newImage = $(this).index();
 		$("#book img").eq(newImage).addClass("opaque");
 		$("#book p").eq(newImage).addClass("caption");
 		$("#book p").eq(newImage).animate({right:"-120px"});

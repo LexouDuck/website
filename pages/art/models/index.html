@@ -6,72 +6,82 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Lexou Duck</title>
-	<meta name="description" content="Index/home page of this website">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" href="assets/_favicon.ico" />
-	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
-	<link rel="stylesheet" href="assets/main.css">
-
-	<script type="text/javascript" src="assets/mustache.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-
-	<script>var current_page = "3D Models";</script>
-	<script type="text/javascript" src="_templates.js"></script>
+	<!-- website code -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<script>var current_page = "Home";</script>
+	<script type="text/javascript" src="/templates.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/_favicon.ico" />
+	<link rel="icon" href="/assets/_favicon.jpg" type="image/jpeg" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
 </head>
-
 <body>
-
-	<div id="template_header"></div>
-
 	<div id="template_navbar"></div>
 
-	<hr>
-	<div id="category">
-		<h3>Lowpoly Models</h3>
+	<header>
+		<div id="template_header"></div>
+	</header>
 
-		<img src="assets/models/monocarrier.gif" height="500">
-		<p class="img_caption">
-			This model was made with heavy inspiration from <a href="http://kennethfejer.com/3d.html">Kenneth Fejer</a>'s lowpoly modeling style.
-			The design of this spaceship is a throwback to Faye's gunship from the anime Cowboy Bebop.
-		</p>
+<div id="template_navbar">
 
-		<img src="assets/models/darksouls.png" height="500">
-		<p class="img_caption">
-			This model was made with an interesting program called <a href="http://www.crocotile3d.com/">Crocotile3D</a>, which is a 3D DCC program with a tile-based workflow.
-			The textures are these very cool GBC-style dark souls sprites made by <a href="https://pixelation.org/index.php?topic=17902.0">Ryumaru over at the Pixelation forums</a>.
-		</p>
-	</div>
+</div>
+<div id="template_header">
 
-	<hr>
-	<div id="category">
-		<h3>Lowpoly Models - Nuclear Throne</h3>
-		<p>This set of models was a for-fun project of mine to remake the popular roguelike indie game Nuclear Throne, with lowpoly 3D assets rather than 2D sprites.</p>
-		<img src="assets/models/nt_char02-Crystal_icon-large.png"			height="500">
-		<img src="assets/models/nt_char06-YV_icon-large.png"				height="500">
-		<img src="assets/models/nt_enem01-Bandit_icon-large.png"			height="500">
-		<img src="assets/models/nt_enem03-BigWorm_icon-large.png"			height="500">
-		<img src="assets/models/nt_enem05-Scorpion_icon-large.png"			height="500">
-		<img src="assets/models/nt_enem06-GoldenScorpion_icon-large.png"	height="500">
-		<img src="assets/models/nt_enem18-Snowtank_icon-large.png"			height="500">
-		<img src="assets/models/nt_enem19-GoldenSnowtank_icon-large.png"	height="500">
-	</div>
+</div>
+<hr />
+<div id="category">
+<h3 id="lowpoly-models">Lowpoly Models</h3>
+<p><img src="assets/models/monocarrier.gif" height="500" /></p>
+<p>This model was made with heavy inspiration from <a
+href="http://kennethfejer.com/3d.html">Kenneth Fejer</a>'s lowpoly
+modeling style. The design of this spaceship is a throwback to Faye's
+gunship from the anime Cowboy Bebop.</p>
+<p><img src="assets/models/darksouls.png" height="500" /></p>
+<p>This model was made with an interesting program called <a
+href="http://www.crocotile3d.com/">Crocotile3D</a>, which is a 3D DCC
+program with a tile-based workflow. The textures are these very cool
+GBC-style dark souls sprites made by <a
+href="https://pixelation.org/index.php?topic=17902.0">Ryumaru over at
+the Pixelation forums</a>.</p>
+</div>
+<hr />
+<div id="category">
+<h3 id="lowpoly-models---nuclear-throne">Lowpoly Models - Nuclear
+Throne</h3>
+<p>This set of models was a for-fun project of mine to remake the
+popular roguelike indie game Nuclear Throne, with lowpoly 3D assets
+rather than 2D sprites.</p>
+<p><img src="assets/models/nt_char02-Crystal_icon-large.png"
+height="500" /> <img src="assets/models/nt_char06-YV_icon-large.png"
+height="500" /> <img src="assets/models/nt_enem01-Bandit_icon-large.png"
+height="500" /> <img
+src="assets/models/nt_enem03-BigWorm_icon-large.png" height="500" />
+<img src="assets/models/nt_enem05-Scorpion_icon-large.png"
+height="500" /> <img
+src="assets/models/nt_enem06-GoldenScorpion_icon-large.png"
+height="500" /> <img
+src="assets/models/nt_enem18-Snowtank_icon-large.png" height="500" />
+<img src="assets/models/nt_enem19-GoldenSnowtank_icon-large.png"
+height="500" /></p>
+</div>
+<hr />
+<div id="category">
+<h3 id="midhighpoly-models">Mid/Highpoly Models</h3>
+<p><img src="assets/models/TangRou_icon-large.png" height="500" /></p>
+</div>
+<div id="template_footer">
 
-	<hr>
-	<div id="category">
-		<h3>Mid/Highpoly Models</h3>
-		<img src="assets/models/TangRou_icon-large.png" height="500">
-	</div>
+</div>
 
-	<div id="template_footer"></div>
-
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
 </body>
 
 </html>

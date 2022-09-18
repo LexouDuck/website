@@ -1,13 +1,16 @@
-* {
+*
+{
 	margin:5px;
 	color:#FFFFFF;
 }
 
-html, body {
+html, body
+{
 	height: 100%;
 }
 
-body {
+body
+{
 	font-family: "Myriad", "Sarpanch", sans-serif;
 	font-size:100%;
 	line-height:145%;
@@ -17,68 +20,89 @@ body {
 	padding:0;
 	height:100%;
 }
-h1 {
+
+h1
+{
 	color:#4C404C;
 	font-weight:bolder;
 	font-size:200%;
 	text-align:right;
 	line-height:125%;
 }
-h2 {
+h2
+{
 	color:#4C404C;
 	font-size:120%;
 	font-weight:normal;
 	margin: 0 0 5px 0;
 }
-h3 {
+h3
+{
 	color:#FFFFFF;
 	font-size:150%;
 	font-weight:bolder;
 	margin: 10px 0 30px 0px;
 }
-h4 { color:#FFFFFF;
+h4
+{ color:#FFFFFF;
 	font-size:90%;
 	font-weight:bold;
 	text-align:center;
 	line-height:15px;
 }
-h5 {
+h5
+{
 	color:#4C404C;
 	font-size:90%;
 	font-weight:bold;
 	text-align:center;
 	line-height:15px;
 }
-section {
+
+
+
+section
+{
 	margin: 20px 20% 30px 20%;
 }
-ul {
+
+
+ul
+{
 	margin: 10px 0 0 -20px;
 }
-li{
+li
+{
 	color:#4C404C;
 	margin: 5px 0 5px -2px;
 	text-align:left;
 }
-p {
+
+p
+{
 	color:#FFFFFF;
 	text-align:left;
 }
-a, a:link {
+a, a:link
+{
 	text-decoration:underline;
 }
-a:hover {
+a:hover
+{
 	text-decoration:underline;
 	color:#1F5CFF;
 }
-#navigation {
+
+#navbar
+{
 	position:fixed;
 	top: 10px;
 	left: 10px;
-	line-height: 10px;
+	line-height: 12px;
 }
 
-hr {
+hr
+{
 	margin-top: 30px;
 	color:#4C404C;
 }

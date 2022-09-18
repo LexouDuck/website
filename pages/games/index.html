@@ -6,76 +6,42 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Lexou Duck</title>
-	<meta name="description" content="Index/home page of this website">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" href="assets/_favicon.ico" />
-	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
-	<link rel="stylesheet" href="assets/main.css">
-
-	<script type="text/javascript" src="assets/mustache.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-
-	<script>var current_page = "Video Games";</script>
-	<script type="text/javascript" src="_templates.js"></script>
+	<!-- website code -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<script>var current_page = "Home";</script>
+	<script type="text/javascript" src="/templates.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/_favicon.ico" />
+	<link rel="icon" href="/assets/_favicon.jpg" type="image/jpeg" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
 </head>
-
 <body>
-
-	<div id="template_header"></div>
-
 	<div id="template_navbar"></div>
 
-	<hr>
-	<article>
-		<div id="gamecaption">
-			<h3>CASTLEVANIA: RONDO OF BLOOD 8-BIT</h3>
-			<p>C'est un projet de jeu que j'ai entamé en tant que projet pour le bac en ISN. J’ai choisi de reprendre le concept d’un jeu de la saga Castlevania peu connu, car il est sorti sur une console également peu connue (la PC-Engine, à 16-bits), et n’est sorti qu’au Japon : Castlevania – Rondo of Blood. L’idée a été de refaire le jeu comme si il était sorti quelques années auparavant, sur la console NES (Nintendo Entertainment System). Cela implique que j’ai dû me plier aux limitations graphiques de celle-ci : 3 couleurs par sprite, et 4 par tile (c'est-à-dire un carré 16x16 de decor), un nombre limité de sprites à l'écran, etc.</p>
-			<p>J’ai commencé à travailler sur le projet en milieu d’année scolaire car c’était d’un intérêt personnel pour moi, j'ai toujours voulu faire des jeux. C’était plus un loisir que du travail en réalité, d’autant plus que j’ai aussi fait les graphismes pour ce jeu (je fais un peu de pixel art aussi) ainsi que la musique, en apprenant à utiliser Famitracker, un logiciel de conception de chiptunes (musique en bip) pour la NES. Le jeu a été programmé en Python (voulu pour le bac) avec la librairie Pygame, il s'agit du combat contre le dragon du niveau 1.</p>
-		</div>
-		<div id="screenshot">
-			<div>
-				<img src="assets/games/castlevania_rondo_mockup-1.png" width="256" height="224">
-				<img src="assets/games/castlevania_rondo_mockup-2.png" width="256" height="224">
-				<img src="assets/games/castlevania_rondo_mockup-3.png" width="256" height="224">
-				<img src="assets/games/castlevania_rondo_mockup-4.gif" width="256" height="224">
-			</div>
-		</div>
-	</article>
+	<header>
+		<div id="template_header"></div>
+	</header>
 
-	<hr>
-	<article>
-		<div id="gamecaption">
-			<h3>FIGHTING TITANS</h3>
-			<p>
-				This is a game I worked on with a buddy from the Spriters Resource forums, <a href="https://twitter.com/g33x">Sketchasaurus</a> (he made most all of the graphics, and thought out most the gameplay concepts, I did all the programming). It's a sort of fighting game in "fake 3D"/"2.5D", built according to NES (Nintendo Entertainment System) console limitations.</p>
-				<br>
-				I programmed it in <a href="https://haxe.org/">Haxe</a>, using the <a href="https://haxeflixel.com/">Haxeflixel</a> library.</p>
-				<br>
-				The game features 8 playable titan characters, each with different stats, projectile attacks, and special moves.</p>
-				<br>
-				You can download the game <a href="">here</a>.
-			</p>
-		</div>
-		<div id="screenshot">
-			<div>
-				<img src="assets/games/titans-1.gif" width="256" height="224">
-				<img src="assets/games/titans-2.gif" width="256" height="224">
-				<img src="assets/games/titans-3.gif" width="256" height="224">
-				<img src="assets/games/titans-4.gif" width="256" height="224">
-			</div>
-		</div>
-	</article>
+<div id="template_navbar">
 
-	<div id="template_footer"></div>
+</div>
+<div id="template_header">
 
+</div>
+<hr />
+<div id="template_footer">
+
+</div>
+
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
 </body>
 
 </html>
