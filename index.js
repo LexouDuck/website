@@ -1,15 +1,14 @@
 
-
-// navigation treeview logic
-$(".treeview_toggle").on("click", function()
-{
-	console.log("clicked treeview_toggle: ", this);
-	$(this).parentElement.querySelector(".nested").classList.toggle("active");
-	$(this).classList.toggle("treeview_toggle_open");
-});
-
 $(document).ready(function()
 {
+	// navigation treeview logic
+	$(".treeview_toggle").on("click", "span", function()
+	{
+		console.log("clicked treeview_toggle: ", this);
+		$(this).parentElement.querySelector(".nested").classList.toggle("active");
+		$(this).classList.toggle("treeview_toggle_open");
+	});
+
 	// image gallery viewer logic
 	$(".gallery_arrows").on("click", "span", function()
 	{

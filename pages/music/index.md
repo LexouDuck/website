@@ -1,18 +1,4 @@
----
-lang: 'en-US'
-title: Lexou | Music
-description: Musical projects I worked on
----
 
-::: {#template_navbar}
-:::
+# Music
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+Here are all the music projects that I worked on over the years.
