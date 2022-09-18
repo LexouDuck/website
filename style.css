@@ -24,9 +24,8 @@ body
 h1
 {
 	color:#4C404C;
-	font-weight:bolder;
 	font-size:200%;
-	text-align:right;
+	font-weight:bolder;
 	line-height:125%;
 }
 h2
@@ -63,7 +62,7 @@ h5
 
 section
 {
-	margin: 20px 20% 30px 20%;
+	padding: 20px 12% 30px 12%;
 }
 
 
@@ -98,7 +97,7 @@ a:hover
 	position:fixed;
 	top: 10px;
 	left: 10px;
-	line-height: 12px;
+	line-height: 13px;
 }
 
 hr

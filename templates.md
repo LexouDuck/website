@@ -11,15 +11,15 @@
 
 
 ::: {#header}
-=================
-LEXOU - {{title}}
-=================
+-----
+LEXOU — {{title}}
+-----
 :::
 
 
 
 ::: {#navbar}
-NAVIGATION
+[LEXOU DUCK](/pages/index.html)
 ----------
 - [Games](                 /pages/games/index.html)
 	- [Personal Projects]( /pages/games/personal/index.html)

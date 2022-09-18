@@ -1,20 +1,9 @@
----
-lang: 'en-US'
-title: Lexou | Chiptunes
-description: Index/home page of this website
----
 
-::: {#template_navbar}
-:::
+# Chiptunes
 
-::: {#template_header}
-:::
+These are the music covers I made as 8-bit chiptunes, using FamiTracker.
 
-------------------------------------------------------------------------
-
-### Chiptunes
-
-I have been making chiptunes since quite a young age - I have always found the practice of making chiptunes to be fascinating, since you must create your own instruments, writing your own volume-over-time curves, etc. Not to mention, the large amount of crazy and interesting techniques that are possible within chiptune limitations - to list a few: single-channel chords via arpeggios, single-channel echo, periodic-noise percussion, multi-pitch N163 waves, and many more...
+I have been making chiptunes since a pretty young age (14-ish) - I have always found the practice of making chiptunes to be fascinating, since you must create your own instruments from scratch, writing your own volume-over-time curves, etc. Not to mention, the large amount of crazy and interesting techniques that are possible within chiptune limitations - to list a few: single-channel chords via arpeggios, single-channel echo, periodic-noise percussion, multi-pitch N163 waves, and many more...
 
 ------------------------------------------------------------------------
 
@@ -148,8 +137,3 @@ The song is available for download in the following formats:
 - [NSF](https://www.mediafire.com/file/jb86vmrxvc1ozq6/FF_VI_-_Dancing_Mad.nsf)
 - [WAV](#)
 - [MP3](#)
-
-
-
-::: {#template_footer}
-:::

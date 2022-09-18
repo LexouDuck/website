@@ -1,18 +1,4 @@
----
-lang: 'en-US'
-title: Lexou | Maths
-description: Mathematical projects I worked on
----
 
-::: {#template_navbar}
-:::
+# Maths
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+Here are the projects I worked that relate to mathematics.

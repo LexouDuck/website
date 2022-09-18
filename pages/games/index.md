@@ -1,17 +1,4 @@
----
-description: Index/home page of this website
-lang: 'en-US'
-title: Lexou Duck
-viewport: 'width=device-width, initial-scale=1'
----
 
-::: {#template_navbar}
-:::
+# Games
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+These are all of the game projects that I worked on.

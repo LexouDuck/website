@@ -1,19 +1,4 @@
----
-lang: 'en-US'
-title: Lexou | Originals
----
 
-::: {#template_navbar}
-:::
+# Original compositions
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-# TODO
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+These are the songs that I have composed/written/recorded myself.
