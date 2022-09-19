@@ -1,0 +1,159 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	background-color: #1F1B1F;
+	font-size: 100%;
+	line-height: 145%;
+	width: 80%;
+	height: 100%;
+	margin-left: 20%;
+	font-family: "Roboto", "Futura", "Calibri", "Rockwell", "Verdana", sans-serif;
+}
+h1, h2, h3, h4, h5
+{
+	font-family: "Myriad", "Sarpanch", sans-serif;
+}
+
+section
+{
+	padding: 30px;
+}
+
+hr
+{
+	color: #4C404C;
+	margin: 30px 0;
+}
+
+h1
+{
+	color: #4C404C !important;
+	font-size:200%;
+	font-weight:bolder;
+	margin: 30px 0;
+}
+h2
+{
+	color: #4C404C !important;
+	font-size:120%;
+	font-weight:normal;
+	margin: 20px 0;
+}
+h3
+{
+	color: white;
+	font-size:150%;
+	font-weight:bolder;
+	margin: 10px 0;
+}
+h4
+{ color: white;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+}
+h5
+{
+	color: #4C404C;
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+}
+
+p
+{
+	color: white;
+	text-align: left;
+}
+a, a:link
+{
+	color: #9C909C;
+	text-decoration: none;
+}
+a.current
+{
+	color: #4C404C;
+	text-decoration: none;
+	pointer-events: none;
+}
+a:hover
+{
+	text-decoration: underline;
+	color: #4F8CFF;
+}
+
+img
+{
+	margin: 10px;
+}
+
+ul
+{
+	margin: 0 0 0 0;
+	line-height: 200%;
+}
+li
+{
+	margin: 0 0 0 10px;
+	text-align: left;
+}
+
+#navbar, #template_navbar
+{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: calc(20% - 10px);
+	height: 100%;
+	padding: 10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.treeview
+{
+	user-select: none; /* Prevent text selection */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.treeview_leaf
+{
+	color: #4C404C;
+	display: inline-block;
+	margin-right: 5px;
+}
+.treeview_node
+{
+	color: white;
+	font-size: 80%;
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+/* Hide the nested list */
+ul.nested
+{
+	display: none;
+}
+/* Rotate the treeview arrow icon when clicked on (using JavaScript) */
+li.open > span.treeview_node
+{
+	transform: rotate(90deg);
+}
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+li.open > ul.nested
+{
+	display: block;
+}

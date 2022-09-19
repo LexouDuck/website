@@ -1,14 +1,4 @@
----
-description: Index/home page of this website
-lang: 'en-US'
-title: Lexou | Contact
----
 
-::: {#template_navbar}
-:::
+# Contact
 
-::: {#template_header}
-:::
-
-::: {#template_footer}
-:::
+For any business inquiries, you may contact me at [?](mailto:#)

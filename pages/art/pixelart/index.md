@@ -1,44 +1,52 @@
----
-description: Index/home page of this website
-lang: 'en-US'
-title: Lexou Duck
-viewport: 'width=device-width, initial-scale=1'
----
 
-::: {#template_navbar}
-:::
+# Pixel Art
 
-::: {#template_header}
-:::
+These are some of the pixel art works I've made over the years (all made entirely in mspaint).
 
 ------------------------------------------------------------------------
 
-::: {#category}
-![](assets/pixelart/gambit.png) ![](assets/pixelart/sunset.png)
-![](assets/pixelart/mantador.png)
-:::
+### Original Pieces
+
+This was done for on contest on [Pixeljoint](#), constraints being a very limited 6-color palette.
+
+![](gambit.png)
+
+This one is purely monochromatic (black/white), I made this to experiment with pixel dithering patterns.
+
+![](sunset.png)
+
+This strange sprite was made for [The Spriters' Resource Fighter game](#), to serve as a "character select" portait.
+To poke fun at the tradition of most arcade fighting games, which is to have overly detailed character portraits,
+that sometimes are quite different from how the character looks in-game. Here this idea was turned up to eleven,
+by requiring that character portraits be done in a style reminiscent of [JoJo's Bizarre Adventure](#)
+
+![](mantador.png)
 
 ------------------------------------------------------------------------
 
-::: {#category}
 ### Demake Mockups
 
-![](assets/pixelart/pokemon-critique.png)
-![](assets/pixelart/demake-starfox.png)
-![](assets/pixelart/demake-ff4.png) ![](assets/pixelart/demake-ff7.png)
-:::
+These are some NES-style "demake" mockups, that I made to illustrate some of my [chiptune covers](/pages/music/chiptunes/index.html).
+
+![](demake-starfox.png)
+
+![](demake-ff4.png)
+
+![](demake-ff7.png)
+
+This piece was an experiment, to attempt to show how it might be possible
+to have some background graphics displayed on the original Gameboy *Pokemon* games.
+
+![](pokemon-critique.png)
 
 ------------------------------------------------------------------------
 
-::: {#category}
-### Fire Emblem
+### Fanart
 
-![](assets/pixelart/fe_balrog.gif) ![](assets/pixelart/fe_adri.png)
-![](assets/pixelart/fe_shanoa.png) ![](assets/pixelart/fe_horace.png)
-![](assets/pixelart/fe_hero-bern.png)
-![](assets/pixelart/fe_hero-elimine.png)
-![](assets/pixelart/fe_marth.png) ![](assets/pixelart/fe_fe4.png)
-:::
+Here are a couple sprits done in the style of the Gameboy Advance *Fire Emblem* games.
+I have always been a big fan of these games, as one can tell from my
+[Emblem Magic](/pages/tools/emblem_magic/index.html) project.
 
-::: {#template_footer}
-:::
+![](/assets/pixelart/fe_balrog.gif)
+
+![](/assets/pixelart/fe_marth.png)

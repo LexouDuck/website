@@ -6,46 +6,56 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Lexou Duck</title>
-	<meta name="description" content="Index/home page of this website">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" href="assets/_favicon.ico" />
-	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
-	<link rel="stylesheet" href="assets/main.css">
-
-	<script type="text/javascript" src="assets/mustache.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-
-	<script>var current_page = "Sketches";</script>
-	<script type="text/javascript" src="_templates.js"></script>
+	<!-- website libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="icon" href="/assets/favicon.png" type="image/png" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
 </head>
-
 <body>
-
-	<div id="template_header"></div>
-
 	<div id="template_navbar"></div>
 
-	<div id="strip">
-		<img src="assets/sketches/sketch_2015-4.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2015-3.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2015-2.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2015-1.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2014-4.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2014-3.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2014-2.png" width="650"><hr>
-		<img src="assets/sketches/sketch_2013-2.png" width="650"><hr>
-	</div>
+	<header>
+		<div id="template_header"></div>
+	</header>
 
-	<div id="template_footer"></div>
+	<section>
+<h1 id="sketches">Sketches</h1>
+<p>Here is a small selection of my sketches.</p>
+<p>Ever since a very young age, I have always been drawing whenever I
+could get my hands on a pencil and some paper. As such, I have drawn
+many many sketches over the years - though I have not drawn as much as I
+would like, ever since I learned to program, and got a job…</p>
+<hr />
+<h3 id="section">2015</h3>
+<p><img src="sketch_2015-4.png" width="650" /></p>
+<p><img src="sketch_2015-3.png" width="650" /></p>
+<p><img src="sketch_2015-2.png" width="650" /></p>
+<p><img src="sketch_2015-1.png" width="650" /></p>
+<hr />
+<h3 id="section-1">2014</h3>
+<p><img src="sketch_2014-4.png" width="650" /></p>
+<p><img src="sketch_2014-3.png" width="650" /></p>
+<p><img src="sketch_2014-2.png" width="650" /></p>
+<hr />
+<h3 id="section-2">2013</h3>
+<p><img src="sketch_2013-2.png" width="650" /></p>
+<hr />
+	</section>
 
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
 </body>
+
+<script type="text/javascript" src="/templates.js"></script>
+<script type="text/javascript" src="/index.js"></script>
 
 </html>

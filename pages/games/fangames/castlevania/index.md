@@ -1,5 +1,5 @@
 
-### Castlevania: Symphony of Blood
+# Castlevania: Symphony of Blood
 
 This is the first game project I ever worked on.
 It started as the project for my end-of-highschool exam, since

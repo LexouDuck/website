@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- website libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="icon" href="/assets/favicon.png" type="image/png" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
+</head>
+<body>
+	<div id="template_navbar"></div>
+
+	<header>
+		<div id="template_header"></div>
+	</header>
+
+	<section>
+<h1 id="castlevania-symphony-of-blood">Castlevania: Symphony of
+Blood</h1>
+<p>This is the first game project I ever worked on. It started as the
+project for my end-of-highschool exam, since I was lucky enough to be in
+a school where, in my last year of highschool, I was given the option to
+select an (experimental) programming class.</p>
+<p>I started working on the project in the middle of the school year
+(long before the exam) because it was of personal interest to me, I
+always wanted to make games. It was more of a hobby to me, especially
+since I did everything by myself: - the graphics (I had been using <a
+href="#">mspaint</a> from a young age) - the music (I learned how to use
+<a href="#">Famitracker</a> to create NES-accurate chiptunes) - the
+coding (programmed in <a href="#">Python</a> - which was taught in the
+class - using the <a href="#">Pygame</a> library)</p>
+<p>I chose to “demake” a game I am fond of, which I think is quite
+underrated: <em>Castlevania - Rondo of Blood</em>. This game is not very
+well-known because it was released on a console that few people own (or
+even know), the <em>PC-Engine</em> - also known as the
+<em>Turbografx16</em> in North America - and also, this game was only
+ever released in Japan. Although, the <em>Castlevania</em> series is a
+well-known franchise, and there was a game that loosely resembled this
+one, that was released in the west: <em>Castlevania - Dracula X</em>.
+Unfortunately <em>Castlevania - Dracula X</em> is very different from
+<em>Castlevania - Rondo of Blood</em>, and most people who have played
+both generally agree that it is by far the lesser of the two games.</p>
+<p>The idea was to “demake” the game (<em>i.e.</em> to remake it under
+lower specs), in other words, to re-imagine the game, as if it had been
+released a few years earlier, on the NES (Nintendo Entertainment
+System). During the lifespan of the NES console, <em>Castlevania</em>
+was one of the truly big names, alongside classics like <em>Super
+Mario</em>, <em>Legend of Zelda</em>, <em>Metroid</em>, <em>Mega
+Man</em>, etc. This would have perhaps allowed the game to enjoy greater
+accessibility, and so, greater success. Demaking the game implies that I
+had to comply with the technical limitations of this console. The NES is
+not a very powerful system, it has many limitations, in terms of power,
+video, audio, etc.</p>
+<p>Here are some mockups I made at the very start, to have an idea of
+what it might look like:</p>
+<div id="screenshot">
+<p><img src="mockup-1.png" class="screencap" width="256" height="224" />
+<img src="mockup-2.png" class="screencap" width="256" height="224" />
+<img src="mockup-3.png" class="screencap" width="256"
+height="224" /></p>
+</div>
+<p>Originally, for the high school exam, I just implemented the battle
+against the first boss (or, to be more precise, one of the two “first
+bosses”, since this game features branching paths). I figured that this
+“lake serpent” enemy would be easier to implement, since it required
+little pixelart sprite work, just a couple of small distinct parts of
+its body - and in fact, making the body parts follow the head of the
+snake was a fun programming challenge in and of itself.</p>
+<div id="screenshot">
+<p><img src="mockup-4.gif" class="screencap" width="256"
+height="224" /></p>
+</div>
+<p>Of course, this first game engine I had built had several bugs
+(including some that made the boss trivial), the player character was
+clunky to control, and many other issues regarding Python made me
+abandon it.</p>
+<p>Several years later, after working on several game projects here and
+there, and after learning several other programming languages, I decided
+to restart, and hopefully finish this project.</p>
+<p>I had two options as to how to develop the game, either: make a
+custom engine that can imitate the NES well, or develop an actual NES
+ROM in 6502 assembly. Needless to say, being experienced with C at this
+point, and having built a complex fully-featured ROM-hacking tool, <a
+href="/tools/emblem_magic/index.html">Emblem Magic</a>, I had had my
+fair share of assembly languages, and so I chose the first option. What
+made sense was to create this custom engine in C, using <a
+href="#">SDL2</a> - this might sound weird, but it will make more sense
+if you know how I view the C language, which I talk about more <a
+href="/tools/ccc/index.md">here</a>.</p>
+<p>I made progress, and as I did so, so too did the scope of the project
+increase. I not only wanted to pay tribute to <em>Castlevania - Rondo of
+Blood</em>, but also to another favorite of mine, and the favorite of
+most players out there: <em>Castlevania - Symphony of the Night</em>.
+Now, <em>Symphony of the Night</em> is quite a different game from
+<em>Rondo of Blood</em>, it is not a tough, linear, level-by-level
+platformer like the original <em>Castlevania</em> games. Its “<a
+href="#">metroidvania</a>” nature makes it much easier to sidestep or
+avoid challenging sections, whereas in <em>Rondo of Blood</em>, there is
+no easy way out (unless you play as Maria, that is…). It seemed to me
+like there was definitely some just middle of difficulty and design
+between the two, a game where the RPG stat mechanics can help a
+struggling stuck player (either through simple grinding, or some other
+strategy), but where there is still sufficient challenge for the player…
+dare I say, a souls-like ?</p>
+<p>It also made a great deal of sense to me to mesh the two games
+together, simply because in terms of lore, <em>Symphony of the
+Night</em> is a direct sequel to <em>Rondo of Blood</em>, occuring just
+a couple of years later, and featuring many of the same characters.
+Furthermore, the maps of the two games have perfect overlap in many
+areas.</p>
+	</section>
+
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
+</body>
+
+<script type="text/javascript" src="/templates.js"></script>
+<script type="text/javascript" src="/index.js"></script>
+
+</html>

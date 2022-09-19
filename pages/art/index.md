@@ -1,18 +1,4 @@
----
-lang: 'en-US'
-title: Lexou | Art
-description: Visual art works
----
 
-::: {#template_navbar}
-:::
+# Artwork
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+Here is a selection of some of my visual arts works, in various mediums.

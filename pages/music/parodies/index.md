@@ -1,19 +1,4 @@
----
-lang: 'en-US'
-title: Lexou | Originals
----
 
-::: {#template_navbar}
-:::
+# Parody music
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-# TODO
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+These are songs that use typical clichés of certain artists/genres, to caricature many styles of music.

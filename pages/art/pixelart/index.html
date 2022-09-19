@@ -6,64 +6,75 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-	<title>Lexou Duck</title>
-	<meta name="description" content="Index/home page of this website">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="icon" href="assets/_favicon.ico" />
-	<link rel="icon" type="image/jpeg" href="assets/_favicon.jpg" />
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sarpanch" type="text/css">
-	<link rel="stylesheet" href="assets/main.css">
-
-	<script type="text/javascript" src="assets/mustache.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-
-	<script>var current_page = "Pixel Art";</script>
-	<script type="text/javascript" src="_templates.js"></script>
+	<!-- website libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="icon" href="/assets/favicon.png" type="image/png" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
 </head>
-
 <body>
-
-	<div id="template_header"></div>
-
 	<div id="template_navbar"></div>
 
-	<hr>
-	<div id="category">
-		<img src="assets/pixelart/gambit.png">
-		<img src="assets/pixelart/sunset.png">
-		<img src="assets/pixelart/mantador.png">
-	</div>
+	<header>
+		<div id="template_header"></div>
+	</header>
 
-	<hr>
-	<div id="category">
-		<h3>Demake Mockups</h3>
-		<img src="assets/pixelart/pokemon-critique.png">
-		<img src="assets/pixelart/demake-starfox.png">
-		<img src="assets/pixelart/demake-ff4.png">
-		<img src="assets/pixelart/demake-ff7.png">
-	</div>
+	<section>
+<h1 id="pixel-art">Pixel Art</h1>
+<p>These are some of the pixel art works I’ve made over the years (all
+made entirely in mspaint).</p>
+<hr />
+<h3 id="original-pieces">Original Pieces</h3>
+<p>This was done for on contest on <a href="#">Pixeljoint</a>,
+constraints being a very limited 6-color palette.</p>
+<p><img src="gambit.png" /></p>
+<p>This one is purely monochromatic (black/white), I made this to
+experiment with pixel dithering patterns.</p>
+<p><img src="sunset.png" /></p>
+<p>This strange sprite was made for <a href="#">The Spriters’ Resource
+Fighter game</a>, to serve as a “character select” portait. To poke fun
+at the tradition of most arcade fighting games, which is to have overly
+detailed character portraits, that sometimes are quite different from
+how the character looks in-game. Here this idea was turned up to eleven,
+by requiring that character portraits be done in a style reminiscent of
+<a href="#">JoJo’s Bizarre Adventure</a></p>
+<p><img src="mantador.png" /></p>
+<hr />
+<h3 id="demake-mockups">Demake Mockups</h3>
+<p>These are some NES-style “demake” mockups, that I made to illustrate
+some of my <a href="/pages/music/chiptunes/index.html">chiptune
+covers</a>.</p>
+<p><img src="demake-starfox.png" /></p>
+<p><img src="demake-ff4.png" /></p>
+<p><img src="demake-ff7.png" /></p>
+<p>This piece was an experiment, to attempt to show how it might be
+possible to have some background graphics displayed on the original
+Gameboy <em>Pokemon</em> games.</p>
+<p><img src="pokemon-critique.png" /></p>
+<hr />
+<h3 id="fanart">Fanart</h3>
+<p>Here are a couple sprits done in the style of the Gameboy Advance
+<em>Fire Emblem</em> games. I have always been a big fan of these games,
+as one can tell from my <a
+href="/pages/tools/emblem_magic/index.html">Emblem Magic</a>
+project.</p>
+<p><img src="/assets/pixelart/fe_balrog.gif" /></p>
+<p><img src="/assets/pixelart/fe_marth.png" /></p>
+	</section>
 
-	<hr>
-	<div id="category">
-		<h3>Fire Emblem</h3>
-		<img src="assets/pixelart/fe_balrog.gif">
-		<img src="assets/pixelart/fe_adri.png">
-		<img src="assets/pixelart/fe_shanoa.png">
-		<img src="assets/pixelart/fe_horace.png">
-		<img src="assets/pixelart/fe_hero-bern.png">
-		<img src="assets/pixelart/fe_hero-elimine.png">
-		<img src="assets/pixelart/fe_marth.png">
-		<img src="assets/pixelart/fe_fe4.png">
-	</div>
-
-	<div id="template_footer"></div>
-
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
 </body>
+
+<script type="text/javascript" src="/templates.js"></script>
+<script type="text/javascript" src="/index.js"></script>
 
 </html>

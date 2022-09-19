@@ -1,18 +1,4 @@
----
-lang: 'en-US'
-title: Lexou | Tools
-description: Programming projects I worked on
----
 
-::: {#template_navbar}
-:::
+# Programming
 
-::: {#template_header}
-:::
-
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-::: {#template_footer}
-:::
+Here is all the software and tools which I have built and released over the years.
