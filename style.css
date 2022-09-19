@@ -78,7 +78,7 @@ p
 }
 a, a:link
 {
-	color: white;
+	color: #9C909C;
 	text-decoration: none;
 }
 a.current
@@ -91,6 +91,11 @@ a:hover
 {
 	text-decoration: underline;
 	color: #4F8CFF;
+}
+
+img
+{
+	margin: 10px;
 }
 
 ul
@@ -143,12 +148,12 @@ ul.nested
 	display: none;
 }
 /* Rotate the treeview arrow icon when clicked on (using JavaScript) */
-li.open span.treeview_node
+li.open > span.treeview_node
 {
 	transform: rotate(90deg);
 }
 /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
-li.open ul.nested
+li.open > ul.nested
 {
 	display: block;
 }
