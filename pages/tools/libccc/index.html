@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- website libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="icon" href="/assets/favicon.png" type="image/png" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
+</head>
+<body>
+	<div id="template_navbar"></div>
+
+	<header>
+		<div id="template_header"></div>
+	</header>
+
+	<section>
+<h1 id="libccc">libccc</h1>
+<h2 id="libccc-1">libccc</h2>
+<p>A comprehensive, cross-platform, customizable standard library for
+C</p>
+<p><a href="https://github.com/LexouDuck/libccc/actions">
+<img src="https://github.com/LexouDuck/libccc/workflows/CI+CD/badge.svg" />
+</a></p>
+<h2 id="the-project">The Project</h2>
+<p>The objective is to have one simple, well-documented, efficient
+open-source implementation of the C standard library, but with easier to
+use functions and types than what is offered by the ISO standards -
+mostly by consistently handling undefined behaviors, and handling edge
+cases in a consistent, coherent way, so as to have code that is as
+little machine-specific as possible.</p>
+<p>The first step to accomplishing this is to avoid using the native
+int/long/short types, which can have different storage size depending on
+the platform (‘int’ is defined as the fastest integer type for the given
+machine, typically this will be the CPU register size - so on a 64-bit
+machine, that’d be int64, on a 32-bit machine int32, and some old
+embedded systems you come across might have 16-bit ints as the machine’s
+default storage size). So first of all, using the integer types defined
+in “stdint.h” (‘int32_t’, ‘uint64_t’, etc) is essential for any
+cross-platform C code, as it ensures consistent cross-platform overflow
+behaviors (Note that these aren’t present on every platform though -
+sometimes we will have to settle for the ‘uint_fastX_t’ types, but
+macros have been provided to make this switch simply). Of course, many
+times a platform-dependent “fast int” is the best thing to use, and this
+is made easy using libccc.</p>
+<p>The following categories/headers include the ISO standard library
+(types, functions, macros):</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 48%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>C header file</th>
+<th>Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>libccc/bool.h</code></td>
+<td><code>t_bool</code></td>
+<td>primitive boolean type (usually <code>_Bool</code>), and strtobool,
+booltostr, etc</td>
+</tr>
+<tr class="even">
+<td><code>libccc/char.h</code></td>
+<td><code>t_char</code>, <code>t_ascii</code>, <code>t_utf8</code></td>
+<td>functions to handle ANSI/ASCII characters (islower, isalpha,
+toupper, etc - but also <code>wchar_t</code> and UTF8 char
+handling)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/int.h</code></td>
+<td><code>t_uint</code>, <code>t_sint</code>, etc…</td>
+<td>integer number types, functions to replace the wonky STD C atoi/itoa
+functions with better type-specific conversion functions</td>
+</tr>
+<tr class="even">
+<td><code>libccc/float.h</code></td>
+<td><code>t_float</code>, etc…</td>
+<td>floating-point types, functions to replace the wonky STD C
+atof/strtol functions with better type-specific conversion
+functions</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/pointer.h</code></td>
+<td><code>t_size</code>, <code>t_ptrdiff</code>, etc…</td>
+<td>important system types for pointer arithmetic (<code>size_t</code>,
+<code>ptrdiff_t</code>) and the functions associated with them</td>
+</tr>
+<tr class="even">
+<td><code>libccc/memory.h</code></td>
+<td><code>void*</code></td>
+<td>functions to manipulate memory directly (memcpy, memset, memchr, etc
+- but also extras like memdup, memrep, getbits)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/string.h</code></td>
+<td><code>t_char*</code></td>
+<td>functions to manipulate strings (strcpy,strchr,strsub,etc but also
+extras such as strformat,strsplit,strmap)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/math.h</code></td>
+<td>N/A</td>
+<td>common mathematical functions operating on floating-point numbers
+(the implementations in this lib are fast-approximate versions, though
+by default LIBCONFIG_FAST_APPROX_MATH is defined as 0, so the functions
+are actually simple wrappers over the builtin FPU math functions)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/sys/time.h</code></td>
+<td><code>t_time</code>, <code>s_date</code>, etc…</td>
+<td>functions for handling times/dates/timezones/timespecs (handling of
+timezones is different from the stdlib ‘global variable’ tzset
+call)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/sys/io.h</code></td>
+<td>N/A</td>
+<td>functions for reading and writing (from/to terminal, or from/to
+file(s) - wrapper functions over <code>unistd.h</code> and
+<code>stdio.h</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>Furthermore, there are other functions here that are not found in the
+ISO standard, particularly in the following categories:</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 48%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>C header file</th>
+<th>Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>libccc/fixed.h</code></td>
+<td><code>t_fixed</code>, etc…</td>
+<td>fixed-point arithmetic, with a configurable fixed-point number type
+(regarding what portion is dedicated to the fractional part)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/color.h</code></td>
+<td><code>t_argb32</code>, <code>s_argb</code>, <code>s_ahsl</code>,
+etc…</td>
+<td>functions manipulating several common color encodings, as well as
+other useful color-related functions (like RGB_to_HSL, etc)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/pointerarray.h</code></td>
+<td><code>void**</code></td>
+<td>a set of functions used to manipulate pointer arrays
+(<code>void **</code>, where the array is terminated by a NULL
+pointer)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/stringarray.h</code></td>
+<td><code>t_char**</code></td>
+<td>a set of functions used to manipulate string arrays
+(<code>char **</code>, where the array is terminated by a NULL
+pointer)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/math/algebra.h</code></td>
+<td><code>s_vector2d</code>, <code>s_matrix2x2</code>, etc…</td>
+<td>math functions for 2D/3D/4D vectors and matrices, as well as
+integrals and more</td>
+</tr>
+<tr class="even">
+<td><code>libccc/random/random.h</code></td>
+<td><code>t_prng</code>, <code>t_csprng</code>, etc…</td>
+<td>functions for simple pseudo-random number generation (many more
+functions than just the ISO rand/srand/rand_r functions)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/math/complex.h</code></td>
+<td><code>s_complex</code></td>
+<td>math functions for complex number operations, as well as
+quaternions</td>
+</tr>
+<tr class="even">
+<td><code>libccc/math/stat.h</code></td>
+<td>N/A</td>
+<td>statistics &amp; probabilities functions: int/float number array
+sort functions, median, standard deviation, etc</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/math/vlq.h</code></td>
+<td><code>t_bigint</code>, <code>t_bigfloat</code>, etc…</td>
+<td>Variable-Length Quantity math functions, for variable-size “big
+ints”, “big fixed”, and “big float” types.</td>
+</tr>
+<tr class="even">
+<td><code>libccc/monad/array.h</code></td>
+<td><code>s_array&lt;T&gt;</code></td>
+<td>generic-type array functions (simply stores a contiguous memory
+buffer <code>.items</code> and a <code>.length</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/monad/list.h</code></td>
+<td><code>s_list&lt;T&gt;</code></td>
+<td>generic-type linked-list functions (which can be configured to be
+singly-linked or doubly-linked)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/monad/stack.h</code></td>
+<td><code>s_stack&lt;T&gt;</code></td>
+<td>generic-type stack functions (mainly push/pop, made to act like a
+FIFO/LILO type)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/monad/queue.h</code></td>
+<td><code>s_queue&lt;T&gt;</code></td>
+<td>generic-type queue functions (mainly push/pop, made to act like a
+LIFO/FILO type)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/monad/dict.h</code></td>
+<td><code>s_dict&lt;T&gt;</code></td>
+<td>generic-type dictionary (key/value pair) functions (access items via
+their string <code>key</code> rather than their index)</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/monad/tree.h</code></td>
+<td><code>s_tree&lt;T&gt;</code></td>
+<td>generic-type tree functions (each <code>struct tree</code> stores a
+value of type <code>T</code>)</td>
+</tr>
+<tr class="even">
+<td><code>libccc/encode/common.h</code></td>
+<td><code>s_kvt*</code></td>
+<td>key-value pair nestable object, supports printing/parsing to several
+common data formats (JSON, YAML, XML, TOML).</td>
+</tr>
+<tr class="odd">
+<td><code>libccc/sys/regex.h</code></td>
+<td><code>s_regex</code></td>
+<td>Regular Expression type and functions, based on the all-encompassing
+<a href="https://github.com/kkos/oniguruma">Oniguruma</a> regex
+engine</td>
+</tr>
+</tbody>
+</table>
+<h2 id="why-does-this-exist">Why does this exist ?</h2>
+<p>What started as a necessary exercise for the 42 school (called
+<code>libft</code>, as in “lib-forty-two”) quickly became a much more
+expansive project, now dubbed <code>libccc</code> (for comprehensive,
+customizable, cross-platform). Whereas the 42 libft project only
+requires students to code a certain set of important memory/string/io
+functions, we decided to take this idea much further. The
+<code>libft</code> project is originally meant as an educational
+exercise, in which a student learns a lot by “reinventing the wheel”
+many times over. Here, the goal is to have a standard C library which
+is: - <strong>fully cross-platform</strong>: libccc should be able to
+compile on as many compilers/machines as possible. -
+<strong>uniformized</strong>: libccc should allow the developer to not
+worry so much about “undefined behavior” or platform-specific edge cases
+when using standard functions. - <strong>configurable</strong>: libccc
+should be compield from source, and linked statically to your project,
+so that configuration variables can be set directly on the commandline,
+when compiling it (see <code>libccc_config.h</code>). -
+<strong>customizable</strong>: libccc being open source (MIT license),
+allows and encourages all developers to use, add and contribute to this
+standard library. - <strong>comprehensive</strong>: libccc offers much
+more than the minimalist set of utility functions that is the C ISO
+standard library, to hopefully alleviate having too many dependencies,
+or too many “util.c” files, which really should be part of the standard
+library.</p>
+<h2 id="how-to-use-this-library">How to use this library</h2>
+<p>The Makefile simply builds a <code>libccc.a</code> library to link to
+your project. (eg: you can link it with something like
+<code>gcc main.c -I./libccc/hdr/ -L./libccc/ -lccc</code>)</p>
+<p>Alternatively, you may add this git repo as a “git submodule” to your
+own. This allows you to be up to date to the latest version at all
+times, by simply <code>cd</code>-ing over to the submodule folder and
+doing a <code>git pull</code>.</p>
+<p>In general though, we recommend having the source code and compiling
+it yourself (as there are important customization flags in
+<code>./hdr/libccc_config.h</code> which change how the library is
+compiled). You are encouraged to take a look at this file (<a
+href="https://github.com/LexouDuck/libccc/blob/master/hdr/libccc_config.h">libccc_config.h</a>),
+and decide on how you wish to configure the library when using it in
+your project. In particular: -
+<code>LIBCONFIG_HANDLE_NULLPOINTERS</code> If 0, then libccc functions
+will always try to dereference (and usually do a segmentation fault)
+when given NULL pointer arguments (this is useful for debug). If 1 (this
+is the default), then all NULL pointer accesses will be avoided, and an
+appropriate return value (eg:<code>NULL</code>, <code>0</code>,
+sometimes <code>-1</code>) will be returned by any libccc function when
+given a NULL pointer. - <code>LIBCONFIG_FAST_APPROX_MATH</code> If 0
+(this is the default), the builtin FPU-call libc math functions will be
+used (eg: <code>__builtin_powf()</code>, etc) If 1, the libccc fast
+approximate math functions will be used (these can be quite unreliable,
+their purpose is to be faster in terms of execution time - the general
+precision error margin they are tested for is 0.0001) -
+<code>LIBCONFIG_INTTYPES_...</code>
+<code>EXACT</code>/<code>FAST</code>/<code>LEAST</code>: If
+<code>LIBCONFIG_INTTYPES_EXACT</code> is true, default <code>int</code>
+types are set to with the standard <code>(u)intSIZE_t</code> type
+specifiers. If <code>LIBCONFIG_INTTYPES_FAST</code> is true, default
+<code>int</code> types are set to with the standard
+<code>(u)int_fastSIZE_t</code> type specifiers. If
+<code>LIBCONFIG_INTTYPES_LEAST</code> is true, default <code>int</code>
+types are set to with the standard <code>(u)int_leastSIZE_t</code> type
+specifiers. If multiple of these macros are simultaneously true, EXACT
+takes precedence over FAST, which itself takes precedence over LEAST. If
+none are true, resolves to EXACT.</p>
+<h2 id="documentation">Documentation</h2>
+<p>The documentation for libccc is available at the following address:
+https://lexouduck.github.io/libccc/doc/html/index.html This
+documentation website is generated from special comments written
+directly within the code, so, as usual in C, it is recommended that you
+take a look at the .h header files located in the <code>hdr</code>
+folder of this repo. Thank you to Doxygen, Doxyrest, Sphinx, and GitHub
+Pages to make this auto-generated documentation work.</p>
+<h2 id="build-system">Build system</h2>
+<p>This library is built using a cross-platform Makefile build system
+(). libccc should be able to build on most all common platforms, in both
+static and dynamic library form.</p>
+<p>The default <code>make</code> rule will simply build the library -
+there are many <code>make</code> commands which make up the build system
+(you can do <code>make test</code> to run the test suite, for example).
+To learn more about what make scripts are provided, do
+<code>make help</code>, which will give a list of all rules and a brief
+description for each.</p>
+<p>There a couple of important custom Makefile variables used, which you
+should keep in mind. Here are some common options which will change how
+the Makefile build is done:</p>
+<p><code>make &lt;target-name&gt; [BUILDMODE=?] [OSMODE=?] [CPUMODE=?] [LIBMODE=?]</code></p>
+<p>Here is an explantion of these optional makefile variables (in
+brackets) which can be specified:</p>
+<ul>
+<li><p><code>BUILDMODE</code>: can be <code>debug</code> or
+<code>release</code> Use this to specify the type of build to perform,
+which will alter the <code>CFLAGS</code> accordingly By default, for
+most rules, the value will be <code>debug</code>, unless you call
+<code>make release</code>. Example usage:
+<code>$ make cli MODE=release</code> (to build the CLI executable
+without debug flags, with optimization etc)</p></li>
+<li><p><code>OSMODE</code>: can be <code>windows</code>,
+<code>macos</code>, <code>linux</code>, or <code>other</code> Use this
+to specify the target platform/operating system, for cross-compiling. By
+default, the Makefile will use the current platform (it will guess using
+<code>uname -s</code>). Example usage:
+<code>$ make release OSMODE=macos</code> (to cross-compile for the MacOS
+platform)</p></li>
+<li><p><code>CPUMODE</code>: this string, by default, is the result of
+the <code>uname -m</code> shell command for your machine. There is no
+complete list of possible return values for the standard
+<code>uname</code> shell command, but here is a spreadsheet which gives
+an idea of some common values:
+https://en.wikipedia.org/wiki/Uname#Examples This variable is used to
+disambiguate builds of various CPU architectures, specifically in the
+<code>./bin</code> and <code>./obj</code> folders.</p></li>
+<li><p><code>LIBMODE</code>: can be <code>static</code> or
+<code>dynamic</code> Use this to specify the type of library to build
+(to the output <code>./bin/</code> folder) If <code>static</code>, only
+the statically-linked <code>libavesterra.a</code> library archive will
+be built. If <code>dynamic</code>, the appropriate dynamically-linked
+library files will be built using <code>CC</code>
+(<code>.dll</code>/<code>.dylib</code>/<code>.so</code>) By default, the
+value is <code>static</code> - but if you call
+<code>make release</code>, both static and dynamic libs will be built.
+Example usage: <code>$ make LIBMODE=dynamic</code> (to only build
+dynamic libs, without creating static <code>.a</code> files)</p></li>
+</ul>
+<h2 id="testing">Testing</h2>
+<p>To ensure proper functionality of all these important functions in
+every edge case, a rather exhaustive testing suite program was
+implemented, which compares libccc functions to their stdlib ISO
+equivalent, wherever applicable (otherwise tests expect results that are
+manually written out and asserted). This test suite program features
+segfault/signal handling and execution time comparison, among other
+things. You can test the <code>libccc</code> by running
+<code>make test</code>: this will compile and run the test suite program
+from the files found in the <code>./test</code> folder.</p>
+<h2 id="continuous-integration">Continuous Integration</h2>
+<p>Every time a new commit/push is done, the automated CI testing job is
+run, as defined in <code>.github/workflows/ci.yml</code> (see the <a
+href="https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions">official
+github documentation for Actions and Workflows to learn more</a>).</p>
+<p>This CI job builds everything with a <code>make</code>, and runs the
+testing suite with a <code>make test</code>. It runs with all of the
+following configurations: - Ubuntu (gcc and clang) - MacOS (gcc and
+clang) - Windows (mingw-gcc and clang)</p>
+<p>You can check the latest CI/CD run of libccc over on the <a
+href="https://github.com/LexouDuck/libccc/actions">GitHub Actions</a>
+page of this repo.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Check <code>CONTRIBUTING.md</code>, this file serves as a
+“contributions style guide”. This style was chosen because it allows for
+more efficient version control and code review.</p>
+<ul>
+<li>TODO add description of coding style to
+<code>CONTRIBUTING.md</code></li>
+</ul>
+	</section>
+
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
+</body>
+
+<script type="text/javascript" src="/templates.js"></script>
+<script type="text/javascript" src="/index.js"></script>
+
+</html>

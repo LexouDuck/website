@@ -94,13 +94,9 @@ This is the song that plays in the "Colosseum" area in the game.
 
 I made this with FamiTracker (using the Konami VRC6 extension module).
 
-I also made a mockup of the game in NES restrictions to illustrate the video, with the help of Emperor Pixel (who has made quite a few more of these NES-style *Castlevania - Symphony of the Night* mockup images, which you can check out here:
-[1](https://pixeljoint.com/pixelart/82408.htm)
-[2](https://pixeljoint.com/pixelart/82689.htm)
-[3](https://pixeljoint.com/pixelart/82857.htm)
-) - he made the HUD, the alucard sprite and some of the background tiles, and everything else (most of the background and the enemies) were made by me.
+I also made a mockup of the game in NES restrictions to illustrate the video, with the help of Emperor Pixel (who has made quite a few more of these NES-style *Castlevania - Symphony of the Night* mockup images, which you can check out here: [1](https://pixeljoint.com/pixelart/82408.htm), [2](https://pixeljoint.com/pixelart/82689.htm), [3](https://pixeljoint.com/pixelart/82857.htm)) - he made the HUD, the alucard sprite and some of the background tiles, and everything else (most of the background and the enemies) were made by me.
 
-This video (and its success) was the impetus for me to start making a NES-style demake of *Castlevania - Rondo of Blood* and *Castlevania - Symphony of the Night*, you can read more about this project of mine [here](/games/fangames/castlevania/index.html).
+This video (and its success) was the impetus for me to start making a NES-style demake of *Castlevania - Rondo of Blood* and *Castlevania - Symphony of the Night*, you can read more about this project of mine [here](/pages/games/fangames/castlevania/index.html).
 
 The song is available for download in the following formats:
 - [NSF](https://www.mediafire.com/file/j88vh5j64loxh9j/Castlevania_SotN_-_Wandering_Ghosts.nsf)

@@ -27,7 +27,7 @@ LEXOU — {{title}}
 
 
 ::: {#navbar}
-[LEXOU DUCK](/pages/index.html)
+<img src="/assets/icon.png" class="icon" style="border-radius:50%;" />[LEXOU DUCK](/pages/index.html)
 ----------
 <ul class="treeview">
 <li> <span class="treeview_node">▶</span> <a href="/pages/games/index.html"                                  >Games             </a> <ul class="treeview nested">
@@ -39,14 +39,16 @@ LEXOU — {{title}}
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/fangames/kirby_golf/index.html"              >Kirby 3D Golf     </a> </li> </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/games/gamejams/index.html"                         >Game Jams         </a> <ul class="treeview nested">
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/lost_sword_citadel/index.html"      >Lost Sword Citadel</a> </li>
-<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/tiger_woods_golf_tour/index.html"   >Tiger Woods Golf  </a> </li>
-<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/warp_ninja/index.html"              >Warp Ninja        </a> </li> </ul> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/tiger_woods_golf_rush/index.html"   >Tiger's Golf Rush </a> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/swap_jutsu/index.html"              >Swap-em-up Jutsu  </a> </li> </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/games/teamprojects/index.html"                     >Team Projects     </a> <ul class="treeview nested">
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/teamprojects/pipe_works/index.html"          >Pipe Works        </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/teamprojects/drill_bunny/index.html"         >Drill Bunny       </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/teamprojects/fighting_titans/index.html"     >Fighting Titans   </a> </li> </ul> </li>
 </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/tools/index.html"                                  >Tools             </a> <ul class="treeview nested">
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/libccc/index.html"                           >libccc            </a> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/cccmk/index.html"                            >cccmk             </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/ccc/index.html"                              >++C               </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/bmp2nam/index.html"                          >bmp2nam           </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/glyphind/index.html"                         >Glyphind          </a> </li>

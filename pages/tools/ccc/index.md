@@ -1,4 +1,4 @@
 
 # ++C
 
-https://github.com/LexouDuck/ccc.git
+https://raw.githubusercontent.com/LexouDuck/ccc/master/README.md

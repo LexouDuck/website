@@ -1,4 +1,4 @@
 
 # Emblem Magic
 
-https://github.com/LexouDuck/Emblem-Magic.git
+https://raw.githubusercontent.com/LexouDuck/Emblem-Magic/master/EmblemMagic/README.md

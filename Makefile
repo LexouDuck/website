@@ -15,7 +15,9 @@ HTML_FRAME = ./frame.html
 
 # Tools
 
-#! The tool used to convert markdown to HTML
+#! The tool used to convert .scss to .css
+SCSS = sass
+#! The tool used to convert .md to .html
 PANDOC = pandoc
 #! The tool used to host a local test server
 PYTHON3 = python3
@@ -47,20 +49,48 @@ setup
 setup:
 	@$(PYTHON3) --version
 	@$(PANDOC) --version
+	@$(SCSS) --version
 
 
 
 #! This rule automatically generates an .html file from its corresponding .md file
 %.html : %.md $(HTML_FRAME)
 	@echo "Building $@..."
-	@$(PANDOC) --from markdown $< --to html -o $@.tmp
-	@cat $(HTML_FRAME) | awk -v filepath="$@.tmp" '\
+	@awk '\
+	function command(cmd)\
+	{\
+		stdout = "";\
+		stdout_line = "";\
+		while (( cmd | getline stdout_line ) > 0)\
+		{\
+			if (length(stdout) == 0)\
+			{ stdout = stdout_line; }\
+			else\
+			{ stdout = stdout "\n" stdout_line; }\
+		}\
+		close(cmd);\
+		return (stdout);\
+	}\
+	\
+	{\
+		if (/^https:(.*)\/README\.md/)\
+		{ print command("curl " $$0); }\
+		else\
+		{ print; }\
+	}' $< \
+	> $<.tmp
+	@$(PANDOC) --from markdown+pipe_tables $<.tmp --to html -o $@.tmp
+	@awk -v filepath="$@.tmp" '\
 	{\
 		if (/%%%/)\
 		{\
 			while (getline line < filepath)\
-			{ print line; }\
+			{\
+				print line;\
+			}\
 		}\
 		else { print; }\
-	}' > $@
+	}' $(HTML_FRAME) \
+	> $@
+	@rm $<.tmp
 	@rm $@.tmp

@@ -1,7 +1,7 @@
 
 ### bmp2nam
 
-This is a tool to convert bitmap images into tile-based graphics data.
+https://raw.githubusercontent.com/LexouDuck/bmp2nam/master/README.md
 
 Here is a quick but pretty detailed summary of graphical limitations on the NES:
 - 2 types of graphics: "sprites" (which can be freely placed anywhere onscreen or offscreen) and "tiles" (which must be positioned aligned to the background tile grid)
