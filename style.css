@@ -101,11 +101,13 @@ img
 
 ul
 {
+	color: white;
 	margin: 0 0 0 0;
 	line-height: 200%;
 }
 li
 {
+	color: white;
 	margin: 0 0 0 10px;
 	text-align: left;
 }
