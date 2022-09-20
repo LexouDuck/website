@@ -99,6 +99,18 @@ img
 	margin: 10px;
 }
 
+table
+{
+	color: white;
+	margin: 10px;
+	border: 1px solid #4C404C;
+}
+td
+{
+	padding: 10px;
+	border: 1px solid #4C404C;
+}
+
 ul
 {
 	color: white;

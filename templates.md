@@ -47,6 +47,8 @@ LEXOU — {{title}}
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/teamprojects/fighting_titans/index.html"     >Fighting Titans   </a> </li> </ul> </li>
 </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/tools/index.html"                                  >Tools             </a> <ul class="treeview nested">
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/libccc/index.html"                           >libccc            </a> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/cccmk/index.html"                            >cccmk             </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/ccc/index.html"                              >++C               </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/bmp2nam/index.html"                          >bmp2nam           </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/glyphind/index.html"                         >Glyphind          </a> </li>

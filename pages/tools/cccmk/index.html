@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- website libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="icon" href="/assets/favicon.png" type="image/png" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
+</head>
+<body>
+	<div id="template_navbar"></div>
+
+	<header>
+		<div id="template_header"></div>
+	</header>
+
+	<section>
+<h1 id="cccmk">cccmk</h1>
+<h1 id="cccmk-1">cccmk</h1>
+<p><code>cccmk</code> is a tool to facilitate harmonizing files and
+folders across all of your projects, so as to ensure that they follow
+the “project template” that suits you.</p>
+<p><code>cccmk</code> is language-agnostic: it only deals with text
+files and folders, so anything goes! You can create any “project
+template” which suits your needs - see the “Documentation” section below
+to learn more. <code>cccmk</code> comes with a fully-featured “project
+template” for several popular programming languages, which follow
+conventional folder structure.</p>
+<p><code>cccmk</code> is implemented entirely in <code>.sh</code> shell
+scripts, so it is fully modifiable by the end-user (it follows the MIT
+license, so you are free to do whatever you wish with it).</p>
+<p>NOTE: <code>cccmk</code> is not SCM-agnostic! Currently, it assumes
+that your SCM tool is <code>git</code> - but this will be made more
+generic, in the future.</p>
+<h3 id="rationale">Rationale</h3>
+<p>You may think that <code>cccmk</code> is redundant, because on the
+surface it seems that this is similar to a typical SCM tool (such as
+<code>git</code>, <code>svn</code>, etc), but the primary goal of
+<code>cccmk</code> is to be used <em>alongside</em> your SCM tool of
+choice, to harmonize files across your different repositories. With this
+goal in mind, <code>cccmk</code> is much simpler in how it tracks files
+than, say for instance, <code>git</code>: whereas with <code>git</code>
+everything is tracked by default, and you purposefully create a
+<code>./.gitignore</code> file to exclude certain files from the repo ;
+with <code>cccmk</code>, the <code>./.cccmk</code> file only lists those
+files which are part of your “project template”, so they can be tracked,
+compared, and updated.</p>
+<p>The name <code>cccmk</code> is derived from the ++C language, which
+is often called CCC, after its common file extension <code>*.ccc</code>,
+and its standard library, <a
+href="https://github.com/LexouDuck/libccc">libccc</a>. It is worth
+noting that <code>cccmk</code> was originally designed as a build system
+management tool for projects which use <code>make</code>, and the aim
+was to use <code>cccmk</code> to help maintain a complex multi-makefile
+build system, which offers many <code>make</code> commands akin to
+package manager tools of several modern programming languages (like
+<code>cargo</code> for Rust, or <code>npm/npx</code> for
+JavaScript/TypeScript). This makefile-based build system is provided in
+the default “project template”, in the
+<code>cccmk/project/_if_ask_mkfile/</code> folder.</p>
+<h3 id="installation">Installation</h3>
+<p>While it is simple enough to download this repo as a .zip and
+manually install cccmk, it is recommended that you clone the repo
+properly, using <code>git clone</code> (see “Step 1, method A: read-only
+installation”). If you wish to customize the “project template”, or
+<code>cccmk</code> itself, then it is probably best that you fork this
+repository, so that you can then <code>git push</code> your custom
+changes to your own forked repo (see “Step 1, method B: customizable
+installation”).</p>
+<ul>
+<li><strong>Step 1, method A: read-only installation</strong></li>
+</ul>
+<p>So, start by cloning the <code>cccmk</code> repo directly:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone  https://github.com/LexouDuck/cccmk.git  ~/.cccmk</span></code></pre></div>
+<ul>
+<li><strong>Step 1, method B: customizable installation</strong></li>
+</ul>
+<p>So, start by forking the repo (learn more here:
+https://docs.github.com/en/get-started/quickstart/fork-a-repo). When you
+clone your forked repo, you may want to use an SSH address rather than
+HTTPS, depending on your use-case:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone  git@github.com:<span class="op">&lt;</span>USERNAME<span class="op">&gt;</span>/cccmk.git  ~/.cccmk</span></code></pre></div>
+<ul>
+<li><strong>Step 2: installing the <code>cccmk</code>
+command</strong></li>
+</ul>
+<p>The above step will create your <code>cccmk</code> installation, in
+the standard <code>~/.cccmk/</code> directory.</p>
+<p>Then, we simply need to let your shell know where to find the
+<code>cccmk</code> command:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> ln <span class="at">-s</span>  ~/.cccmk/scripts/cccmk.sh  /usr/local/bin/cccmk</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> chmod 755 /usr/local/bin/cccmk <span class="co"># On most systems, this isn&#39;t necessary</span></span></code></pre></div>
+<p>That should be it ! Try running <code>cccmk --help</code> to see if
+it works.</p>
+<p>NOTE: If you use a windows machine, then, depending on the shell that
+you use, there is perhaps no <code>chmod</code> command, there is
+probably no <code>sudo</code> command, and there is most likely no
+simple working <code>ln -s</code> command to create symlinks. In this
+case, the best manner to have a working <code>cccmk</code> command is to
+add your installation folder to your PATH env variable, like so:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="st">&quot;</span><span class="va">$PATH</span><span class="st">:~/.cccmk/scripts/&quot;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> ~/.cccmk/scripts/cccmk.sh ~/.cccmk/scripts/cccmk <span class="co"># remove the .sh file extension from the main entry-point script</span></span></code></pre></div>
+<h3 id="usage">Usage</h3>
+<p><code>cccmk</code> has three main features/commands: -
+<code>cccmk create</code>: creating new projects, using the “project
+template” - <code>cccmk diff</code>: comparing tracked project files to
+the corresponding “project template” source file -
+<code>cccmk update</code>: updating files in existing projects, to
+synchronize them with their “project template” source</p>
+<p>To learn more, try using <code>cccmk --help</code>.</p>
+<h3 id="documentation">Documentation</h3>
+<p>Each project template file is processed by the
+<code>template.awk</code> templater program (located at
+<code>cccmk/scripts/template.awk</code>), here is an explanation of how
+this templater program works:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// This script creates a text file from a project template text file</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">// Here is an example of how this script should be called:</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    $ awk \</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>v variables<span class="op">=</span><span class="st">&quot; foo=FOO; bar=BAR; &quot;</span> \</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>util<span class="op">.</span>awk \</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>template<span class="op">-</span>functions<span class="op">.</span>awk \</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>template<span class="op">.</span>awk \</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;$inputfile&quot;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">// As for the syntax of the template file&#39;s contents, essentially 3 kinds of directives are accepted:</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">// 1. variable (string expansion): is replaced with the content of the variable named &#39;varname&#39;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">%[</span>varname<span class="op">]%</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">// 2. loop (array expansion): is replaced with &#39;n&#39; lines, for each element of the &#39;array&#39; variable</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">%%</span><span class="cf">for</span> <span class="op">(</span>varname<span class="op">):</span> <span class="co">// (single-line version) some code here</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="op">%%</span><span class="cf">for</span> <span class="op">(</span>varname<span class="op">)</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="co">// (multi-line version - note the absence of &#39;:&#39;) some code here</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">%%</span>end <span class="cf">for</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co">// 3. conditional: is put into the output only if the condition evaluates to true</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">%%</span><span class="cf">if</span> myfunc<span class="op">(</span>foo<span class="op">,</span>bar<span class="op">):</span> <span class="co">// (single-line version) some code here</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="op">%%</span><span class="cf">if</span> myfunc<span class="op">(</span>foo<span class="op">,</span>bar<span class="op">)</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="co">// (multi-line version - note the absence of &#39;:&#39;) some code here</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="op">%%</span>end <span class="cf">if</span></span></code></pre></div>
+<p>The functions which can be used in conditional directives are
+implemented in <code>cccmk/scripts/template-functions.awk</code>. By
+default, a couple of useful functions are provided: -
+<code>%%if true()</code>: Always include the given section -
+<code>%%if false()</code>: Never include the given section -
+<code>%%if is(varname, text)</code>: Checks if the variable
+<code>varname</code> contains a value which is identical to the given
+<code>text</code>. - <code>%%if matches(varname, regexp)</code>: Checks
+if the variable <code>varname</code> matches the given
+<code>regexp</code> regular expression. -
+<code>%%if tracked(filepath)</code>: Checks if the given project
+template <code>filepath</code> is tracked in the project’s
+<code>.cccmk</code> file.</p>
+<h3 id="repo-folder-structure">Repo folder structure</h3>
+<ul>
+<li><code>./project</code>: holds the template source files used when
+creating a new project with <code>cccmk new</code>.</li>
+<li><code>./scripts</code>: holds the source code sheel scripts which
+make up the <code>cccmk</code> toolchain.</li>
+</ul>
+	</section>
+
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
+</body>
+
+<script type="text/javascript" src="/templates.js"></script>
+<script type="text/javascript" src="/index.js"></script>
+
+</html>

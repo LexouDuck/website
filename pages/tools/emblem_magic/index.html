@@ -28,7 +28,176 @@
 
 	<section>
 <h1 id="emblem-magic">Emblem Magic</h1>
-<p>https://github.com/LexouDuck/Emblem-Magic.git</p>
+<h2 id="emblem-magic-1">Emblem Magic</h2>
+<p>Emblem Magic is an all-in-one ROMhacking/editing tool for the GBA
+Fire Emblem games. I wanted it to be more complete than it is now before
+releasing it, but i’m going to be extremely busy, and I had set a
+deadline for myself beforehand. As such, there isn’t much in the way of
+guides as to how to use the program, so I hope that it won’t be too
+confusing for users. In any case, you can think of this of more of a
+public beta than an actual release: so bug reports are rather welcome,
+and so are feature suggestions.</p>
+<p>So, Emblem Magic includes a set of different editors, as well as some
+core functionalities to better allow the user to manage the changes made
+to the ROM. These core tools include: - a history of writes done to the
+ROM (thanks to which the user can use Ctrl+Z/Ctrl+Y to undo/redo
+changes) - an editor to manage which areas of the ROM are marked (by
+default the markings “FREE” and “USED” exist, but the user can create
+their own marking types) - tools for easier repointing (the user can
+choose whether the program should prompt them to repoint upon insertion
+or not, for instance) All this information can be stored by the user in
+an MHF file (MHF stands for Fire Emblem Hack); also note that with this
+file, the ROMhack can be recreated from an approriate clean ROM. Also,
+Emblem Magic reads external text files to associate names to array
+entries in the ROM (kinda like the dropdowns from Nightmare, and the
+user can have their own set of text files, seperate from</p>
+<p>the ones for the vanilla ROMs).</p>
+<p>The Editors range from some very fundamental ROMhacking tools to more
+specific ones intended for the GBA Fire Emblem games: <em>Note</em>: The
+editors in the following list which have an “X” before their name are
+the more incomplete and WIP ones (I say this, but in fact almost all of
+them are incomplete in some way).</p>
+<ul>
+<li><strong>Basic ROM Editor</strong> (simple interface to read &amp;
+write bytes, with LZ77 compression)</li>
+</ul>
+<p><img src="https://i.imgur.com/zXa7QhP.png" /></p>
+<ul>
+<li><strong>Hex Editor</strong> (like any hex editor, can explore
+through the bytes of the currently opened ROM)</li>
+</ul>
+<p><img src="https://i.imgur.com/c12seK8.png" /></p>
+<ul>
+<li><strong>Patch Editor</strong> (for applying various patches to the
+ROM through MHF files located in the “Patches” folder)</li>
+</ul>
+<p><img src="https://i.imgur.com/Iu0RGxa.png" /></p>
+<ul>
+<li><strong>ASM Editor</strong> (dissassemble/assemble ASM code, and can
+somewhat “test run” code line-per-line)</li>
+</ul>
+<p><img src="https://i.imgur.com/gvm4P8k.png" /></p>
+<ul>
+<li>X <strong>Event Editor</strong> (calls EA from a bundled dll file,
+the code editor has syntax coloring, mousehover documentation and some
+more cool functions)</li>
+</ul>
+<p><img src="https://i.imgur.com/78eDICB.png" /></p>
+<ul>
+<li><strong>Module Editor</strong> (basically like Nightmare, uses .mmf
+text files to load GUI to edit arrays or other data in the ROM - create
+your own struct editors this way)</li>
+</ul>
+<p><img src="https://i.imgur.com/gvm4P8k.png" /></p>
+<ul>
+<li><strong>Text Editor</strong> (to change the text in the game, as
+well as the fonts used to display text)</li>
+</ul>
+<p><img src="https://i.imgur.com/L48DeB2.png" /></p>
+<ul>
+<li><strong>Item Editor</strong> (to edit anything pertaining to items,
+including their stat bonuses or the classes they’re effective
+against)</li>
+</ul>
+<p><img src="https://i.imgur.com/ykHkL72.png" /></p>
+<ul>
+<li>X <strong>Map Tileset Editor</strong> (to change the tilesets of
+16x16 tiles used for maps, their animations, their terrain
+associations)</li>
+</ul>
+<p><img src="https://i.imgur.com/JHtS290.png" /></p>
+<ul>
+<li><strong>Map Editor</strong> (to edit the maps for each chapter of
+the game, as well as the triggerable tile changes for these maps)</li>
+</ul>
+<p><img src="https://i.imgur.com/BIYSiKS.png" /></p>
+<ul>
+<li><strong>Graphics Editor</strong> (basically GBAGE, to view and edit
+images in the ROM)</li>
+</ul>
+<p><img src="https://i.imgur.com/dEuiZ0U.png" /></p>
+<ul>
+<li><strong>Portrait Editor</strong> (to view and edit the different
+portraits in the game)</li>
+</ul>
+<p><img src="https://i.imgur.com/WbAj6zP.png" /></p>
+<ul>
+<li><strong>Map Sprite Editor</strong> (to view and change the sprites
+of units on the map)</li>
+</ul>
+<p><img src="https://i.imgur.com/xdISHav.png" /></p>
+<ul>
+<li><strong>Battle Screen Editor</strong> (to change the screen frame
+during battle, or the platforms under the characters’ feet)</li>
+</ul>
+<p><img src="https://i.imgur.com/bMfjteM.png" /></p>
+<ul>
+<li><strong>Battle Animation</strong> Editor (to view and change the
+various battle animations in the game, and the palettes for them)</li>
+</ul>
+<p><img src="https://i.imgur.com/EkwftEq.png" /></p>
+<ul>
+<li>X <strong>Spell Animation</strong> Editor</li>
+</ul>
+<figure>
+<img src="https://i.png" alt="No Screenshot" />
+<figcaption aria-hidden="true">No Screenshot</figcaption>
+</figure>
+<ul>
+<li><strong>Backgrounds Editor</strong> (to change dialogue scene
+backgrounds, battle backgrounds, and cutscene CG screens)</li>
+</ul>
+<p><img src="https://i.imgur.com/4LvUHEp.png" /></p>
+<ul>
+<li>X <strong>Title Screen Editor</strong> (very unfinished, really just
+has shortcuts to the Graphics Editor for the 3 sub-images that make up
+the title screen)</li>
+</ul>
+<p><img src="https://i.imgur.com/wfljIvf.png" /></p>
+<ul>
+<li>X <strong>Music Editor</strong> (very unfinished, to change the
+music and sound-effect tracks used in the game)</li>
+</ul>
+<p><img src="https://i.imgur.com/sTQ7JmE.png" /></p>
+<ul>
+<li><strong>World Map Editor</strong> (pretty simple editor for
+image-inserting, for the large/small world maps for the game)</li>
+</ul>
+<p><img src="https://i.imgur.com/G7E5h5Y.png" /></p>
+<p>Some other more general editors are accessible from within the other
+editors, under the ‘Tools’ menu:</p>
+<ul>
+<li><strong>Palette Editor</strong> (you can also open this by clicking
+on any palette in any editor)</li>
+</ul>
+<p><img src="https://i.imgur.com/kxvL0CC.png" /></p>
+<ul>
+<li><strong>TSA Editor</strong> (to change TSA arrays, these indicate
+tile layout and associate 16-color palettes to each tile, for more
+complex images)</li>
+</ul>
+<p><img src="https://i.imgur.com/vV78kzr.png" /></p>
+<ul>
+<li><strong>OAM Editor</strong> (accessed from the Battle Animation
+Editor, to change the sprite layout information for a given frame of
+animation)</li>
+</ul>
+<p><img src="https://i.imgur.com/Ptb0IdR.png" /></p>
+<p>Download the program here: <em>(also, I strongly suggest reading the
+readme.txt before doing anything !)</em>
+http://www.mediafire.com/file/8lv5xfzst1055cd/Emblem+Magic+BETA.zip</p>
+<p>UPDATE: Second release version of the beta is here, adding quite a
+few new features - Event Editor - Item Editor - Map Tileset Editor -
+Title Screen Editor - And plenty of other stuff (many bugfixes of
+course), including pretty much all the things said in this thread (like
+having more shortcuts) and some other things, like the ability to modify
+batte anim structs within the battle anim editor
+http://www.mediafire.com/file/al2kt7s7ckn2932/Emblem+Magic+BETA+2.zip</p>
+<p>UPDATE: Several bugfixes and minor features have been, but no new
+release… you can compile this latest version yourself though, with
+Visual Studio and .NET 4.0. I might create a github continous
+integration routine to compile the program automatically on each
+commit…</p>
 	</section>
 
 	<footer>
