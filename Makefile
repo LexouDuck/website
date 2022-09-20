@@ -15,7 +15,9 @@ HTML_FRAME = ./frame.html
 
 # Tools
 
-#! The tool used to convert markdown to HTML
+#! The tool used to convert .scss to .css
+SCSS = sass
+#! The tool used to convert .md to .html
 PANDOC = pandoc
 #! The tool used to host a local test server
 PYTHON3 = python3
@@ -47,6 +49,7 @@ setup
 setup:
 	@$(PYTHON3) --version
 	@$(PANDOC) --version
+	@$(SCSS) --version
 
 
 

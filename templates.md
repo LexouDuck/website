@@ -39,8 +39,8 @@ LEXOU — {{title}}
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/fangames/kirby_golf/index.html"              >Kirby 3D Golf     </a> </li> </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/games/gamejams/index.html"                         >Game Jams         </a> <ul class="treeview nested">
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/lost_sword_citadel/index.html"      >Lost Sword Citadel</a> </li>
-<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/tiger_woods_golf_tour/index.html"   >Tiger Woods Golf  </a> </li>
-<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/warp_ninja/index.html"              >Warp Ninja        </a> </li> </ul> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/tiger_woods_golf_rush/index.html"   >Tiger's Golf Rush </a> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/gamejams/swap_jutsu/index.html"              >Swap-em-up Jutsu  </a> </li> </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/games/teamprojects/index.html"                     >Team Projects     </a> <ul class="treeview nested">
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/teamprojects/pipe_works/index.html"          >Pipe Works        </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/games/teamprojects/drill_bunny/index.html"         >Drill Bunny       </a> </li>
