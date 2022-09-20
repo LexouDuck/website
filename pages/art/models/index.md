@@ -7,6 +7,8 @@ Here are some of the 3D models I have made over the years.
 
 ### Lowpoly Models
 
+![](lexou.gif)
+
 ![](monocarrier.gif)
 
 This model was made with heavy inspiration from [Kenneth Fejer](http://kennethfejer.com/3d.html)'s lowpoly modeling style.

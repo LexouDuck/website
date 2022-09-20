@@ -1,6 +1,8 @@
 
 # Castlevania: Symphony of Blood
 
+### The "why"
+
 This is the first game project I ever worked on.
 It started as the project for my end-of-highschool exam, since
 I was lucky enough to be in a school where, in my last year of highschool,
@@ -68,7 +70,7 @@ It breaks away from the preceding formula, and instead helped to coined the "[me
 term - a platformer instead focused on exploration, backtracking and ingenuity.
 The game's "metroidvania" nature makes it much easier to sidestep or avoid challenging sections,
 whereas in *Rondo of Blood*, there is no easy way out (unless you play as Maria, that is...).
-It seemed to me like there was definitely some "just middle" of difficulty and design between the two,
+It seemed to me like there was definitely some "just middle" of difficulty and design between the two:
 a game where the RPG stat mechanics can help a struggling/stuck player (either through simple grinding,
 or some other strategy), but where there is still sufficient challenge for the player... dare I say, a souls-like ?
 
@@ -79,15 +81,20 @@ and featuring many of the same characters. Furthermore, the maps of the two game
 After some time passed, with renewed passion, I got to working on this project again.
 And, as I did so, so too did the scope of the project increase accordingly.
 
-At this point, after fighting against game engine libraries every time I attempted this, I had two options as to how to develop the game. Either: make a custom engine that can imitate the NES well,
+### The "how"
+
+At this point, after ending up battling against game engine libraries every time I attempted this,
+I had two options as to how to develop the game. Either: make a custom engine that can imitate the NES well,
 or develop an actual NES ROM in 6502 assembly. Needless to say, being experienced with C at this point,
 and having built a complex fully-featured ROM-hacking tool, [Emblem Magic](/tools/emblem_magic/index.html),
 I had gained some experience of assembly languages - and so I chose the first option, because assembly
 really isn't my cup of tea...
-What made sense was to create this custom engine in C, using [SDL2](#) - this would grant me
+
+What made sense was to create this custom engine in C, using [SDL2](https://www.libsdl.org/) - this would grant me
 complete control over the rendering pipeline, and so complete control over performance.
-It would also allow me to go beyond the (very restrictive!) limitations of the NES, in areas
-that most players dont immediately see (having no lag, having many sprites onscreen without flickering, etc).
+It would also allow me to go beyond the (very restrictive!) limitations of the NES, especially
+the kind of restrictions that most players dont immediately notice (such as having no lag,
+having many sprites onscreen without flickering, background parallax scrolling, etc).
 Though, I still wished to be considerate of the NES purists out there, so I added a bunch of
 "NES fidelity options" to the game, for those who wish for the authentic, laggy, flickering experience.
 
