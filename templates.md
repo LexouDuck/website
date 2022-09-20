@@ -27,7 +27,7 @@ LEXOU — {{title}}
 
 
 ::: {#navbar}
-[LEXOU DUCK](/pages/index.html)
+<img src="/assets/icon.png" class="icon" style="border-radius:50%;" />[LEXOU DUCK](/pages/index.html)
 ----------
 <ul class="treeview">
 <li> <span class="treeview_node">▶</span> <a href="/pages/games/index.html"                                  >Games             </a> <ul class="treeview nested">
