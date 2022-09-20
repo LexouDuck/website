@@ -1,17 +1,19 @@
 
 # Lost Sword Citadel (gamejam)
 
-This game was made for the 9th GBJAM (Gameboy-themed gamejam), with a group of buddies I knew from my old forum-going days.
-The gamejam lasted one week - I programmed most of it, using Unity. I hadn't ever used Unity before so this was an opportunity to learn on the spot (I already had extensive experience using C#, though).
+![](thumbnail.png)
 
-You can play the game directly in your browser, over on the [official page on itch.io](https://gallowaygames.itch.io/lost-sword-citadel)
+This game was made for the 9th GBJAM (Gameboy-themed gamejam), with a group of buddies I knew from my old forum-going days.
+To be more precise, we called the team "Galloway Games".
+The gamejam lasted one week - I programmed most of it, using Unity (I also made a couple of sprites, and one of the chiptunes). I hadn't ever used Unity before so this was an opportunity to learn on the spot (I already had extensive experience using C#, though).
+
+You can play the game directly in your browser (or download the executable), over on the [official page on itch.io](https://gallowaygames.itch.io/lost-sword-citadel)
 
 Here are some screenshots of the game:
 
 ![](screenshot-1.png)
 ![](screenshot-2.png)
-![](screenshot-3.png)
-![](screenshot-4.jpg)
+![](screenshot-3.jpg)
 ![](screenshot-4.png)
 
 And here are some GIFs roughly showing how it plays:
