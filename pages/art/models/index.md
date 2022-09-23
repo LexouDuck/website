@@ -34,6 +34,10 @@ roguelike indie game [*Nuclear Throne*](#), with lowpoly 3D assets rather than 2
 ![](nt_enem06-GoldenScorpion_icon-large.png){height="500"}
 ![](nt_enem18-Snowtank_icon-large.png){height="500"}
 ![](nt_enem19-GoldenSnowtank_icon-large.png){height="500"}
+<div class="sketchfab-embed-wrapper">
+<iframe title="Nuclear Throne - Scorpion" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/4b2448a164994b2288977e2d61e6c19d/embed?ui_theme=dark" width="640" height="480">
+</iframe>
+</div>
 
 ------------------------------------------------------------------------
 
