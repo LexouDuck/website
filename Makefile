@@ -3,15 +3,30 @@
 # Files
 
 #! The list of markdown files which make up the contents of the website
-SRCS = ./templates.md \
+CONTENTS = \
 	$(wildcard ./pages/*.md) \
 	$(wildcard ./pages/*/*.md) \
 	$(wildcard ./pages/*/*/*.md) \
 	$(wildcard ./pages/*/*/*/*.md) \
-#! The list of generated html files, from SRCS markdown files
-HTML = $(SRCS:%.md=%.html)
+
+CONTENTS_HTML = $(CONTENTS:%.md=%.html)
+
+#! The list of source markdown files which become HTML template components
+TEMPLATES = \
+	./templates/head.md \
+	./templates/header.md \
+	./templates/footer.md \
+	./templates/navbar.md \
+
+TEMPLATES_HTML = $(TEMPLATES:%.md=%.html)
+
+#! The file which contains the generic HTML template code which reoccurs throughout the website
+HTML_FINAL = ./templates.html
+
 #! The file which contains the generic HTML code which is present on all pages
 HTML_FRAME = ./frame.html
+
+
 
 # Tools
 
@@ -34,14 +49,14 @@ start: build
 #! This rule builds the HTML code for the website
 .PHONY:\
 build
-build: $(HTML)
+build: $(HTML_FINAL) $(CONTENTS_HTML)
 	@echo "Successfully generated all HTML files."
 
 #! This rule deletes all generated files
 .PHONY:\
 clean
 clean:
-	@rm $(HTML)
+	@rm $(CONTENTS_HTML) $(TEMPLATES_HTML)
 
 #! This rule makes sure all prerequisite dev tools are installed
 .PHONY:\
@@ -53,9 +68,24 @@ setup:
 
 
 
+#! This rule creates the final templates.html file
+$(HTML_FINAL): $(TEMPLATES_HTML)
+	@echo "Building $@"
+	@echo "" > $(HTML_FINAL)
+	@for file in $(TEMPLATES_HTML) ; do \
+		printf "\n\n\n" >> $(HTML_FINAL) ; \
+		cat  "$${file}" >> $(HTML_FINAL) ; \
+	done
+
+#! This rule automatically generates a template .html file from its corresponding .md file
+./templates/%.html : ./templates/%.md
+	@echo "Building template: $@"
+	@# convert the markdown source to html (with pipe table syntax extension)
+	@$(PANDOC) --from markdown+pipe_tables $< --to html -o $@
+
 #! This rule automatically generates an .html file from its corresponding .md file
-%.html : %.md $(HTML_FRAME)
-	@echo "Building $@..."
+./pages/%.html : ./pages/%.md $(HTML_FRAME)
+	@echo "Building content: $@"
 	@# fetch any external README.md files referenced, for webpage content
 	@awk '\
 	function command(cmd)\
