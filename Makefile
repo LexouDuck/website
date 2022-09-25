@@ -28,8 +28,8 @@ PYTHON3 = python3
 .PHONY:\
 start
 start: build
-	@open http://localhost:8000/pages/index.html
-	@python3 -m http.server
+	@open http://localhost:4000/pages/index.html
+	@python3 -m http.server 4000
 
 #! This rule builds the HTML code for the website
 .PHONY:\
@@ -56,6 +56,7 @@ setup:
 #! This rule automatically generates an .html file from its corresponding .md file
 %.html : %.md $(HTML_FRAME)
 	@echo "Building $@..."
+	@# fetch any external README.md files referenced, for webpage content
 	@awk '\
 	function command(cmd)\
 	{\
@@ -79,7 +80,9 @@ setup:
 		{ print; }\
 	}' $< \
 	> $<.tmp
+	@# convert the markdown source to html (with pipe table syntax extension)
 	@$(PANDOC) --from markdown+pipe_tables $<.tmp --to html -o $@.tmp
+	@# insert the generated HTML into the <body> of a copy of the frame.html file
 	@awk -v filepath="$@.tmp" '\
 	{\
 		if (/%%%/)\
