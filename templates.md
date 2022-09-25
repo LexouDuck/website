@@ -54,6 +54,7 @@ LEXOU — {{title}}
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/bmp2nam/index.html"                          >bmp2nam           </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/glyphind/index.html"                         >Glyphind          </a> </li>
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/emblem_magic/index.html"                     >Emblem Magic      </a> </li>
+<li> <span class="treeview_leaf">⊚</span> <a href="/pages/tools/raytracer/index.html"                        >Raytracer         </a> </li>
 </ul> </li>
 <li> <span class="treeview_node">▶</span> <a href="/pages/maths/index.html"                                  >Maths             </a> <ul class="treeview nested">
 <li> <span class="treeview_leaf">⊚</span> <a href="/pages/maths/bnnn/index.html"                             >BNNN              </a> </li>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- website libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<!-- website icon -->
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="icon" href="/assets/favicon.png" type="image/png" />
+	<!-- website font -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<!-- website info -->
+	<div id="template_head"></div>
+</head>
+<body>
+	<div id="template_navbar"></div>
+
+	<header>
+		<div id="template_header"></div>
+	</header>
+
+	<section>
+<h1 id="raytracer">Raytracer</h1>
+<h1 id="rt">RT</h1>
+<p>A 3d raytracing program (42 team project)</p>
+<figure>
+<img src="GIF.gif" alt="" /><figcaption>rt.gif</figcaption>
+</figure>
+<p>Exported BMP image of render by Monte-Carlo path tracing with a ray-per-pixel amount of 1024 and a depth of 24</p>
+<figure>
+<img src="render_lego.bmp" alt="" /><figcaption>render_lego.bmp</figcaption>
+</figure>
+<p>Below are the features (current features are marked with ‘•’ and projected features are marked with ‘-’):</p>
+<h1 id="features">Features:</h1>
+<ul>
+<li>Cross-platform (windows, mac, linux), using SDL2 and OpenCL</li>
+<li>Realtime (no unnecessary renders done, 60 fps - depending on the quality of render currently set and the GPU)</li>
+<li>OpenCL GPU acceleration, to lessen the usual lag of a raytracer (and maybe scale2x or hq2x if needed)</li>
+<li>Fully controllable camera, with all 3 clicks and/or arrow keys</li>
+<li>A configuration file to store properties between program executions</li>
+<li>UI pane allowing the user to modify any of the camera’s properties</li>
+<li>UI pane allowing the user to modify any of the scene’s properties</li>
+<li>UI list of objects within the scene with property expanding and scrollbar controls</li>
+<li>I/O functions accessible through the UI for file opening/importing and saving</li>
+<li>A random RT file generator</li>
+<li>[TODO] Clipboard copy/pasting of data within the program</li>
+<li>[TODO] Selecting objects on click, and moving/rot/scaling them with keys</li>
+<li>[TODO] Skybox (currently background colors, or textured giant primitives can be used to this effect)</li>
+</ul>
+<h1 id="light-features">Light Features:</h1>
+<ul>
+<li>Primitive-shaped lights</li>
+<li>Monte-Carlo path-tracing</li>
+<li>[TODO] Bi-directional path-tracing</li>
+<li>Reflection (mirror surfaces)</li>
+<li>Refraction (transparent surfaces)</li>
+<li>fresnel reflections (glassy surface highlighting)</li>
+<li>[TODO] caustic lights (refractions on shadows)</li>
+<li>[TODO] Black holes (ray curving)</li>
+</ul>
+<h1 id="primitives-shapes">Primitives &amp; Shapes:</h1>
+<ul>
+<li>Plane (infinite, and finite rectangle and disk)</li>
+<li>Triangle</li>
+<li>Cube</li>
+<li>Sphere</li>
+<li>Cylinder (infinite, and finite)</li>
+<li>Cone (infinite and finite)</li>
+<li>Saddle</li>
+<li>Paraboloid</li>
+<li>Hyperboloid</li>
+<li>[TODO] OBJ triangular mesh models (intersecting rays in world space)</li>
+<li>[TODO] Mobius twist</li>
+<li>[TODO] Torus knot</li>
+<li>[TODO] 3D Epitrochoid/Hypocycloid</li>
+<li>[TODO] Fractals</li>
+</ul>
+	</section>
+
+	<footer>
+		<div id="template_footer"></div>
+	</footer>
+</body>
+
+<script type="text/javascript" src="/templates.js"></script>
+<script type="text/javascript" src="/index.js"></script>
+
+</html>
