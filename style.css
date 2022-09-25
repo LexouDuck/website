@@ -102,11 +102,16 @@ img
 
 img.icon
 {
+	color:  white;
 	position: relative;
 	width: 30px;
 	height: 30px;
 	top: 15px;
 	margin: 5px;
+}
+img.icon.svg
+{
+	filter: invert(50%);
 }
 
 table
@@ -133,6 +138,18 @@ li
 	margin: 0 0 0 10px;
 	text-align: left;
 }
+
+pre
+{
+	border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    overflow: scroll;
+}
+
+
 
 #navbar, #template_navbar
 {
