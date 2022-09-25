@@ -70,6 +70,8 @@ setup:
 
 #! This rule creates the final templates.html file
 $(HTML_FINAL): $(TEMPLATES_HTML)
+	@echo "Generating navigation bar..."
+	@./navbar.sh
 	@echo "Building $@"
 	@echo "" > $(HTML_FINAL)
 	@for file in $(TEMPLATES_HTML) ; do \

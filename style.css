@@ -109,6 +109,10 @@ img.icon
 	top: 15px;
 	margin: 5px;
 }
+img.icon.png
+{
+	border-radius: 50%;
+}
 img.icon.svg
 {
 	filter: invert(50%);
