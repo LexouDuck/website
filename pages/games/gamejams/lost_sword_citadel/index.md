@@ -1,5 +1,5 @@
 
-# Lost Sword Citadel (gamejam)
+# Lost Sword Citadel
 
 ![](thumbnail.png)
 

@@ -1,5 +1,5 @@
 
-# Tiger Woods Golf Tour (gamejam)
+# Tiger Woods Golf Tour
 
 ![](thumbnail.png)
 

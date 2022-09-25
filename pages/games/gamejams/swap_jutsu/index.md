@@ -1,5 +1,5 @@
 
-# Swap Jutsu (gamejam)
+# Swap-em-up: Jutsu
 
 ![](thumbnail.png)
 

@@ -1,5 +1,5 @@
 
-### bmp2nam
+# bmp2nam
 
 https://raw.githubusercontent.com/LexouDuck/bmp2nam/master/README.md
 
