@@ -7,7 +7,7 @@ These are some of the pixel art works I've made over the years (all made entirel
 
 ### Original Pieces
 
-This was done for on contest on [Pixeljoint](#), constraints being a very limited 6-color palette.
+This was done for on contest on [Pixeljoint](https://pixeljoint.com/pixelart/96147.htm), constraints being a very limited 8-color palette (6 colors plus black and white) and a predetermined canvas size.
 
 ![](gambit.png)
 
@@ -15,10 +15,10 @@ This one is purely monochromatic (black/white), I made this to experiment with p
 
 ![](sunset.png)
 
-This strange sprite was made for [The Spriters' Resource Fighter game](#), to serve as a "character select" portait.
+This strange sprite was made for [The Spriters' Resource Fighter game](https://www.vg-resource.com/thread-20507.html), to serve as a "character select" portait.
 To poke fun at the tradition of most arcade fighting games, which is to have overly detailed character portraits,
 that sometimes are quite different from how the character looks in-game. Here this idea was turned up to eleven,
-by requiring that character portraits be done in a style reminiscent of [JoJo's Bizarre Adventure](#)
+by requiring that character portraits be done in a style reminiscent of *JoJo's Bizarre Adventure*.
 
 ![](mantador.png)
 

@@ -30,7 +30,7 @@ The textures are these very cool *Gameboy Color* style sprites of *Dark Souls* m
 ##### Nuclear Throne
 
 This set of models was a for-fun project of mine to remake the popular
-roguelike indie game [*Nuclear Throne*](#), with lowpoly 3D assets rather than 2D sprites.
+roguelike indie game [*Nuclear Throne*](http://nuclearthrone.com/), with lowpoly 3D assets rather than 2D sprites.
 
 ![](nt_char06-YV_icon-large.png){height="500"}
 

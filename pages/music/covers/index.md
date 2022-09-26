@@ -15,14 +15,12 @@ Here are some guitar-only arragements of songs that I have come up with:
 
 ### Music
 
-All of these covers were made using [Garageband for iOS](#)
+All of these covers were made using [Garageband for iOS](https://www.apple.com/ios/garageband/)
 
 - TODO
 
 ------------------------------------------------------------------------
 
 ### Video game music
-
-All of these covers were made using [Reason](#)
 
 - TODO

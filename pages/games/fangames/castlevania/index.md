@@ -11,9 +11,9 @@ I was given the option to select an (experimental) programming class.
 I started working on the project in the middle of the school year (long before the exam)
 because it was of personal interest to me, I always wanted to make games.
 It was more of a hobby to me, especially since I did everything by myself:
-- the graphics (I had been using [mspaint](#) from a young age)
-- the music (I learned how to use [Famitracker](#) to create NES-accurate chiptunes)
-- the coding (programmed in [Python](#) - which was taught in the class - using the [Pygame](#) library)
+- the graphics (I had been using [mspaint](https://en.wikipedia.org/wiki/Microsoft_Paint#Windows_7_and_8.x) from a young age)
+- the music (I learned how to use [Famitracker](http://famitracker.com/) to create NES-accurate chiptunes)
+- the coding (programmed in [Python](https://www.python.org/) - which was taught in the class - using the [Pygame](https://www.pygame.org/) library)
 
 I chose to "demake" a game I am fond of, which I think is quite underrated: *Castlevania - Rondo of Blood*.
 This game is not very well-known because it was released on a console that few people own (or even know), 
@@ -66,7 +66,7 @@ Around this time, I made a [chiptune](/pages/music/chiptunes/index.html) of one 
 
 Now, *Symphony of the Night* is pretty a different game from *Rondo of Blood*,
 it is not a tough, linear, level-by-level platformer like the original *Castlevania* games.
-It breaks away from the preceding formula, and instead helped to coined the "[metroidvania](#)"
+It breaks away from the preceding formula, and instead helped to coined the "[metroidvania](https://en.wikipedia.org/wiki/Metroidvania)"
 term - a platformer instead focused on exploration, backtracking and ingenuity.
 The game's "metroidvania" nature makes it much easier to sidestep or avoid challenging sections,
 whereas in *Rondo of Blood*, there is no easy way out (unless you play as Maria, that is...).
@@ -101,18 +101,18 @@ Though, I still wished to be considerate of the NES purists out there, so I adde
 ![](gameplay-nes_options.gif)
 
 So, I started developing this (final) engine, and made good progress.
-I found the perfect tool for my needs, the [NES Screen Tool](#), which is
+I found the perfect tool for my needs, the [NES Screen Tool](https://shiru.untergrund.net/software.shtml), which is
 experssly built to create tile-based 2bpp graphics for the NES - and it also
 features a nice interface to assemble meta-sprites from multiple 8x8 sprites.
 
 ![](workflow-nst-richter.png)
 
-I also used the [TileReplace](#) tool by the same fellow, to optimize tilesets
-to make them fit in the limited size of an [NES nametable](#).
+I also used the [TileReplace](https://shiru.untergrund.net/software.shtml) tool by the same fellow, to optimize tilesets
+to make them fit in the limited size of an [NES nametable](https://www.nesdev.org/wiki/PPU_nametables).
 
 ![](workflow-nst-tileset.png)
 
-I also found a good workflow to create maps/environments, using [Tiled](#),
+I also found a good workflow to create maps/environments, using [Tiled](https://www.mapeditor.org/),
 and I designed a custom `.map` file format, and implemented a plugin to export said files from Tiled.
 
 ![](workflow-tiled.png)

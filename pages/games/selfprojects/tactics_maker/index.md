@@ -17,4 +17,4 @@ working game - the tougher task is implementing your game's frontend look & feel
 
 - Check it out on [Github](https://github.com/LexouDuck/Tactics-Maker)
 
-- TODO add screenshots of commandline-interface [curses](#) frontend
+- TODO add screenshots of commandline-interface [curses](https://docs.python.org/3/howto/curses.html) frontend
