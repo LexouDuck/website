@@ -193,13 +193,13 @@ ul.nested
 {
 	display: none;
 }
-/* Rotate the treeview arrow icon when clicked on (using JavaScript) */
-li.open > span.treeview_node
-{
-	transform: rotate(90deg);
-}
-/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+/* Show the nested list when the user clicks on the caret/arrow */
 li.open > ul.nested
 {
 	display: block;
+}
+/* Rotate the treeview arrow icon when clicked on */
+li.open > span.treeview_node
+{
+	transform: rotate(90deg);
 }

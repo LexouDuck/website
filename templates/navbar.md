@@ -1,53 +1,56 @@
-::: {#navbar}
-<img src="/assets/icon.png" class="icon" style="border-radius:50%;" />[LEXOU DUCK](/pages/index.html)
-----------
+<div id="navbar">
+## ![](/pages/icon.png){.icon .png} [LEXOU DUCK](/pages/index.html)
+
 <ul class="treeview">
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/games/icon.svg"                                 /> <a href="/pages/games/index.html"                                  >Games             </a> <ul class="treeview nested">
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/games/personal/icon.svg"                        /> <a href="/pages/games/personal/index.html"                         >Personal Projects </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/personal/rogue_angels/icon.svg"           /> <a href="/pages/games/personal/rogue_angels/index.html"            >Rogue Angels      </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/personal/tactics_maker/icon.svg"          /> <a href="/pages/games/personal/tactics_maker/index.html"           >Tactics Maker     </a> </li> </ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/games/fangames/icon.svg"                        /> <a href="/pages/games/fangames/index.html"                         >Fan Games         </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/fangames/castlevania/icon.svg"            /> <a href="/pages/games/fangames/castlevania/index.html"             >Castlevania       </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/fangames/kirby_golf/icon.svg"             /> <a href="/pages/games/fangames/kirby_golf/index.html"              >Kirby 3D Golf     </a> </li> </ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/games/gamejams/icon.svg"                        /> <a href="/pages/games/gamejams/index.html"                         >Game Jams         </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/gamejams/lost_sword_citadel/icon.svg"     /> <a href="/pages/games/gamejams/lost_sword_citadel/index.html"      >Lost Sword Citadel</a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/gamejams/tiger_woods_golf_rush/icon.svg"  /> <a href="/pages/games/gamejams/tiger_woods_golf_rush/index.html"   >Tiger's Golf Rush </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/gamejams/swap_jutsu/icon.svg"             /> <a href="/pages/games/gamejams/swap_jutsu/index.html"              >Swap-em-up Jutsu  </a> </li> </ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/games/teamprojects/icon.svg"                    /> <a href="/pages/games/teamprojects/index.html"                     >Team Projects     </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/teamprojects/sharkaiger/icon.svg"         /> <a href="/pages/games/teamprojects/sharkaiger/index.html"          >Sharkaiger        </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/teamprojects/pipe_works/icon.svg"         /> <a href="/pages/games/teamprojects/pipe_works/index.html"          >Pipe Works        </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/teamprojects/drill_bunny/icon.svg"        /> <a href="/pages/games/teamprojects/drill_bunny/index.html"         >Drill Bunny       </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/games/teamprojects/fighting_titans/icon.svg"    /> <a href="/pages/games/teamprojects/fighting_titans/index.html"     >Fighting Titans   </a> </li> </ul> </li>
-</ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/music/icon.svg"                                 /> <a href="/pages/music/index.html"                                  >Music             </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/music/originals/icon.svg"                       /> <a href="/pages/music/originals/index.html"                        >Originals         </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/music/chiptunes/icon.svg"                       /> <a href="/pages/music/chiptunes/index.html"                        >Chiptune Covers   </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/music/parodies/icon.svg"                        /> <a href="/pages/music/parodies/index.html"                         >Parody Music      </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/music/covers/icon.svg"                          /> <a href="/pages/music/covers/index.html"                           >Covers            </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/music/bands/icon.svg"                           /> <a href="/pages/music/bands/index.html"                            >Bands             </a> </li>
-</ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/art/icon.svg"                                   /> <a href="/pages/art/index.html"                                    >Art               </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/art/sketches/icon.svg"                          /> <a href="/pages/art/sketches/index.html"                           >Sketches          </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/art/colorart/icon.svg"                          /> <a href="/pages/art/colorart/index.html"                           >Color Art         </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/art/pixelart/icon.svg"                          /> <a href="/pages/art/pixelart/index.html"                           >Pixel Art         </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/art/algorithm/icon.svg"                         /> <a href="/pages/art/algorithm/index.html"                          >Algorithm         </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/art/models/icon.svg"                            /> <a href="/pages/art/models/index.html"                             >3D Models         </a> </li>
-</ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/tools/icon.svg"                                 /> <a href="/pages/tools/index.html"                                  >Tools             </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/libccc/icon.svg"                          /> <a href="/pages/tools/libccc/index.html"                           >libccc            </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/cccmk/icon.svg"                           /> <a href="/pages/tools/cccmk/index.html"                            >cccmk             </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/ccc/icon.svg"                             /> <a href="/pages/tools/ccc/index.html"                              >++C               </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/bmp2nam/icon.svg"                         /> <a href="/pages/tools/bmp2nam/index.html"                          >bmp2nam           </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/glyphind/icon.svg"                        /> <a href="/pages/tools/glyphind/index.html"                         >Glyphind          </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/emblem_magic/icon.svg"                    /> <a href="/pages/tools/emblem_magic/index.html"                     >Emblem Magic      </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/tools/raytracer/icon.svg"                       /> <a href="/pages/tools/raytracer/index.html"                        >Raytracer         </a> </li>
-</ul> </li>
-<li> <span class="treeview_node">▶</span> <img class="icon svg" alt="" src="/pages/maths/icon.svg"                                 /> <a href="/pages/maths/index.html"                                  >Maths             </a> <ul class="treeview nested">
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/maths/bnnn/icon.svg"                            /> <a href="/pages/maths/bnnn/index.html"                             >BNNN              </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/maths/mathophilia/icon.svg"                     /> <a href="/pages/maths/mathophilia/index.html"                      >Mathophilia       </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/maths/property_table/icon.svg"                  /> <a href="/pages/maths/property_table/index.html"                   >Property Table    </a> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/maths/ccclean/icon.svg"                         /> <a href="/pages/maths/ccclean/index.html"                          >++Clean           </a> </li>
-</ul> </li>
-<li> <span class="treeview_leaf">•</span> <img class="icon svg" alt="" src="/pages/contact/icon.svg"                               /> <a href="/pages/contact/index.html"                                >Contact           </a> </li>
-</ul>
-:::
+	-   [▶]{.treeview_node} ![](/pages/art/icon.svg){.icon .svg} [Artwork](/pages/art/index.html)
+	<ul class="treeview nested">
+		-   [•]{.treeview_leaf} [Sketches](/pages/art/sketches/index.html)
+		-   [•]{.treeview_leaf} [Color Art](/pages/art/colorart/index.html)
+		-   [•]{.treeview_leaf} [Pixel Art](/pages/art/pixelart/index.html)
+		-   [•]{.treeview_leaf} [Software Art](/pages/art/algorithm/index.html)
+		-   [•]{.treeview_leaf} [3D Models](/pages/art/models/index.html)
+	-   [▶]{.treeview_node} ![](/pages/music/icon.svg){.icon .svg} [Music](/pages/music/index.html)
+	<ul class="treeview nested">
+		-   [•]{.treeview_leaf} [Original compositions](/pages/music/originals/index.html)
+		-   [•]{.treeview_leaf} [Parody music](/pages/music/parodies/index.html)
+		-   [•]{.treeview_leaf} [Chiptunes](/pages/music/chiptunes/index.html)
+		-   [•]{.treeview_leaf} [Music covers](/pages/music/covers/index.html)
+		-   [•]{.treeview_leaf} [Music bands](/pages/music/bands/index.html)
+	-   [▶]{.treeview_node} ![](/pages/games/icon.svg){.icon .svg} [Games](/pages/games/index.html)
+	<ul class="treeview nested">
+		-   [▶]{.treeview_node} [Self Projects](/pages/games/selfprojects/index.html)
+		<ul class="treeview nested">
+			-   [•]{.treeview_leaf} [Rogue Angels](/pages/games/selfprojects/rogue_angels/index.html)
+			-   [•]{.treeview_leaf} [Tactics Maker](/pages/games/selfprojects/tactics_maker/index.html)
+		-   [▶]{.treeview_node} [Fan Games](/pages/games/fangames/index.html)
+		<ul class="treeview nested">
+			-   [•]{.treeview_leaf} [Castlevania: Symphony of Blood](/pages/games/fangames/castlevania/index.html)
+			-   [•]{.treeview_leaf} [Kirby's 3D Dream Course](/pages/games/fangames/kirby_golf/index.html)
+		-   [▶]{.treeview_node} [Team Projects](/pages/games/teamprojects/index.html)
+		<ul class="treeview nested">
+			-   [•]{.treeview_leaf} [Drill Bunny](/pages/games/teamprojects/drill_bunny/index.html)
+			-   [•]{.treeview_leaf} [Fighting Titans](/pages/games/teamprojects/fighting_titans/index.html)
+			-   [•]{.treeview_leaf} [Pipe Works](/pages/games/teamprojects/pipe_works/index.html)
+			-   [•]{.treeview_leaf} [Sharkaiger](/pages/games/teamprojects/sharkaiger/index.html)
+		-   [▶]{.treeview_node} [Game Jams](/pages/games/gamejams/index.html)
+		<ul class="treeview nested">
+			-   [•]{.treeview_leaf} [Lost Sword Citadel](/pages/games/gamejams/lost_sword_citadel/index.html)
+			-   [•]{.treeview_leaf} [Swap-em-up: Jutsu](/pages/games/gamejams/swap_jutsu/index.html)
+			-   [•]{.treeview_leaf} [Tiger Woods Golf Tour](/pages/games/gamejams/tiger_woods_golf_rush/index.html)
+	-   [▶]{.treeview_node} ![](/pages/tools/icon.svg){.icon .svg} [Tools](/pages/tools/index.html)
+	<ul class="treeview nested">
+		-   [•]{.treeview_leaf} [libccc](/pages/tools/libccc/index.html)
+		-   [•]{.treeview_leaf} [++C](/pages/tools/ccc/index.html)
+		-   [•]{.treeview_leaf} [cccmk](/pages/tools/cccmk/index.html)
+		-   [•]{.treeview_leaf} [Raytracer](/pages/tools/raytracer/index.html)
+		-   [•]{.treeview_leaf} [Emblem Magic](/pages/tools/emblem_magic/index.html)
+		-   [•]{.treeview_leaf} [bmp2nam](/pages/tools/bmp2nam/index.html)
+		-   [•]{.treeview_leaf} [Glyphind](/pages/tools/glyphind/index.html)
+	-   [▶]{.treeview_node} ![](/pages/maths/icon.svg){.icon .svg} [Maths](/pages/maths/index.html)
+	<ul class="treeview nested">
+		-   [•]{.treeview_leaf} [Base-Neutral Number Notation](/pages/maths/bnnn/index.html)
+		-   [•]{.treeview_leaf} [Mathophilia](/pages/maths/mathophilia/index.html)
+		-   [•]{.treeview_leaf} [Property Table of Algebraic Structures](/pages/maths/property_table/index.html)
+		-   [•]{.treeview_leaf} [++Clean](/pages/maths/ccclean/index.html)
+	-   [•]{.treeview_leaf} ![](/pages/contact/icon.svg){.icon .svg} [Contact](/pages/contact/index.html)
+</div>

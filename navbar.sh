@@ -7,7 +7,7 @@ navbar_folder()
 	local indent="$3"
 	if [ -z "$indent" ]
 	then printf "<div id=\"navbar\">\n"
-	else printf "$indent<li>"
+	else printf "$indent-   "
 	fi
 	(
 	local path="$( echo "$shpath" | tr -d "." )"
@@ -24,32 +24,31 @@ navbar_folder()
 	if ! [ -z "$( echo "$children" | tr -d "[:space:]" )" ]
 	then has_children=true
 	fi
+	# check if there is a cutom sort order for folders
+	if [ -f "./sort.txt" ]
+	then children="$( cat sort.txt | xargs )"
+	fi
 	# check if is folder (node) or file (leaf)
-	if ! [ -z "$indent" ]
-	then
+	if [ -z "$indent" ]
+	then printf "## "
+	else
 		if $has_children
-		then printf " <span class=\"treeview_node\">▶</span>"
-		else printf " <span class=\"treeview_leaf\">•</span>"
+		then printf "[▶]{.treeview_node} "
+		else printf "[•]{.treeview_leaf} "
 		fi
 	fi
 	# check if icon should be added
-	if   [ -f "./icon.svg" ] ; then printf " <img class=\"icon svg\" src=\"$path/$folder/icon.svg\" />"
-	elif [ -f "./icon.png" ] ; then printf " <img class=\"icon png\" src=\"$path/$folder/icon.png\" />"
+	if   [ -f "./icon.svg" ] ; then printf "![]($path/$folder/icon.svg){.icon .svg} "
+	elif [ -f "./icon.png" ] ; then printf "![]($path/$folder/icon.png){.icon .png} "
 	fi
 	# write the main text hyperlink
-	if [ -z "$indent" ]
-	then printf "<h2>"
-	fi
 	local title="$( awk '/^# / { print substr($0, 3); exit; }' ./index.md )"
-	printf " <a href=\"$path/$folder/index.html\">$title</a>"
-	if [ -z "$indent" ]
-	then printf "</h2>"
-	fi
-	printf "\n"
+	printf "[$title]($path/$folder/index.html)\n"
 	# recurse into subfolders
 	local nested=""
-	if ! [ -z "$indent" ]
-	then nested=" nested"
+	if [ -z "$indent" ]
+	then printf "\n"
+	else nested=" nested"
 	fi
 	if $has_children
 	then
@@ -59,13 +58,14 @@ navbar_folder()
 			navbar_folder "$shpath/$folder" "$f" "	$indent"
 			children="$children $f"
 		done
-		printf "$indent</ul>\n"
+		#printf "$indent</ul>\n"
 	fi
 	)
 	if [ -z "$indent" ]
-	then printf '</div>\n'
-	else printf "$indent</li>\n"
+	then printf "</div>\n"
 	fi
 }
 
-navbar_folder . pages "" > ./templates/navbar.html
+
+
+navbar_folder . pages "" > ./templates/navbar.md

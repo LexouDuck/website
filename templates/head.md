@@ -1,5 +1,4 @@
-::: {#head}
-<!-- website info -->
+<div id="head">
 <title>{{title}}</title>
 <meta name="description" content="{{description}}">
-:::
+</div>

@@ -70,8 +70,6 @@ setup:
 
 #! This rule creates the final templates.html file
 $(HTML_FINAL): $(TEMPLATES_HTML)
-	@echo "Generating navigation bar..."
-	@./navbar.sh
 	@echo "Building $@"
 	@echo "" > $(HTML_FINAL)
 	@for file in $(TEMPLATES_HTML) ; do \
@@ -79,14 +77,23 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 		cat  "$${file}" >> $(HTML_FINAL) ; \
 	done
 
+#! This rule automatically generates the website navigation menu, by looking through the ./pages folders
+./templates/navbar.md: ./navbar.sh
+	@echo "Generating navigation bar..."
+	@./navbar.sh
+
 #! This rule automatically generates a template .html file from its corresponding .md file
-./templates/%.html : ./templates/%.md
+./templates/%.html: ./templates/%.md
 	@echo "Building template: $@"
 	@# convert the markdown source to html (with pipe table syntax extension)
 	@$(PANDOC) --from markdown+pipe_tables $< --to html -o $@
+	@# post-processing to fix the navbar html since it has a peculiar <ul> list
+	@if [ "$(basename $(notdir $@))" = "navbar" ] ;\
+	then awk '{ gsub(/<ul>/, ""); if (length($0)) { print; } }' $@ > $@.tmp && mv $@.tmp $@ ;\
+	fi
 
 #! This rule automatically generates an .html file from its corresponding .md file
-./pages/%.html : ./pages/%.md $(HTML_FRAME)
+./pages/%.html: ./pages/%.md $(HTML_FRAME)
 	@echo "Building content: $@"
 	@# fetch any external README.md files referenced, for webpage content
 	@awk '\
