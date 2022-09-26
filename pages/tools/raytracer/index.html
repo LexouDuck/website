@@ -31,28 +31,41 @@
 <h1 id="rt">RT</h1>
 <p>A 3d raytracing program (42 team project)</p>
 <figure>
-<img src="GIF.gif" alt="" /><figcaption>rt.gif</figcaption>
+<img src="GIF.gif" alt="rt.gif" />
+<figcaption aria-hidden="true">rt.gif</figcaption>
 </figure>
-<p>Exported BMP image of render by Monte-Carlo path tracing with a ray-per-pixel amount of 1024 and a depth of 24</p>
+<p>Exported BMP image of render by Monte-Carlo path tracing with a
+ray-per-pixel amount of 1024 and a depth of 24</p>
 <figure>
-<img src="render_lego.bmp" alt="" /><figcaption>render_lego.bmp</figcaption>
+<img src="render_lego.bmp" alt="render_lego.bmp" />
+<figcaption aria-hidden="true">render_lego.bmp</figcaption>
 </figure>
-<p>Below are the features (current features are marked with ‘•’ and projected features are marked with ‘-’):</p>
+<p>Below are the features (current features are marked with ‘•’ and
+projected features are marked with ‘-’):</p>
 <h1 id="features">Features:</h1>
 <ul>
 <li>Cross-platform (windows, mac, linux), using SDL2 and OpenCL</li>
-<li>Realtime (no unnecessary renders done, 60 fps - depending on the quality of render currently set and the GPU)</li>
-<li>OpenCL GPU acceleration, to lessen the usual lag of a raytracer (and maybe scale2x or hq2x if needed)</li>
+<li>Realtime (no unnecessary renders done, 60 fps - depending on the
+quality of render currently set and the GPU)</li>
+<li>OpenCL GPU acceleration, to lessen the usual lag of a raytracer (and
+maybe scale2x or hq2x if needed)</li>
 <li>Fully controllable camera, with all 3 clicks and/or arrow keys</li>
-<li>A configuration file to store properties between program executions</li>
-<li>UI pane allowing the user to modify any of the camera’s properties</li>
-<li>UI pane allowing the user to modify any of the scene’s properties</li>
-<li>UI list of objects within the scene with property expanding and scrollbar controls</li>
-<li>I/O functions accessible through the UI for file opening/importing and saving</li>
+<li>A configuration file to store properties between program
+executions</li>
+<li>UI pane allowing the user to modify any of the camera’s
+properties</li>
+<li>UI pane allowing the user to modify any of the scene’s
+properties</li>
+<li>UI list of objects within the scene with property expanding and
+scrollbar controls</li>
+<li>I/O functions accessible through the UI for file opening/importing
+and saving</li>
 <li>A random RT file generator</li>
 <li>[TODO] Clipboard copy/pasting of data within the program</li>
-<li>[TODO] Selecting objects on click, and moving/rot/scaling them with keys</li>
-<li>[TODO] Skybox (currently background colors, or textured giant primitives can be used to this effect)</li>
+<li>[TODO] Selecting objects on click, and moving/rot/scaling them with
+keys</li>
+<li>[TODO] Skybox (currently background colors, or textured giant
+primitives can be used to this effect)</li>
 </ul>
 <h1 id="light-features">Light Features:</h1>
 <ul>
@@ -76,7 +89,8 @@
 <li>Saddle</li>
 <li>Paraboloid</li>
 <li>Hyperboloid</li>
-<li>[TODO] OBJ triangular mesh models (intersecting rays in world space)</li>
+<li>[TODO] OBJ triangular mesh models (intersecting rays in world
+space)</li>
 <li>[TODO] Mobius twist</li>
 <li>[TODO] Torus knot</li>
 <li>[TODO] 3D Epitrochoid/Hypocycloid</li>
