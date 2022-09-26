@@ -5,6 +5,7 @@ navbar_folder()
 	local shpath="$1"
 	local folder="$2"
 	local indent="$3"
+	# begin list item
 	if [ -z "$indent" ]
 	then printf "<div id=\"navbar\">\n"
 	else printf "$indent-   "
@@ -44,12 +45,12 @@ navbar_folder()
 	# write the main text hyperlink
 	local title="$( awk '/^# / { print substr($0, 3); exit; }' ./index.md )"
 	printf "[$title]($path/$folder/index.html)\n"
-	# recurse into subfolders
 	local nested=""
 	if [ -z "$indent" ]
 	then printf "\n"
 	else nested=" nested"
 	fi
+	# recurse into subfolders
 	if $has_children
 	then
 		printf "$indent<ul class=\"treeview$nested\">\n"
@@ -61,6 +62,7 @@ navbar_folder()
 		#printf "$indent</ul>\n"
 	fi
 	)
+	# end list item
 	if [ -z "$indent" ]
 	then printf "</div>\n"
 	fi
