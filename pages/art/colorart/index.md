@@ -1,7 +1,8 @@
 
 # Color Art
 
-It is rather rare that I actually finish a drawing of mine and give it color, here are some of the few such "finished" works I have made.
+It is rather rare that I actually finish a full-canvas drawing and decide to give it some color,
+but here are some of the few such "finished" works I have made.
 
 ------------------------------------------------------------------------
 
@@ -18,7 +19,7 @@ This was an exercise done for a class in university - students were tasked with 
 Here is some simple coloring put above some of my [sketches](/pages/art/sketches/index.html).
 Note that the large-headed zombie near the center is the only fan-art character here, the "Re-dead" from *The Legend of Zelda - Wind Waker*
 
-![](sketches.png)
+![](sketches.jpg)
 
 ------------------------------------------------------------------------
 

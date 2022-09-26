@@ -12,7 +12,7 @@ as much as I would like, ever since I learned to program, and got a job...
 
 ### 2019
 
-![](2019_strider.png){width="650"}
+![](2019_strider.jpg){width="650"}
 
 ------------------------------------------------------------------------
 

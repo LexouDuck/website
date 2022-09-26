@@ -38,10 +38,13 @@ select an (experimental) programming class.</p>
 (long before the exam) because it was of personal interest to me, I
 always wanted to make games. It was more of a hobby to me, especially
 since I did everything by myself: - the graphics (I had been using <a
-href="#">mspaint</a> from a young age) - the music (I learned how to use
-<a href="#">Famitracker</a> to create NES-accurate chiptunes) - the
-coding (programmed in <a href="#">Python</a> - which was taught in the
-class - using the <a href="#">Pygame</a> library)</p>
+href="https://en.wikipedia.org/wiki/Microsoft_Paint#Windows_7_and_8.x">mspaint</a>
+from a young age) - the music (I learned how to use <a
+href="http://famitracker.com/">Famitracker</a> to create NES-accurate
+chiptunes) - the coding (programmed in <a
+href="https://www.python.org/">Python</a> - which was taught in the
+class - using the <a href="https://www.pygame.org/">Pygame</a>
+library)</p>
 <p>I chose to “demake” a game I am fond of, which I think is quite
 underrated: <em>Castlevania - Rondo of Blood</em>. This game is not very
 well-known because it was released on a console that few people own (or
@@ -111,15 +114,16 @@ href="https://pixeljoint.com/pixelart/82857.htm">3</a></p>
 <em>Rondo of Blood</em>, it is not a tough, linear, level-by-level
 platformer like the original <em>Castlevania</em> games. It breaks away
 from the preceding formula, and instead helped to coined the “<a
-href="#">metroidvania</a>” term - a platformer instead focused on
-exploration, backtracking and ingenuity. The game’s “metroidvania”
-nature makes it much easier to sidestep or avoid challenging sections,
-whereas in <em>Rondo of Blood</em>, there is no easy way out (unless you
-play as Maria, that is…). It seemed to me like there was definitely some
-“just middle” of difficulty and design between the two: a game where the
-RPG stat mechanics can help a struggling/stuck player (either through
-simple grinding, or some other strategy), but where there is still
-sufficient challenge for the player… dare I say, a souls-like ?</p>
+href="https://en.wikipedia.org/wiki/Metroidvania">metroidvania</a>” term
+- a platformer instead focused on exploration, backtracking and
+ingenuity. The game’s “metroidvania” nature makes it much easier to
+sidestep or avoid challenging sections, whereas in <em>Rondo of
+Blood</em>, there is no easy way out (unless you play as Maria, that
+is…). It seemed to me like there was definitely some “just middle” of
+difficulty and design between the two: a game where the RPG stat
+mechanics can help a struggling/stuck player (either through simple
+grinding, or some other strategy), but where there is still sufficient
+challenge for the player… dare I say, a souls-like ?</p>
 <p>It also made a great deal of sense to me to mesh the two games
 together, simply because in terms of lore, <em>Symphony of the
 Night</em> is a direct sequel to <em>Rondo of Blood</em>, occuring just
@@ -151,18 +155,22 @@ there, so I added a bunch of “NES fidelity options” to the game, for
 those who wish for the authentic, laggy, flickering experience.</p>
 <p><img src="gameplay-nes_options.gif" /></p>
 <p>So, I started developing this (final) engine, and made good progress.
-I found the perfect tool for my needs, the <a href="#">NES Screen
-Tool</a>, which is experssly built to create tile-based 2bpp graphics
-for the NES - and it also features a nice interface to assemble
-meta-sprites from multiple 8x8 sprites.</p>
+I found the perfect tool for my needs, the <a
+href="https://shiru.untergrund.net/software.shtml">NES Screen Tool</a>,
+which is experssly built to create tile-based 2bpp graphics for the NES
+- and it also features a nice interface to assemble meta-sprites from
+multiple 8x8 sprites.</p>
 <p><img src="workflow-nst-richter.png" /></p>
-<p>I also used the <a href="#">TileReplace</a> tool by the same fellow,
-to optimize tilesets to make them fit in the limited size of an <a
-href="#">NES nametable</a>.</p>
+<p>I also used the <a
+href="https://shiru.untergrund.net/software.shtml">TileReplace</a> tool
+by the same fellow, to optimize tilesets to make them fit in the limited
+size of an <a href="https://www.nesdev.org/wiki/PPU_nametables">NES
+nametable</a>.</p>
 <p><img src="workflow-nst-tileset.png" /></p>
 <p>I also found a good workflow to create maps/environments, using <a
-href="#">Tiled</a>, and I designed a custom <code>.map</code> file
-format, and implemented a plugin to export said files from Tiled.</p>
+href="https://www.mapeditor.org/">Tiled</a>, and I designed a custom
+<code>.map</code> file format, and implemented a plugin to export said
+files from Tiled.</p>
 <p><img src="workflow-tiled.png" /></p>
 <p>I implemented the main playable characters first: Richter, Alucard,
 and Maria. Getting terrain collisions to work properly, especially with
