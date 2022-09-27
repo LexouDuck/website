@@ -11,7 +11,7 @@ I programmed the game in [Haxe](https://haxe.org/), using the [Haxeflixel](https
 
 The game features 8 playable "titan" characters, each with different stats, projectile attacks, and special moves.
 
-You can download the game [here](#).
+You can download an early playable build of the game [here](#).
 
 Here are some of the mockups that Sketchasaurus originally made, which made me want to work on this:
 

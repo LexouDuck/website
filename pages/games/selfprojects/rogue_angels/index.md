@@ -1,8 +1,8 @@
 
 # Rogue Angels
 
-This is my "brainchild" game, as some might say - in other words, this is
-the project I've kept in the back of my head and kept brainstorming on/off for many many years...
+This is my "brainchild" game, as some might say - in other words, this is the project
+that I have kept in the back of my head and kept brainstorming on/off for many many years...
 
 Without revealing too much:
 
@@ -12,4 +12,4 @@ is with a complex and innovative algorithmic system that can
 generate rich and believable NPC personalities/emotions.
 
 As for the titular "angels", they do not come from any common mythos you might know,
-they are instead pure incarnations of various concepts or ideas.
+they are instead pure incarnations of various concepts or ideas from mathematics, physics, philosophy, etc.
