@@ -28,7 +28,172 @@
 
 	<section>
 <h1 id="base-neutral-number-notation">Base-Neutral Number Notation</h1>
-<p>TODO explain</p>
+<h3 id="the-why">The “why”</h3>
+<p>I think we are lacking a number notation system which can indicate a
+number base in a non-ambiguous fashion. Similar to how musicians have a
+clef at the beginning of a sheet of music to indicate the point of
+reference of the musical staff, I think mathematics can benefit from
+using (sparingly!) a base-neutral number notation system as a way of
+indicating the chosen number base.</p>
+<p>Too often I have seen write the name of our common decimal system as
+“base 10” - if you think about it, literally every base can be said to
+be “base 10” (provided 0 and 1 are the first two characters chosen to
+represent this number base). This goes to show how decimal-centric our
+point of view is. We have 10 - I mean, <strong>ten</strong> fingers,
+after all…</p>
+<p>Others have already made great points at how other number bases can
+be more effective than decimal: special mention to <a
+href="https://www.youtube.com/watch?v=qID2B4MK7Y0">this video, making a
+great case for base 6 as a viable number base to use in everyday
+life</a>.</p>
+<p>But here, the goal is to not rely on some arbitrary integer as the
+fundamental basis for our notation of quantities. What else can we use
+to construct a number notation system ? The best answer I have come up
+with is to use prime numbers, or to be more exact: <a
+href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic">the
+fundamental theorem of arithmetic</a>. Thanks to this truth, we can
+simplify the problem: instead of having to design a new glyph for each
+and every number, we can design new glyphs only for prime numbers, and
+represent all the non-prime (composite) numbers by combining the prime
+number glyphs that make up its prime factor decomposition.</p>
+<p>So a simple, naive approach here might look like this:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">number</th>
+<th style="text-align: center;">primes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">23</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">222</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">33</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"><strong><em>?</em></strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">223</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;"><strong><em>?</em></strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">27</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">2222</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">17</td>
+<td style="text-align: center;"><strong><em>?</em></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Instead of concatenating prime factors together horizontally like on
+the table above, my decision was to have the entire glyph be rotated by
+right angle, such that prime factors would be stacked up vertically to
+notate a composite number. This way, the width of each of the glyphs
+stays similar, though their heights will vary. And, since almost every
+human writing system writes horizontally and not vertically, it is
+easier to tell apart a character from its adjacent neighbors in this
+way.</p>
+<p><a href="sheet_Glyphs.html">Here</a> is a spreadsheet of the glyphs
+I’ve decided to use. It is quite intentional that the numbers 0, 1, 2,
+3, 5, and 8 look quite similar to those we know and use daily. After
+that, the prime number glyphs follow certain patterns in how their gyphs
+are designed:</p>
+<ul>
+<li>Prime glyphs which represent <a href="#">twin primes</a> must be
+vertically symmetrical to each other.</li>
+<li>Prime glyphs grow more complex respective to the order they appear
+in - the higher the prime number the more elaborate the glyph which
+represents it.</li>
+</ul>
+<p>There are some notable exceptional glyphs - these are mostly for
+speed and ease-of-writing, as well as to give this number notation
+system some visual flair, similar to what a natural language might
+enjoy.</p>
+<ul>
+<li>Square numbers (numbers with a natural integer square root,
+i.e. <code>n ∈ ℕ, √n ∈ ℕ</code>) have a special glyph, typically
+featuring n-partite symmetry.</li>
+<li>Cubic numbers (numbers with a natural integer cube root,
+i.e. <code>n ∈ ℕ, ∛n ∈ ℕ</code>)</li>
+<li>The number <code>4</code> is the first square number
+(<code>2×2</code>), as well as the first composite number, and it
+extremely common across the board - so it has a special glyph, borne of
+a conjoined concatenation of two <code>2</code>s - and so, its glyph
+resembles a flipped “§” section/paragraph symbol.</li>
+<li>The number <code>8</code> is the first cubic number
+(<code>2×2×2</code>), and so it also enjoys an expcetional glyph. This
+special glyph is really just to simply look like the <code>8</code> we
+are all used to.</li>
+</ul>
+<p>And <a href="sheet_Tables.html">here</a> is an (as of yet incomplete)
+multiplication table. seeing this table makes it easy to understand the
+big advantage of this number system: it makes multiplication so simple
+as to be nearly trivial - and it also makes us recall the big
+disadvantage, which is that addition is notably less simple in this
+system than it would be with common integer bases. This makes intuitive
+sense, since we based our notation system on the very idea of
+multication, since prime numbers and the fundamental theorem of
+arithmetic are just the logical consequence of the notion of
+multiplication.</p>
+<p>So, I do not believe it would be very wise to begin using this
+notation system everywhere - but there are a select few areas where it
+can have its uses and merits. In particular, one thought that
+immediately comes to mind would be to use this to indicate the choice of
+a number base in a mathematics document.</p>
 	</section>
 
 	<footer>
