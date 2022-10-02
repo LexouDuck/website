@@ -7,7 +7,7 @@ Here are some covers I have made, of both famous and not so famous songs.
 
 ### Guitar arrangements
 
-Here are some guitar-only arragements of songs that I have come up with:
+Here are some solo guitar arragements of songs that I have come up with:
 
 - TODO
 
