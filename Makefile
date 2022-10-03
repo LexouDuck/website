@@ -96,7 +96,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 ./pages/%.html: ./pages/%.md $(HTML_FRAME)
 	@echo "Building content: $@"
 	@# fetch any external README.md files referenced, for webpage content
-	@awk '\
+	@awk -v filepath="$@" -v currentdir="` dirname "$@" `" '\
 	function command(cmd)\
 	{\
 		stdout = "";\
@@ -113,10 +113,29 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 	}\
 	\
 	{\
-		if (/^https:(.*)\/README\.md/)\
-		{ print command("curl " $$0); }\
-		else\
-		{ print; }\
+		if ($$1 == "%%%")\
+		{\
+			if ($$2 == "folder")\
+			{\
+				split(command("ls -F " currentdir " | grep \"/$$\""), folders, "\n");\
+				for (f in folders)\
+				{\
+					print "cat " currentdir "/" folders[f] "index.md" > "/dev/stderr";\
+					print "";\
+					print "---------";\
+					print "";\
+					content = command("cat " currentdir "/" folders[f] "index.md");\
+					print substr(content, 1, 200) "...";\
+					print "";\
+					print "[Read more...](" currentdir "/" folders[f] "index.html" ")";\
+				}\
+			}\
+			else if ($$2 ~ /https:(.*)\/README\.md/)\
+			{\
+				print command("curl " $$0);\
+			}\
+		}\
+		else { print; }\
 	}' $< \
 	> $<.tmp
 	@# convert the markdown source to html (with pipe table syntax extension)

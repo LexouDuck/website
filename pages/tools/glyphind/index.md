@@ -1,4 +1,4 @@
 
 # Glyphind
 
-https://raw.githubusercontent.com/LexouDuck/glyphind/master/README.md
+%%% https://raw.githubusercontent.com/LexouDuck/glyphind/master/README.md

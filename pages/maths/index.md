@@ -1,4 +1,8 @@
 
 # Maths
 
-Here are the projects I worked that relate to mathematics.
+Here are some of the projects I worked on, which relate to mathematics.
+
+
+
+%%% folder
