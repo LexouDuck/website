@@ -3,9 +3,18 @@
 
 ![](thumbnail.png)
 
-This game was made for the 9th GBJAM (Gameboy-themed gamejam), with a group of buddies I knew from my old forum-going days.
-To be more precise, we called the team "Galloway Games".
+**STATUS:** ???
+
+This game was made for the [9th GBJAM](https://itch.io/jam/gbjam-9) (Gameboy-themed gamejam), with a group of buddies I knew from my old forum-going days. We managed to get 8th place overall, with **1st place** in graphics !
+
+The game is a top-down adventure game, with combat based on elementally-infused projectiles.
+
+---
+
 The gamejam lasted one week - I programmed most of it, using Unity (I also made a couple of sprites, and one of the chiptunes). I hadn't ever used Unity before so this was an opportunity to learn on the spot (I already had extensive experience using C#, though).
+
+These online pals of mine made most all of the pixelart, and music - I made one track, and a couple of sprites.
+To be more precise, we called the team [Galloway Games](#), in reference to an old forum we had going long ago.
 
 You can play the game directly in your browser (or download the executable), over on the [official page on itch.io](https://gallowaygames.itch.io/lost-sword-citadel)
 

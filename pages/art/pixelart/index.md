@@ -1,9 +1,16 @@
 
 # Pixel Art
 
-These are some of the pixel art works I've made over the years (all made entirely in mspaint).
+These are some of the pixel art works I've made over the years.
 
-------------------------------------------------------------------------
+Since I was very young, I have been drawing - and have been fascinated with
+video game sprites and backgrounds. I naturally spent quite some time getting
+better at making pixelart, hanging on PixelJoint and the Spriters' Resource forums.
+
+Pretty much all of these were made entirely in mspaint - though I have been using
+other tools here and there, like [usenti](#) and [gale](#), and more recently [aseprite](#).
+
+---
 
 ### Original Pieces
 
@@ -23,7 +30,7 @@ This is one of the first characters I ever designed, originally for a sprite con
 
 ![](advance-wars_CO.png)
 
-------------------------------------------------------------------------
+---
 
 ### Demake Mockups
 
@@ -40,7 +47,7 @@ to have some background graphics displayed on the original Gameboy *Pokemon* gam
 
 ![](pokemon-critique.png)
 
-------------------------------------------------------------------------
+---
 
 ### Fanart
 
@@ -58,7 +65,7 @@ in the style of the original *Paper Mario* on the Nintendo 64.
 
 ![](paper-mario-64_doopliss.ong)
 
-------------------------------------------------------------------------
+---
 
 ### The Fighters' Resource
 
@@ -82,7 +89,7 @@ be done in a style reminiscent of *JoJo's Bizarre Adventure*.
 
 ![](TFR_mantador.png)
 
-------------------------------------------------------------------------
+---
 
 ### TSRPG
 
@@ -95,7 +102,7 @@ was to make a silly JRPG game about the wonderful wacky world of the Spriters's 
 The rightmost sprite here is the humanoid version of my mascot character, and was done by [VirtuaBoy123](#) to be one of the enemies for the game. I decided to chip in & help out by creating the leftmost sprite - the mantaray version of my mascot.
 Seeing the two side-by-side, made me want to imagine a mid-level between the two, similar to a *Pokemon* evolution line.
 
-------------------------------------------------------------------------
+---
 
 ### Upscaled/revamped NES sprites
 

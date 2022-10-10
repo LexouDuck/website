@@ -1,10 +1,12 @@
 
 # Color Art
 
-It is rather rare that I actually finish a full-canvas drawing and decide to give it some color,
+It is rather rare that I actually finish a sketch and decide to give it some color,
 but here are some of the few such "finished" works I have made.
 
-------------------------------------------------------------------------
+These are mostly digital art for now, I ought to get my on-paper works scanned and displayed here.
+
+---
 
 ### Original works
 
@@ -21,7 +23,7 @@ Note that the large-headed zombie near the center is the only fan-art character 
 
 ![](sketches.jpg)
 
-------------------------------------------------------------------------
+---
 
 ### Fan art works
 

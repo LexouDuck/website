@@ -1,6 +1,12 @@
 
 # Base-Neutral Number Notation
 
+This is a notation system for integers which I invented.
+
+This system is not based on additions of powers of an arbitrary radix, like a traditional number base (decimal being radix=10, hexadecimal is radix=16, binary is radix=2, etc). Instead, it is base on the idea of multiplication, and prime numbers.
+
+---
+
 ### The "why"
 
 I think we are lacking a number notation system which can indicate a number base in a non-ambiguous fashion.
@@ -63,4 +69,4 @@ And here is an (as of yet incomplete) multiplication table written in base-neutr
 
 Seeing this table makes it easy to understand the big advantage of this number system: it makes multiplication so simple as to be nearly trivial - and it also makes us recall the big disadvantage, which is that addition is notably less simple in this system than it would be with common integer bases. This makes intuitive sense, since we based our notation system on the very idea of multication, since prime numbers and the fundamental theorem of arithmetic are just the logical consequence of the notion of multiplication.
 
-So, I do not believe it would be very wise to begin using this notation system everywhere - but there are a select few areas where it can have its uses and merits. In particular, one thought that immediately comes to mind would be to use this to indicate the choice of a number base in a mathematics document.
+So, I do not believe it would be very wise to begin using this notation system everywhere - but there are a select few areas where it can have its uses and merits. In particular, one thought that immediately comes to mind would be to use this to indicate the choice of a number base at the beginning of a mathematics document, in a totally unambiguous fashion.

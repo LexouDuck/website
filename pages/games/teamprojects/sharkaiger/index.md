@@ -1,7 +1,15 @@
 
 # Sharkaiger
 
+**STATUS:** Hiatus
+
 This is the first game project I helped out on, all the way back in 2010.
+
+It is a puzzle-platformer game, which can be either co-op or single-player.
+It features 4 distinct playable shark protagonists, working together despite
+their differences to escape from (and take down) the soulless MOBY corp.ltd.inc.
+
+---
 
 ![](titlescreen.png)
 

@@ -1,10 +1,19 @@
 
 # Castlevania: Symphony of Blood
 
+**STATUS:** In-progress
+
+This is the first game project I worked on for myself, in 2015.
+
+The idea is to mesh together the best parts of *Castlevania - Rondo of Blood*
+with *Castlevania - Symphony of the Night*, in the shape of a "demake" (like a remake,
+but for an earlier console, with lower specs).
+
+---
+
 ### The "why"
 
-This is the first game project I ever worked on.
-It started as the project for my end-of-highschool exam, since
+This game initially started as the project for my end-of-highschool exam, since
 I was lucky enough to be in a school where, in my last year of highschool,
 I was given the option to select an (experimental) programming class.
 

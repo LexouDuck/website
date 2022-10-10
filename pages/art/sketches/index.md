@@ -8,19 +8,19 @@ I could get my hands on a pencil and some paper. As such, I have
 drawn many many sketches over the years - though I have not drawn
 as much as I would like, ever since I learned to program, and got a job...
 
-------------------------------------------------------------------------
+---
 
 ### 2019
 
 ![](2019_strider.jpg){width="650"}
 
-------------------------------------------------------------------------
+---
 
 ### 2016
 
 ![](2016_ETE-L2.png){width="650"}
 
-------------------------------------------------------------------------
+---
 
 ### 2015
 
@@ -35,7 +35,7 @@ as much as I would like, ever since I learned to program, and got a job...
 ![](2015_scenery.png){width="650"}
 ![](2015_after-partiels.png){width="650"}
 
-------------------------------------------------------------------------
+---
 
 ### 2014
 
@@ -53,7 +53,7 @@ as much as I would like, ever since I learned to program, and got a job...
 ![](2014_Power-Jesus.png){width="650"}
 ![](2014_Pre-BAC.png){width="650"}
 
-------------------------------------------------------------------------
+---
 
 ### 2013
 
@@ -67,10 +67,10 @@ as much as I would like, ever since I learned to program, and got a job...
 ![](2013_Prasville.png){width="650"}
 ![](2013_zodiac.png){width="650"}
 
-------------------------------------------------------------------------
+---
 
 ### 2011
 
 ![](2011_Blon.png){width="650"}
 
-------------------------------------------------------------------------
+---

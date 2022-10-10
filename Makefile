@@ -125,14 +125,13 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 					print "---------";\
 					print "";\
 					content = command("cat " currentdir "/" folders[f] "index.md");\
-					print substr(content, 1, 200) "...";\
-					print "";\
+					print substr(content, 1, index(content, "\n\n---"));\
 					print "[Read more...](" currentdir "/" folders[f] "index.html" ")";\
 				}\
 			}\
-			else if ($$2 ~ /https:(.*)\/README\.md/)\
+			else if ($$2 ~ /https:(.*)/)\
 			{\
-				print command("curl " $$0);\
+				print command("curl " $$2);\
 			}\
 		}\
 		else { print; }\
@@ -143,7 +142,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 	@# insert the generated HTML into the <body> of a copy of the frame.html file
 	@awk -v filepath="$@.tmp" '\
 	{\
-		if (/%%%/)\
+		if ($$1 == "%%%")\
 		{\
 			while (getline line < filepath)\
 			{\

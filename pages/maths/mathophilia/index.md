@@ -1,7 +1,9 @@
 
 # Mathophilia
 
-This is not so much my project as it is my brother's - the idea is to experiment with better ways to teach math.
+This is not so much *my* project as it is my brother's - the idea is to experiment with better ways to teach math.
+
+---
 
 The first of such experiments is a big document which teaches important notions, symbols and vocabulary of several areas of mathematics, but without any of the proofs - instead just examples, visual geometric intuitions, and explanations.
 

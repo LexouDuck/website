@@ -1,9 +1,11 @@
 
 # Property Table of Algebraic Structures
 
-This project is first and foremost an exercise I did for myself, to better get a grasp of the many terms and concepts of group theory and category theory.
+This project is, first and foremost, an exercise I did for myself - to better get a grasp of the many terms and concepts of group theory and category theory.
 
 The exercise is quite simple: to fill up some huge spreadsheets, mapping each and every algebraic structure, to each common property of algebra - with the relevant proofs in each cell.
+
+---
 
 Here are the (as-of-yet quite incomplete) tables in question:
 

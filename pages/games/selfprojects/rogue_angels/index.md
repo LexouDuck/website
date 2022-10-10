@@ -1,8 +1,12 @@
 
 # Rogue Angels
 
+**STATUS:** In-progress
+
 This is my "brainchild" game, as some might say - in other words, this is the project
 that I have kept in the back of my head and kept brainstorming on/off for many many years...
+
+---
 
 Without revealing too much:
 

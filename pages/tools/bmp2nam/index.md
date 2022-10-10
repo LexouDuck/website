@@ -1,6 +1,14 @@
 
 # bmp2nam
 
+This is a simple commandline tool to process images, and reduce their color-count, such that
+the resulting color-reduced image fits within a certain tile-based set of constraints.
+
+In pretty much every old game console, background are drawn using tile-based graphics.
+This is a tool that can take in any bitmap image, and spit out a tile-conscient version of it.
+
+---
+
 %%% https://raw.githubusercontent.com/LexouDuck/bmp2nam/master/README.md
 
 Here is a quick but pretty detailed summary of graphical limitations on the NES:

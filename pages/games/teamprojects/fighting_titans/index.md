@@ -1,6 +1,16 @@
 
 # Fighting Titans
 
+**STATUS:** ???
+
+This is a 2-person game project I worked on around 2016.
+
+It is a unique combination of genres: fighting game, and beat-em-up.
+The playable characters are various creatures with special powers,
+and their battles are set in large arenas for humans to enjoy.
+
+---
+
 This is a game I worked on with a buddy from the Spriters Resource forums, [Sketchasaurus](https://twitter.com/g33x).
 He made pretty much all of the graphics, and thought out most the gameplay concepts.
 I did all of the programming, as well as pitching in ideas and designs.

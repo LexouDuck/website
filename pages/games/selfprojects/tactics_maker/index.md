@@ -1,10 +1,14 @@
 
 # Tactics Maker
 
+**STATUS:** In-progress
+
 This is more of a tool to make games, rather than a video game in and of itself.
 Tactics Maker is a highly customizable, modular, data-oriented game engine and toolset,
 which is specifically geared towards creating "tactics RPG" games - i.e. the kind of
 strategy games that play on some sort of grid, and that are typically turn-based.
+
+---
 
 Think of it like this: this engine allows one to implement games ranging from simple timeless games,
 like Go, Checkers, Chess, Shogi, to more complex modern SRPG/tactics games such as

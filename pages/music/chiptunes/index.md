@@ -5,7 +5,7 @@ These are the music covers I made as 8-bit chiptunes, using FamiTracker.
 
 I have been making chiptunes since a pretty young age (14-ish) - I have always found the practice of making chiptunes to be fascinating, since you must create your own instruments from scratch, writing your own volume-over-time curves, etc. Not to mention, the large amount of crazy and interesting techniques that are possible within chiptune limitations - to list a few: single-channel chords via arpeggios, single-channel echo, periodic-noise percussion, multi-pitch N163 waves, and many more...
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Cwsuib-Kr1c"></iframe>
 
@@ -21,7 +21,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/cMEKw2tOKMc"></iframe>
 
@@ -38,7 +38,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/tq7jLBu9oQg"></iframe>
 
@@ -54,7 +54,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/FehM-1AtSVQ"></iframe>
 
@@ -69,7 +69,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/8ZliqY6-lrQ"></iframe>
 
@@ -85,7 +85,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/bIFMvhv_-Og"></iframe>
 
@@ -103,7 +103,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/NGxFFcdW7nA"></iframe>
 
@@ -119,7 +119,7 @@ The song is available for download in the following formats:
 - [WAV](#)
 - [MP3](#)
 
-------------------------------------------------------------------------
+---
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/YmIfv8dM5HA"></iframe>
 
