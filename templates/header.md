@@ -1,3 +1,2 @@
 ::: {#header}
-## LEXOU — {{title}}
 :::
