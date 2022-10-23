@@ -7,6 +7,13 @@ I have been making chiptunes since a pretty young age (14-ish) - I have always f
 
 ---
 
+### Video Game Music covers
+
+I guess I can mention [this fangame project](/pages/games/fangames/castlevania/index.html) which has a chiptune soundtrack.
+The soundtrack was made in collboration with my friend, [Gorsal](#) - he did the songs from *Rondo of Blood*, while I did the songs from *Symphony of the Night*.
+
+---
+
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Cwsuib-Kr1c"></iframe>
 
 Here's my chiptune cover of *Birth of a God*, from *Final Fantasy VII* (PS1).

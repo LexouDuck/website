@@ -17,8 +17,8 @@ enemy bullets. The player must thus redirect bullets appropriately towards enemi
 
 - You can download the game over on the GTMK [itch.io](https://itch.io/jam/gmtk-2018/rate/301343)
 
-Here is a GIF of the game in action:
+Here is a short GIF of the game in action:
 
-- TODO
+![](gameplay.gif)
 
-TODO explain
+As you can see, it is *very* rough around the edges - we had no time to give the game any level of polish.
