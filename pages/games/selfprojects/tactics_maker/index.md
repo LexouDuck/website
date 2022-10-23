@@ -21,4 +21,11 @@ working game - the tougher task is implementing your game's frontend look & feel
 
 - Check it out on [Github](https://github.com/LexouDuck/Tactics-Maker)
 
-- TODO add screenshots of commandline-interface [curses](https://docs.python.org/3/howto/curses.html) frontend
+For now, there only exists one frontend, which is (by design) very basic and commandline-based,
+written directly in [Python](https://python.org/), using [curses](https://docs.python.org/3/howto/curses.html).
+
+- Here is what a game of chess looks like in it:
+![](gameplay_chess-balbo.gif)
+
+- Here is what a game of mock *Advance Wars* looks like:
+![](gameplay_advance-wars.gif)
