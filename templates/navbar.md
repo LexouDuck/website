@@ -12,10 +12,10 @@
 	-   [▶]{.treeview_node} ![](/pages/music/icon.svg){.icon .svg} [Music](/pages/music/index.html)
 	<ul class="treeview nested">
 		-   [•]{.treeview_leaf} [Original compositions](/pages/music/originals/index.html)
-		-   [•]{.treeview_leaf} [Parody music](/pages/music/parodies/index.html)
-		-   [•]{.treeview_leaf} [Chiptunes](/pages/music/chiptunes/index.html)
-		-   [•]{.treeview_leaf} [Music covers](/pages/music/covers/index.html)
 		-   [•]{.treeview_leaf} [Music bands](/pages/music/bands/index.html)
+		-   [•]{.treeview_leaf} [Music covers](/pages/music/covers/index.html)
+		-   [•]{.treeview_leaf} [Chiptunes](/pages/music/chiptunes/index.html)
+		-   [•]{.treeview_leaf} [Parody music](/pages/music/parodies/index.html)
 	-   [▶]{.treeview_node} ![](/pages/games/icon.svg){.icon .svg} [Games](/pages/games/index.html)
 	<ul class="treeview nested">
 		-   [▶]{.treeview_node} [Self Projects](/pages/games/selfprojects/index.html)
