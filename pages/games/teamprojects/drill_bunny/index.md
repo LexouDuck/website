@@ -16,4 +16,5 @@ which originally began as a [ludum dare gamejam](https://stvr.itch.io/drill-bunn
 
 The extent of my participation was just to implement some menus, with some parallax scrolling.
 
-- TODO add screenshots/GIFs
+- Here is the parallax scrolling main menu in action:
+![](parallax_menu.gif)

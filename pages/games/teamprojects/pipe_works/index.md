@@ -16,6 +16,18 @@ Early development was documented in forum threads, as a sort of interactive devl
 - [TIGsource](https://forums.tigsource.com/index.php?topic=32804)
 - [Spriters'Resource](https://www.vg-resource.com/showthread.php?tid=21931)
 
-The extent of my participation was to just implement some menus & buttons.
+There is also a [soundcloud](https://soundcloud.com/pipeworks) channel featuring some tracks from the game.
 
-- TODO add screenshots/GIFs
+The extent of my participation was to really just implement some menus & buttons (this is among the first projects I worked on).
+
+- Here are some screenshots from an early build of the game:
+
+![](pipe-works_1.png)
+
+![](pipe-works_2.png)
+
+![](pipe-works_menu.gif)
+
+- Here is a spritesheet showing the detailed animations of the player character:
+
+![](pipe-works_player.png)
