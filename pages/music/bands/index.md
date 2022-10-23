@@ -41,3 +41,5 @@ precious few who saw us play live), I am taking the liberty of sharing these 4 t
 <audio controls src="tukana/Tukana - Purple Clouds.mp3">
 			<a href="tukana/Tukana - Purple Clouds.mp3">Download</a></audio>
 </figure>
+
+![](tukana/photo.jpg){width="100%"}
