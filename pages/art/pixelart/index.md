@@ -63,7 +63,7 @@ I was also always a big fan of the *Paper Mario* games, and so I created a coupl
 sprites edits, mostly to reproduce characters from *Paper Mario: The Thousand-Year Door*
 in the style of the original *Paper Mario* on the Nintendo 64.
 
-![](paper-mario-64_doopliss.ong)
+![](paper-mario-64_doopliss.png)
 
 ---
 
@@ -100,7 +100,7 @@ was to make a silly JRPG game about the wonderful wacky world of the Spriters's 
 ![](TSRPG.png)
 
 The rightmost sprite here is the humanoid version of my mascot character, and was done by [VirtuaBoy123](#) to be one of the enemies for the game. I decided to chip in & help out by creating the leftmost sprite - the mantaray version of my mascot.
-Seeing the two side-by-side, made me want to imagine a mid-level between the two, similar to a *Pokemon* evolution line.
+Seeing the two side-by-side, made me want to imagine a mid-level between the two, similar to a *Pokemon* evolution line - this is why I also created the larger darker manta ray in the middle.
 
 ---
 
@@ -113,3 +113,5 @@ NES sprite, scale up its size times four, and choose 3 new colors to add to it.
 ![](NES-revamp_Link.png)
 
 ![](NES-revamp_Ryu.png)
+
+A good friend of mine, [Chris2balls](https://pixeljoint.com/p/14966.htm), had made several of these: [Ice Climber](https://pixeljoint.com/pixelart/101853.htm), [Balloon Fight](https://pixeljoint.com/pixelart/101855.htm), [Getsu Fuuma](https://pixeljoint.com/pixelart/101854.htm)
