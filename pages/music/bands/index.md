@@ -10,7 +10,7 @@ The band was originally called *Dynam Cross*, and we did a couple of small gigs 
 Afterwards, some people left, and the 4 core guys (guitarist; keyboardist; drummer; and myself, the bassist)
 decided to orient our music more towards more of a jazz fusion style.
 
-To symbolize our change of personnel and direction, we changed the band name to become *Tukana* - this was back in 2018.
+To symbolize our change of personnel and direction, we changed the band name to become *Tukana* - this was back in 2017.
 
 ### Tukana
 
@@ -23,23 +23,21 @@ precious few who saw us play live), I am taking the liberty of sharing these 4 t
 ![](tukana/cover.jpg)
 
 <figure>            <figcaption>01 - Take Off</figcaption>
-<audio controls src="tukana/Tukana - Take Off.mp3">
+<audio controls src="tukana/Tukana - Take Off.mp3" style="width:100%;">
 			<a href="tukana/Tukana - Take Off.mp3">Download</a></audio>
 </figure>
 
 <figure>            <figcaption>02 - Bewavier</figcaption>
-<audio controls src="tukana/Tukana - Bewavier.mp3">
+<audio controls src="tukana/Tukana - Bewavier.mp3" style="width:100%;">
 			<a href="tukana/Tukana - Bewavier.mp3">Download</a></audio>
 </figure>
 
 <figure>            <figcaption>03 - Beak</figcaption>
-<audio controls src="tukana/Tukana - Beak.mp3">
+<audio controls src="tukana/Tukana - Beak.mp3" style="width:100%;">
 			<a href="tukana/Tukana - Beak.mp3">Download</a></audio>
 </figure>
 
-<figure>            <figcaption>04 - Purple Clouds</figcaption>
-<audio controls src="tukana/Tukana - Purple Clouds.mp3">
-			<a href="tukana/Tukana - Purple Clouds.mp3">Download</a></audio>
+<figure>            <figcaption>04 - Purple Cloud</figcaption>
+<audio controls src="tukana/Tukana - Purple Cloud.mp3" style="width:100%;">
+			<a href="tukana/Tukana - Purple Cloud.mp3">Download</a></audio>
 </figure>
-
-![](tukana/photo.jpg){width="100%"}

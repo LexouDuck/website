@@ -48,13 +48,17 @@ Here are some mockups I made at the very start, to have an idea of what it might
 ![](mockup-2.png){.screencap width="256" height="224"}
 ![](mockup-3.png){.screencap width="256" height="224"}
 
+And here is a GIF of the initial engine, which was essentially my first programming project.
+
+![](gameplay_python_alpha.gif)
+
 Originally, for the high school exam, I just implemented the battle against the first boss
 (or, to be more precise, one of the two "first bosses", since this game features branching paths).
 I figured that this "lake serpent" enemy would be easier to implement, since it required little
 pixelart sprite work, just a couple of small distinct parts of its body - and in fact,
 making the body parts follow the head of the snake was a fun programming challenge in and of itself.
 
-![](gameplay-python.gif){.screencap width="256" height="224"}
+![](gameplay_python_bridge.gif)
 
 Of course, this first game engine I had built had several bugs (including some that made the boss trivial),
 the player character was clunky to control, and many other issues regarding Python made me abandon it.
@@ -118,20 +122,22 @@ features a nice interface to assemble meta-sprites from multiple 8x8 sprites.
 
 I also used the [TileReplace](https://shiru.untergrund.net/software.shtml) tool by the same fellow, to optimize tilesets
 to make them fit in the limited size of an [NES nametable](https://www.nesdev.org/wiki/PPU_nametables).
+Here is an example of a tileset nametable, again in the *NES Screen Tool*:
 
 ![](workflow-nst-tileset.png)
+
+I implemented the main playable characters first: Richter, Alucard, and Maria.
+Then the various menus within the "pause" screen.
+Getting terrain collisions to work properly, especially with diagonally sloped tiles,
+was quite the challenge.
+
+![](gameplay_c_castle.gif)
 
 I also found a good workflow to create maps/environments, using [Tiled](https://www.mapeditor.org/),
 and I designed a custom `.map` file format, and implemented a plugin to export said files from Tiled.
 
 ![](workflow-tiled.png)
 
-I implemented the main playable characters first: Richter, Alucard, and Maria.
-Getting terrain collisions to work properly, especially with diagonally sloped tiles,
-was quite the challenge.
+I added more explorable areas, thanks to this nicer workflow.
 
-![](gameplay-1.png)
-
-Then the various menus within the "pause" screen.
-
-![](gameplay-2.png)
+![](gameplay_c_caverns.gif)

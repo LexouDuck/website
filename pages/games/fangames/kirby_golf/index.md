@@ -3,6 +3,8 @@
 
 **STATUS:** ???
 
+Remember *Kirby's Dream Course* ? How about an expanded, 3D version of this fun kind of Kirby golf ?
+
 ---
 
-TODO explain
+- TODO explain more...

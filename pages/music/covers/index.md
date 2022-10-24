@@ -14,27 +14,27 @@ Here are some covers I have made, of both famous and not so famous songs.
 Here are some short solo guitar arragements of some popular video game songs that I made, back in 2015:
 
 <figure>        <figcaption>[Final Fantasy III] Djinn's Curse</figcaption>
-<audio controls src="guitar/[Final Fantasy III] Djinn's Curse.mp3">
+<audio controls src="guitar/[Final Fantasy III] Djinn's Curse.mp3" style="width:100%;">
 			<a href="guitar/[Final Fantasy III] Djinn's Curse.mp3">Download</a></audio>
 </figure>
 <figure>        <figcaption>[Legend of Zelda - Oracle of Ages] Song Of Nayru</figcaption>
-<audio controls src="guitar/[Legend of Zelda - Oracle of Ages] Song Of Nayru.mp3">
+<audio controls src="guitar/[Legend of Zelda - Oracle of Ages] Song Of Nayru.mp3" style="width:100%;">
 			<a href="guitar/[Legend of Zelda - Oracle of Ages] Song Of Nayru.mp3">Download</a></audio>
 </figure>
 <figure>        <figcaption>[Legend of Zelda - Oracle of Seasons] Dancing with Din</figcaption>
-<audio controls src="guitar/[Legend of Zelda - Oracle of Seasons] Dancing with Din.mp3">
+<audio controls src="guitar/[Legend of Zelda - Oracle of Seasons] Dancing with Din.mp3" style="width:100%;">
 			<a href="guitar/[Legend of Zelda - Oracle of Seasons] Dancing with Din.mp3">Download</a></audio>
 </figure>
 <figure>        <figcaption>[Legend of Zelda - Oracle of Seasons] Skull Pirates</figcaption>
-<audio controls src="guitar/[Legend of Zelda - Oracle of Seasons] Skull Pirates.mp3">
+<audio controls src="guitar/[Legend of Zelda - Oracle of Seasons] Skull Pirates.mp3" style="width:100%;">
 			<a href="guitar/[Legend of Zelda - Oracle of Seasons] Skull Pirates.mp3">Download</a></audio>
 </figure>
 <figure>        <figcaption>[Sonic Adventure 2] Lovely Gate</figcaption>
-<audio controls src="guitar/[Sonic Adventure 2] Lovely Gate.mp3">
+<audio controls src="guitar/[Sonic Adventure 2] Lovely Gate.mp3" style="width:100%;">
 			<a href="guitar/[Sonic Adventure 2] Lovely Gate.mp3">Download</a></audio>
 </figure>
 <figure>        <figcaption>[Super Mario Galaxy] Comet Observatory</figcaption>
-<audio controls src="guitar/[Super Mario Galaxy] Comet Observatory.mp3">
+<audio controls src="guitar/[Super Mario Galaxy] Comet Observatory.mp3" style="width:100%;">
 			<a href="guitar/[Super Mario Galaxy] Comet Observatory.mp3">Download</a></audio>
 </figure>
 
