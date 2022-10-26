@@ -110,8 +110,10 @@ This is some of the first "custom" pixelart I had ever done, way back in 2010:
 This was an old short-lived [trend](NES-revamp_Samus.png) on [the Spriters' Resource forums](#), wherein you take an old-school
 NES sprite, scale up its size times four, and choose 3 new colors to add to it.
 
+A good friend of mine, [Chris2balls](https://pixeljoint.com/p/14966.htm), had made several of these: [Ice Climber](https://pixeljoint.com/pixelart/101853.htm), [Balloon Fight](https://pixeljoint.com/pixelart/101855.htm), [Getsu Fuuma](https://pixeljoint.com/pixelart/101854.htm)
+
+And finally, here are the 2 (unfinished) ones that I made, though they pale in comparison to the previous examples...
+
 ![](NES-revamp_Link.png)
 
 ![](NES-revamp_Ryu.png)
-
-A good friend of mine, [Chris2balls](https://pixeljoint.com/p/14966.htm), had made several of these: [Ice Climber](https://pixeljoint.com/pixelart/101853.htm), [Balloon Fight](https://pixeljoint.com/pixelart/101855.htm), [Getsu Fuuma](https://pixeljoint.com/pixelart/101854.htm)
