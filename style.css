@@ -155,6 +155,11 @@ pre
     overflow: scroll;
 }
 
+figcaption
+{
+	color: white;
+}
+
 
 
 #navbar, #template_navbar

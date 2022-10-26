@@ -42,15 +42,40 @@ Wars, Final Fantasy Tactics, XCOM, etc. In fact, reference
 implementations of public domain classic games like Chess and Shogi are
 provided by default with Tactics Maker, to serve as useful examples for
 developers.</p>
+<p>With <em>Tactics Maker</em>, the game code must be separated into 2
+distinct parts: - the core game logic (the backend) - how your game
+looks (the frontend) This allows various players to choose a frontend
+which suits them. For example, one chess player might like playing with
+a simple newspaper-like stylized 2D visualization, whereas another may
+prefer a 3D board and pieces, which is more similar to real life. Heck,
+one may prefer to use no frontend at all (for example, to quickly train
+up an artificial intelligence, using reinforcement learning, without
+wasting unnecessary computing power).</p>
+<h3 id="the-backend">The backend</h3>
+<p>The backend code is supposed to be as data-driven as possible - all
+game data constants should generally be stored in the form of
+<code>.tsv</code> spreadsheets. The backend game code itself should be
+implemented in <a href="https://python.org/">Python</a> (this is
+generally no problem for optimization, since these are not physics-based
+games, all of the heavy computing work is done on the frontend
+side).</p>
+<ul>
+<li>Check it out on <a
+href="https://github.com/LexouDuck/Tactics-Maker">Github</a></li>
+</ul>
 <p>With just some <code>.tsv</code> spreadsheets, and a hundred lines of
 python code, you can have a working game - the tougher task is
 implementing your game’s frontend look &amp; feel.</p>
+<h3 id="the-frontend">The frontend</h3>
+<p>For now, there only exists one frontend, which is (by design) very
+basic and commandline-based, written directly in <a
+href="https://python.org/">Python</a>, using <a
+href="https://docs.python.org/3/howto/curses.html">curses</a>.</p>
 <ul>
-<li><p>Check it out on <a
-href="https://github.com/LexouDuck/Tactics-Maker">Github</a></p></li>
-<li><p>TODO add screenshots of commandline-interface <a
-href="https://docs.python.org/3/howto/curses.html">curses</a>
-frontend</p></li>
+<li><p>Here is what a game of chess looks like in it: <img
+src="gameplay_chess-balbo.gif" /></p></li>
+<li><p>Here is what a game of mock <em>Advance Wars</em> looks like:
+<img src="gameplay_advance-wars.gif" /></p></li>
 </ul>
 	</section>
 

@@ -16,10 +16,29 @@ Fire Emblem, Advance Wars, Final Fantasy Tactics, XCOM, etc.
 In fact, reference implementations of public domain classic games like Chess and Shogi
 are provided by default with Tactics Maker, to serve as useful examples for developers.
 
+With *Tactics Maker*, the game code must be separated into 2 distinct parts:
+- the core game logic (the backend)
+- how your game looks (the frontend)
+This allows various players to choose a frontend which suits them.
+For example, one chess player might like playing with a simple newspaper-like stylized 2D visualization,
+whereas another may prefer a 3D board and pieces, which is more similar to real life.
+Heck, one may prefer to use no frontend at all (for example, to quickly train up an artificial intelligence,
+using reinforcement learning, without wasting unnecessary computing power).
+
+### The backend
+
+The backend code is supposed to be as data-driven as possible - all game data constants should
+generally be stored in the form of `.tsv` spreadsheets.
+The backend game code itself should be implemented in [Python](https://python.org/)
+(this is generally no problem for optimization, since these are not physics-based games,
+all of the heavy computing work is done on the frontend side).
+
+- Check it out on [Github](https://github.com/LexouDuck/Tactics-Maker)
+
 With just some `.tsv` spreadsheets, and a hundred lines of python code, you can have a
 working game - the tougher task is implementing your game's frontend look & feel.
 
-- Check it out on [Github](https://github.com/LexouDuck/Tactics-Maker)
+### The frontend
 
 For now, there only exists one frontend, which is (by design) very basic and commandline-based,
 written directly in [Python](https://python.org/), using [curses](https://docs.python.org/3/howto/curses.html).
