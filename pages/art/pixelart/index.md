@@ -8,7 +8,8 @@ video game sprites and backgrounds. I naturally spent quite some time getting
 better at making pixelart, hanging on PixelJoint and the Spriters' Resource forums.
 
 Pretty much all of these were made entirely in mspaint - though I have been using
-other tools here and there, like [usenti](#) and [gale](#), and more recently [aseprite](#).
+other tools here and there, like [usenti](https://www.coranac.com/projects/usenti/)
+and [GraphicGale](https://graphicsgale.com/us/), and more recently [aseprite](https://www.aseprite.org/).
 
 ---
 
@@ -99,7 +100,7 @@ was to make a silly JRPG game about the wonderful wacky world of the Spriters's 
 
 ![](TSRPG.png)
 
-The rightmost sprite here is the humanoid version of my mascot character, and was done by [VirtuaBoy123](#) to be one of the enemies for the game. I decided to chip in & help out by creating the leftmost sprite - the mantaray version of my mascot.
+The rightmost sprite here is the humanoid version of my mascot character, and was done by [VirtuaBoy123](https://www.vg-resource.com/user-18076.html) to be one of the enemies for the game. I decided to chip in & help out by creating the leftmost sprite - the mantaray version of my mascot.
 Seeing the two side-by-side, made me want to imagine a mid-level between the two, similar to a *Pokemon* evolution line - this is why I also created the larger darker manta ray in the middle.
 
 ---
@@ -107,8 +108,8 @@ Seeing the two side-by-side, made me want to imagine a mid-level between the two
 ### Upscaled/revamped NES sprites
 
 This is some of the first "custom" pixelart I had ever done, way back in 2010:
-This was an old short-lived [trend](NES-revamp_Samus.png) on [the Spriters' Resource forums](#), wherein you take an old-school
-NES sprite, scale up its size times four, and choose 3 new colors to add to it.
+This was an old short-lived [trend](NES-revamp_Samus.png) on [the Spriters' Resource forums](https://www.vg-resource.com/thread-17156.html), wherein you take an old-school NES sprite,
+scale up its size times four, and choose 3 new colors to add to it.
 
 ![](NES-revamp_Link.png)
 

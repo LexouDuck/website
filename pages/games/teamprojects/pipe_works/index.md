@@ -3,7 +3,7 @@
 
 **STATUS:** Hiatus
 
-This was a project I worked on with the [Dream Show Adventures](#) team, around 2013.
+This was a project I worked on with the [Dream Show Adventures](https://dreamshowadventures.com/) team, around 2013.
 
 It is a puzzle game, in which the player rearranges and rotates pipes around,
 to meet various level objectives. It was developed primarily for mobile phone platforms.

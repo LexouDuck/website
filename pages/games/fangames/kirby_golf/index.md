@@ -3,7 +3,7 @@
 
 **STATUS:** ???
 
-Remember *Kirby's Dream Course* ? How about an expanded, 3D version of this fun kind of Kirby golf ?
+Remember *Kirby's Dream Course* ? How about an expanded, 3D version of this fun kind of Kirby mini-golf game ?
 
 ---
 

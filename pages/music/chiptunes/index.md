@@ -10,7 +10,7 @@ I have been making chiptunes since a pretty young age (14-ish) - I have always f
 ### Video Game Music covers
 
 I guess I can mention [this fangame project](/pages/games/fangames/castlevania/index.html) which has a chiptune soundtrack.
-The soundtrack was made in collboration with my friend, [Gorsal](#) - he did the songs from *Rondo of Blood*, while I did the songs from *Symphony of the Night*.
+The soundtrack was made in collboration with my friend, [Gorsal](https://www.youtube.com/watch?v=uNFBAXtNk6Q) - he did the songs from *Rondo of Blood*, while I did the songs from *Symphony of the Night*.
 
 ---
 

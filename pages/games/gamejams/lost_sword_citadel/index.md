@@ -14,7 +14,7 @@ The game is a top-down adventure game, with combat based on elementally-infused 
 The gamejam lasted one week - I programmed most of it, using Unity (I also made a couple of sprites, and one of the chiptunes). I hadn't ever used Unity before so this was an opportunity to learn on the spot (I already had extensive experience using C#, though).
 
 These online pals of mine made most all of the pixelart, and music - I made one track, and a couple of sprites.
-To be more precise, we called the team [Galloway Games](#), in reference to an old forum we had going long ago.
+To be more precise, we called the team [Galloway Games](https://gallowaygames.itch.io), in reference to an old forum we had going long ago.
 
 You can play the game directly in your browser (or download the executable), over on the [official page on itch.io](https://gallowaygames.itch.io/lost-sword-citadel)
 
@@ -47,4 +47,4 @@ If I were to get back to working on this, the main idea I wanted to implement
 was to make the key equippable items alter how the B button works.
 You would start with nothing on the B button, then quickly learn the "facing-lock".
 Afterwards, you could have the ability to run, to jump, to carry objects.
-If this idea sounds very much like a classic Zelda game, then I can only say "guilty"
+If this idea sounds very much like a classic Zelda game, then I can only say "guilty"...

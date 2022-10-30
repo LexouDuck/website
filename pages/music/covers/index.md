@@ -42,7 +42,7 @@ Here are some short solo guitar arragements of some popular video game songs tha
 
 #### Remixes
 
-Here are some remixes of video game songs I made back in 2013, using [Reason](#)
+Here are some remixes of video game songs I made back in 2013, using [Reason](https://www.reasonstudios.com/en/reason)
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/82099338&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lexouduck" title="LexouDuck" target="_blank" style="color: #cccccc; text-decoration: none;">LexouDuck</a> · <a href="https://soundcloud.com/lexouduck/jaws-of-a-scorched-earth" title="Jaws of a Scorched Earth" target="_blank" style="color: #cccccc; text-decoration: none;">Jaws of a Scorched Earth</a></div>
 

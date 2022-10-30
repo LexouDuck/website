@@ -79,8 +79,9 @@ Around this time, I made a [chiptune](/pages/music/chiptunes/index.html) of one 
 
 Now, *Symphony of the Night* is pretty a different game from *Rondo of Blood*,
 it is not a tough, linear, level-by-level platformer like the original *Castlevania* games.
-It breaks away from the preceding formula, and instead helped to coined the "[metroidvania](https://en.wikipedia.org/wiki/Metroidvania)"
-term - a platformer instead focused on exploration, backtracking and ingenuity.
+It breaks away from the preceding formula, and instead helped to coined the
+["metroidvania"](https://en.wikipedia.org/wiki/Metroidvania) term -
+a platformer instead focused on exploration, backtracking and item-collecting.
 The game's "metroidvania" nature makes it much easier to sidestep or avoid challenging sections,
 whereas in *Rondo of Blood*, there is no easy way out (unless you play as Maria, that is...).
 It seemed to me like there was definitely some "just middle" of difficulty and design between the two:

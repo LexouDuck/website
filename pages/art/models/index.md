@@ -7,10 +7,12 @@ I have interested in 3D modeling since I was a child playing video games,
 in particular lowpoly models of old consoles, particularly the "PS1" or "DS" style
 of models, that use unfiltered pixelart textures.
 
-At first I experimented a little bit with [Google Sketchup](#), then got the
-opportunity to use [3DS max](#), until I settled on [Maya](#) for a while,
+At first I experimented a little bit with [Google Sketchup](https://www.sketchup.com/),
+then got the opportunity to use [3DS max](https://www.autodesk.com/products/3ds-max/overview),
+until I settled on [Maya](https://www.autodesk.com/products/maya/overview) for a while,
 since it is highly customizable and scriptable. Though, more recently, I have
-begun to take a liking to [Blender](#) (and not just because of AutoDe$k's pricing!).
+begun to take a liking to [Blender](https://www.blender.org/) (and not just because of *AutoDe$k*'s pricing!) -
+its user interface has made great progress since the early days when I first tried it.
 
 ---
 

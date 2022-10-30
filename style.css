@@ -40,33 +40,34 @@ hr
 h1
 {
 	color: #4C404C !important;
-	font-size:200%;
-	font-weight:bolder;
+	font-size: 200%;
+	font-weight: bolder;
 	margin: 30px 0;
 }
 h2
 {
 	color: #4C404C !important;
-	font-size:120%;
-	font-weight:normal;
+	font-size: 120%;
+	font-weight: normal;
 	margin-bottom: 20px;
 }
 h3
 {
 	color: white;
-	font-size:150%;
-	font-weight:bolder;
+	font-size: 150%;
+	font-weight: bolder;
 	margin: 10px 0;
 }
 h4
-{ color: white;
+{
+	color: white;
 	font-size: 90%;
 	font-weight: bold;
 	text-align: center;
 }
 h5
 {
-	color: #4C404C;
+	color: #9C909C;
 	font-size: 90%;
 	font-weight: bold;
 	text-align: center;
