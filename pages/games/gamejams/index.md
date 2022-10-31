@@ -1,8 +1,8 @@
 
 # Game Jams
 
-These are the video game projects I worked in the context of gamejams (so, with every limited dev time).
+These are the video game projects I worked for gamejams (i.e. with very limited dev time).
 
-
+---
 
 %%% folder

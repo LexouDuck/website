@@ -117,20 +117,22 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 		{\
 			if ($$2 == "folder")\
 			{\
-				split(command("ls -F " currentdir " | grep \"/$$\""), folders, "\n");\
+				split(command("find " currentdir " -type d -depth 1 "), folders, "\n");\
 				for (f in folders)\
 				{\
-					print "cat " currentdir "/" folders[f] "index.md" > "/dev/stderr";\
+					print "cat " folders[f] "/index.md" > "/dev/stderr";\
 					print "";\
 					print "---------";\
 					print "";\
-					content = command("cat " currentdir "/" folders[f] "index.md");\
+					content = command("cat " folders[f] "/index.md");\
 					print substr(content, 1, index(content, "\n\n---"));\
-					print "[Read more...](" currentdir "/" folders[f] "index.html" ")";\
+					print "[Read more...](" folders[f] "index.html" ")";\
 				}\
 			}\
 			else if ($$2 ~ /https:(.*)/)\
 			{\
+				print "*This page was generated from [the github readme](" $$2 ")*";\
+				print "";\
 				print command("curl " $$2);\
 			}\
 		}\
