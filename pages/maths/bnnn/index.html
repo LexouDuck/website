@@ -58,12 +58,15 @@ fundamental basis for our notation of quantities. What else can we use
 to construct a number notation system ? The best answer I have come up
 with is to use prime numbers, or to be more exact: <a
 href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic">the
-fundamental theorem of arithmetic</a>. Thanks to this truth, we can
-simplify the problem: instead of having to design a new glyph for each
-and every number, we can design new glyphs only for prime numbers, and
-represent all the non-prime (composite) numbers by combining the prime
-number glyphs that make up its prime factor decomposition.</p>
-<p>So a simple, naive approach here might look like this:</p>
+fundamental theorem of arithmetic</a>.</p>
+<p>Thanks to this fascinating truth, we can simplify the problem:
+instead of having to design a new glyph for each and every number, we
+can design new glyphs only for prime numbers, and represent all the
+non-prime (composite) numbers by combining the prime number glyphs that
+make up its prime factor decomposition.</p>
+<p>So a simple, naive approach here might look like this (the
+<code>?</code> question marks indicate where new glyphs must be
+invented):</p>
 <table>
 <thead>
 <tr class="header">
@@ -148,26 +151,30 @@ number glyphs that make up its prime factor decomposition.</p>
 </table>
 <p>Instead of concatenating prime factors together horizontally like on
 the table above, my decision was to have the entire glyph be rotated by
-right angle, such that prime factors would be stacked up vertically to
+a right angle, such that prime factors would be stacked up vertically to
 notate a composite number. This way, the width of each of the glyphs
 stays similar, though their heights will vary. And, since almost every
 human writing system writes horizontally and not vertically, it is
 easier to tell apart a character from its adjacent neighbors in this
 way.</p>
+<h3 id="notation">Notation</h3>
 <p>Here is a spreadsheet of the glyphs I’ve decided to use:</p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRT0n7SD_-wCBRO_Tz_vDCRAipDj_PBGaoDCqkplb4Bt-1EpBTn1gLdObA3QbECBF8b1wfsr5E6oqsr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width:80%;height:80vh;">
 </iframe>
+<h4 id="notation-glyph-rules">Notation glyph rules</h4>
 <p>It is quite intentional that the numbers 0, 1, 2, 3, 5, and 8 look
 quite similar to those we know and use daily. After that, the prime
 number glyphs follow certain patterns in how their gyphs are
 designed:</p>
 <ul>
-<li>Prime glyphs which represent <a href="#">twin primes</a> must be
+<li>Prime glyphs which represent <a
+href="https://en.wikipedia.org/wiki/Twin_prime">twin primes</a> must be
 vertically symmetrical to each other.</li>
 <li>Prime glyphs grow more complex respective to the order they appear
 in - the higher the prime number the more elaborate the glyph which
 represents it.</li>
 </ul>
+<h4 id="exceptional-glyphs">Exceptional glyphs</h4>
 <p>There are some notable exceptional glyphs - these are mostly for
 speed and ease-of-writing, as well as to give this number notation
 system some visual flair, similar to what a natural language might
@@ -188,6 +195,7 @@ resembles a mirrored <code>§</code> section symbol.</li>
 special glyph is chosen really just to look like the <code>8</code> we
 are all used to.</li>
 </ul>
+<h4 id="multiplication-table">Multiplication table</h4>
 <p>And here is an (as of yet incomplete) multiplication table written in
 base-neutral number notation:</p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRT0n7SD_-wCBRO_Tz_vDCRAipDj_PBGaoDCqkplb4Bt-1EpBTn1gLdObA3QbECBF8b1wfsr5E6oqsr/pubhtml?gid=545017230&amp;single=true&amp;widget=true&amp;headers=false" style="width:100%;height:80vh;">

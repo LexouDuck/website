@@ -32,9 +32,15 @@
 the build system.</p>
 <p>The goal is to have a modern package manager tool, made up entirely
 of shell/makefile scripts. This means that unlike tools such as <a
-href="#">npm</a> or <a href="#">cargo</a>, the dev here can quite easily
-go ahead and customize the behavior of his build system.</p>
+href="https://www.npmjs.com/">npm</a> (for the JavaScript ecosystem) or
+<a href="https://doc.rust-lang.org/cargo/">cargo</a> (for the Rust
+ecosystem), when using cccmk’s <code>mkfile</code>, the dev here can
+quite easily go ahead and customize the behavior of his build
+system.</p>
 <hr />
+<p><em>This page was generated from <a
+href="https://raw.githubusercontent.com/LexouDuck/cccmk/master/README.md">the
+github readme</a></em></p>
 <h1 id="cccmk-1">cccmk</h1>
 <p><code>cccmk</code> is a tool to facilitate harmonizing files and
 folders across all of your projects, so as to ensure that they follow
@@ -136,7 +142,7 @@ this templater program works:</p>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">// Here is an example of how this script should be called:</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    $ awk \</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>v variables<span class="op">=</span><span class="st">&quot; foo=FOO; bar=BAR; &quot;</span> \</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>util<span class="op">.</span>awk \</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>utils<span class="op">.</span>awk \</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>template<span class="op">-</span>functions<span class="op">.</span>awk \</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>f <span class="op">~/.</span>cccmk<span class="op">/</span>scripts<span class="op">/</span>template<span class="op">.</span>awk \</span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;$inputfile&quot;</span></span>
@@ -162,7 +168,7 @@ implemented in <code>cccmk/scripts/template-functions.awk</code>. By
 default, a couple of useful functions are provided: -
 <code>%%if true()</code>: Always include the given section -
 <code>%%if false()</code>: Never include the given section -
-<code>%%if is(varname, text)</code>: Checks if the variable
+<code>%%if is(varname,text)</code>: Checks if the variable
 <code>varname</code> contains a value which is identical to the given
 <code>text</code>. - <code>%%if matches(varname, regexp)</code>: Checks
 if the variable <code>varname</code> matches the given
