@@ -69,7 +69,7 @@ other programming languages, I decided to restart, and hopefully finish this pro
 I made progress with creating a new engine in [Haxe](https://haxe.org), using the [HaxeFlixel](https://haxeflixel.com/) library.
 This time around, I implemented some of the skeleton enemies first.
 
-![](gameplay-haxe.gif)
+![](gameplay_haxe.gif)
 
 Unfortunately, this new engine had several issues as well - it was not riddled with bugs like the first one,
 but the way in which HaxeFlixel handles rendering meant that several visual tricks which are
