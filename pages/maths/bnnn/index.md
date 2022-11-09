@@ -17,12 +17,13 @@ for example, as a way of indicating the chosen number base.
 Too often I have seen people write the name of our common decimal system as "base 10" - if you think about it, literally every base can be said to be "base 10" (provided 0 and 1 are the first two characters chosen to represent this number base).
 This goes to show how decimal-centric our point of view is. It is nevertheless true that we have 10 - I mean, **ten** fingers, after all...
 
-Others have already made great points at how other number bases can be more effective than decimal: special mention to [this video, making a great case for base 6 as a viable number base to use in everyday life](https://www.youtube.com/watch?v=qID2B4MK7Y0).
+Others have already made great points at how other number bases can be more effective than decimal: many good arguments can be made for base-twelve - though, in particular, i'd like to mention the great case for base-six as a viable number base to use in everyday life: https://www.seximal.net/
 
 But here, the goal is to not rely on some arbitrary integer as the fundamental basis for our notation of quantities.
-What else can we use to construct a number notation system ? The best answer I have come up with is to use prime numbers, or to be more exact: [the fundamental theorem of arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic).
+What else can we use to construct a number notation system ? The naive answer here would be to simply to create a new unique glyph for each number - though it would be impossible to memorise so many symbols.
+What we want is to reduce this necessity/complexity of creating new glyphs for new numbers, and, of course, to avoid simply using a traditional base system by selecting a radix integer.
 
-Thanks to this fascinating truth, we can simplify the problem: instead of having to design a new glyph for each and every number, we can design new glyphs only for prime numbers, and represent all the non-prime (composite) numbers by combining the prime number glyphs that make up its prime factor decomposition.
+The best answer I have come up with is to use the idea of prime factors, or to be more exact: [the fundamental theorem of arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic). Thanks to this fascinating truth, we can simplify the problem: instead of having to design a new glyph for each and every number, we can design new glyphs only for prime numbers, and represent all the non-prime (composite) numbers by combining the prime number glyphs that make up its prime factor decomposition.
 
 So a simple, naive approach here might look like this (the `?` question marks indicate where new glyphs must be invented):
 
