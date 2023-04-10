@@ -12,16 +12,16 @@ I then found a group of people who were serious about writing original songs as 
 The band we had was originally called *Dynam Cross*, and we did a couple of small gigs for 2-3 years.
 
 Here is a list of the band members of *Dynam Cross*:
-- *Bassist*: **myself**
-- *Drums*: Guillaume Rossignol (and later, Alexandre Denis)
-- *Guitarist*: Maximilien Girault
-- *Keyboards*: Étienne Chassagnol
-- *Singer*: Constance Matthiessen
-- *Rapper*: Daniel Norbert
-- *Backup vocals*:: **myself**
-- *Saxophone (baritone)*: Pierre Desbrosses
-- *Saxophone (tenor)*: Justin Larue
-- *Saxophone (alto), Clarinet*: Théophile Fleury
+
+- **Bassist**: *myself*
+- **Drums**: Guillaume Rossignol (and later, Alexandre Denis)
+- **Guitarist**: Maximilien Girault
+- **Keyboards**: Étienne Chassagnol
+- **Singer**: Constance Matthiessen
+- **Rapper**: Daniel Norbert
+- **Saxophone (baritone)**: Pierre Desbrosses
+- **Saxophone (tenor)**: Justin Larue
+- **Saxophone (alto), Clarinet**: Théophile Fleury
 
 Many thanks to those who saw us play live, back in the day.
 
@@ -34,11 +34,12 @@ To symbolize our change of personnel and direction, we changed the band name to 
 ### Tukana
 
 Here is the list of band members of *Tukana*:
-- *Bassist*: **myself**
-- *Drums*: Diego Fernandez Cerda
-- *Guitarist*: Maximilien Girault
-- *Keyboards*: Étienne Chassagnol
-- *Saxophone, Flute*: Tom Salguero
+
+- **Bassist**: *myself*
+- **Drums**: Diego Fernandez Cerda
+- **Guitarist**: Maximilien Girault
+- **Keyboards**: Étienne Chassagnol
+- **Saxophone, Flute**: Tom Salguero
 
 We had written 6 tracks, and got 4 of those recorded - unfortunately, the mixes were never finalized, so they are a little rough on the edges.
 
