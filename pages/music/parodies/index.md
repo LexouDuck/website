@@ -5,20 +5,29 @@ Here are some not-serious dumb parody songs I made - there are several approache
 
 ---
 
+### Musical caricature
+
+These are songs that use typical clichés of certain artists/genres, to caricature many styles of music.
+
+All of these songs (or rather, "short loops" is better name for what these are) were made using [Garageband for iOS](https://www.apple.com/ios/garageband/).
+
+- `TODO: export & upload these`
+
+---
+
 ### Shocking "remixes"
 
 Here are some intentionally-horrible remixes, made entirely using Audacity - messing up the waveform in several manners.
 
-These remixes are meant to be horrendously dissatisfying to listen to.
+These remixes are meant to be horrendously dissatisfying to listen to - and furthermore, these are meant to make fun of their original counterparts.
+Typically, because the original song in question has been overused, and/or become a well-known internet meme.
 
-These remixes are meant to make fun of their original counterparts - typically because the song has become a well-known meme.
+As such, I am quite confident that these parody-remixes could be protected under the fair use doctrine, since they directly intend to make fun of the original song.
 
-As such, I am quite confident that they could be protected under the fair use doctrine.
+To me, these parodies are not just fun to produce, but also hilarious to listen to!
+Although, from my experience, and what I've noticed, it seems that the sense of humor varies a lot from person to person for this kind of stuff.
 
-To me these are not just fun to make, but also hilarious to listen to - though from my experience, and what I've noticed,
-it seems that the sense of humor varies a lot from person to person for this kind of stuff.
-
-Also beware: these are all extremely LOUD - turn your sound down!
+Also beware: these are all extremely LOUD - perhaps turn your sound down!
 
 <figure>    <figcaption>01 - Smash Mouth - All Star</figcaption>
 <audio controls src="earrape/Smash Mouth - All Star.mp3">
@@ -76,14 +85,3 @@ Also beware: these are all extremely LOUD - turn your sound down!
 <audio controls src="earrape/Desireless - Voyage Voyage.mp3">
 			<a href="earrape/Desireless - Voyage Voyage.mp3">Download</a></audio>
 </figure>
-
----
-
-### Musical caricature
-
-These are songs that use typical clichés of certain artists/genres, to caricature many styles of music.
-
-All of these songs (or rather, "short loops" is better name for what these are)
-were made using [Garageband for iOS](https://www.apple.com/ios/garageband/).
-
-- TODO export & upload these
