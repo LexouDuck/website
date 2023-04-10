@@ -2,6 +2,9 @@
 {
 	margin: 0;
 	padding: 0;
+			box-sizing: border-box; /* Opera/IE 8+ */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 }
 
 html
@@ -12,15 +15,17 @@ html
 
 body
 {
-	background-color: #1F1B1F;
-	font-size: 100%;
-	line-height: 145%;
-	width: 70%;
+	width: 100%;
 	height: 100%;
-	margin-left: 20%;
-	margin-right: 10%;
+	margin: 0;
+	padding: 0;
+	background-color: #1F1B1F;
 	font-family: "Roboto", "Futura", "Calibri", "Rockwell", "Verdana", sans-serif;
+	font-size: 100%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@800&display=swap');
+
 h1, h2, h3, h4, h5
 {
 	font-family: "Myriad", "Sarpanch", sans-serif;
@@ -47,7 +52,7 @@ h1
 h2
 {
 	color: #4C404C !important;
-	font-size: 120%;
+	font-size: 150%;
 	font-weight: normal;
 	margin-bottom: 20px;
 }
@@ -109,8 +114,8 @@ img.icon
 	position: relative;
 	width: 30px;
 	height: 30px;
-	top: 15px;
 	margin: 5px;
+	vertical-align: middle;
 }
 img.icon.png
 {
@@ -149,11 +154,11 @@ li
 pre
 {
 	border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    overflow: scroll;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	overflow: scroll;
 }
 
 figcaption
@@ -163,13 +168,39 @@ figcaption
 
 
 
+#content
+{
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	line-height: 145%;
+}
+
+
+
+/* Home logo */
+
+#lexou-duck
+{
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+#lexou-duck img.icon
+{
+	position: inherit;
+}
+
+
+
+/* Navigation menu */
+
 #navbar, #template_navbar
 {
 	position:fixed;
 	top: 0;
 	left: 0;
-	max-width: 500px;
-	width: calc(20% - 10px);
+	width: 20%;
 	height: 100%;
 	padding: 10px;
 	overflow-x: hidden;
@@ -211,4 +242,101 @@ li.open > ul.nested
 li.open > span.treeview_node
 {
 	transform: rotate(90deg);
+}
+
+li.open > a
+{
+	line-height: 140%;
+}
+
+/* Hide nav menu checkbox */
+
+.side-menu
+{
+	display: none;
+}
+.menu-icon
+{
+	display: none;
+}
+
+
+
+/* Mobile responsiveness */
+
+
+
+@media (max-width: 800px)
+{
+
+#lexou-duck
+{
+	font-size: 6vw;
+}
+
+nav
+{
+	max-height: 0;
+}
+
+.side-menu:checked ~ nav
+{
+	max-height: 100%;
+	transition: max-height .5s ease-out;
+}
+
+.side-menu:checked ~ .menu-icon img
+{
+	content: url(/assets/icon_exit.svg);
+}
+
+#navbar, #template_navbar
+{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #1F1B1F;
+}
+
+#content
+{
+	width: 90%;
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 130%;
+}
+
+nav > ul.treeview
+{
+	padding: 15%;
+}
+ul.treeview
+{
+	font-size: 5vw;
+}
+
+li
+{
+	margin: 0 0 0 5vw;
+}
+
+img.icon
+{
+	width: 8vw;
+	height: 8vw;
+}
+
+.menu-icon
+{
+	display: block;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}
+
 }

@@ -22,7 +22,7 @@ function logic_treeview()
 			return;
 		}
 	});
-	$("span.treeview_node").on("click", function(event)
+	$(".treeview_node").on("click", function(event)
 	{
 		this.parentElement.classList.toggle("open");
 	});

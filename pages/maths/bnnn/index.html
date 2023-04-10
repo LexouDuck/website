@@ -15,58 +15,31 @@
 	<link rel="icon" href="/assets/favicon.png" type="image/png" />
 	<!-- website font -->
 	<link rel="stylesheet" type="text/css" href="/style.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
 	<!-- website info -->
 	<div id="template_head"></div>
 </head>
 <body>
 	<div id="template_navbar"></div>
 
-	<header>
-		<div id="template_header"></div>
-	</header>
+	<div id="content">
 
-	<section>
+		<header>
+			<div id="template_header"></div>
+		</header>
+
+		<section>
 <h1 id="base-neutral-number-notation">Base-Neutral Number Notation</h1>
 <p>This is a notation system for integers which I invented.</p>
-<p>This system is not based on additions of powers of an arbitrary
-radix, like a traditional number base (decimal being radix=10,
-hexadecimal is radix=16, binary is radix=2, etc). Instead, this notation
-system is based on the idea of multiplication, and the concept of prime
-numbers (which is a natural consequence of multiplication).</p>
+<p>This system is not based on additions of powers of an arbitrary radix, like a traditional number base (decimal being radix=10, hexadecimal is radix=16, binary is radix=2, etc). Instead, this notation system is based on the idea of multiplication, and the concept of prime numbers (which is a natural consequence of multiplication).</p>
 <hr />
 <h3 id="the-why">The “why”</h3>
-<p>I think we are lacking a number notation system which can indicate a
-number base in a non-ambiguous fashion. Similar to how musicians have a
-clef at the beginning of a sheet of music to indicate the point of
-reference of the musical staff, I think mathematics can benefit from
-using (sparingly!) a base-neutral number notation system - for example,
-as a way of indicating the chosen number base.</p>
-<p>Too often I have seen people write the name of our common decimal
-system as “base 10” - if you think about it, literally every base can be
-said to be “base 10” (provided 0 and 1 are the first two characters
-chosen to represent this number base). This goes to show how
-decimal-centric our point of view is. It is nevertheless true that we
-have 10 - I mean, <strong>ten</strong> fingers, after all…</p>
-<p>Others have already made great points at how other number bases can
-be more effective than decimal: special mention to <a
-href="https://www.youtube.com/watch?v=qID2B4MK7Y0">this video, making a
-great case for base 6 as a viable number base to use in everyday
-life</a>.</p>
-<p>But here, the goal is to not rely on some arbitrary integer as the
-fundamental basis for our notation of quantities. What else can we use
-to construct a number notation system ? The best answer I have come up
-with is to use prime numbers, or to be more exact: <a
-href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic">the
-fundamental theorem of arithmetic</a>.</p>
-<p>Thanks to this fascinating truth, we can simplify the problem:
-instead of having to design a new glyph for each and every number, we
-can design new glyphs only for prime numbers, and represent all the
-non-prime (composite) numbers by combining the prime number glyphs that
-make up its prime factor decomposition.</p>
-<p>So a simple, naive approach here might look like this (the
-<code>?</code> question marks indicate where new glyphs must be
-invented):</p>
+<p>I think we are lacking a number notation system which can indicate a number base in a non-ambiguous fashion. Similar to how musicians have a clef at the beginning of a sheet of music to indicate the point of reference of the musical staff, I think mathematics can benefit from using (sparingly!) a base-neutral number notation system - for example, as a way of indicating the chosen number base.</p>
+<p>Too often I have seen people write the name of our common decimal system as “base 10” - if you think about it, literally every base can be said to be “base 10” (provided 0 and 1 are the first two characters chosen to represent this number base). This goes to show how decimal-centric our point of view is. It is nevertheless true that we have 10 - I mean, <strong>ten</strong> fingers, after all…</p>
+<p>Others have already made great points at how other number bases can be more effective than decimal: many good arguments can be made for base-twelve - though, in particular, i’d like to mention the great case for base-six as a viable number base to use in everyday life: https://www.seximal.net/</p>
+<p>But here, the goal is to not rely on some arbitrary integer as the fundamental basis for our notation of quantities. What else can we use to construct a number notation system ? The naive answer here would be to simply to create a new unique glyph for each number - though it would be impossible to memorise so many symbols. What we want is to reduce this necessity/complexity of creating new glyphs for new numbers, and, of course, to avoid simply using a traditional base system by selecting a radix integer.</p>
+<p>The best answer I have come up with is to use the idea of prime factors, or to be more exact: <a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic">the fundamental theorem of arithmetic</a>. Thanks to this fascinating truth, we can simplify the problem: instead of having to design a new glyph for each and every number, we can design new glyphs only for prime numbers, and represent all the non-prime (composite) numbers by combining the prime number glyphs that make up its prime factor decomposition.</p>
+<p>So a simple, naive approach here might look like this (the <code>?</code> question marks indicate where new glyphs must be invented):</p>
 <table>
 <thead>
 <tr class="header">
@@ -149,76 +122,39 @@ invented):</p>
 </tr>
 </tbody>
 </table>
-<p>Instead of concatenating prime factors together horizontally like on
-the table above, my decision was to have the entire glyph be rotated by
-a right angle, such that prime factors would be stacked up vertically to
-notate a composite number. This way, the width of each of the glyphs
-stays similar, though their heights will vary. And, since almost every
-human writing system writes horizontally and not vertically, it is
-easier to tell apart a character from its adjacent neighbors in this
-way.</p>
+<p>Instead of concatenating prime factors together horizontally like on the table above, my decision was to have the entire glyph be rotated by a right angle, such that prime factors would be stacked up vertically to notate a composite number. This way, the width of each of the glyphs stays similar, though their heights will vary. And, since almost every human writing system writes horizontally and not vertically, it is easier to tell apart a character from its adjacent neighbors in this way.</p>
 <h3 id="notation">Notation</h3>
 <p>Here is a spreadsheet of the glyphs I’ve decided to use:</p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRT0n7SD_-wCBRO_Tz_vDCRAipDj_PBGaoDCqkplb4Bt-1EpBTn1gLdObA3QbECBF8b1wfsr5E6oqsr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width:80%;height:80vh;">
 </iframe>
 <h4 id="notation-glyph-rules">Notation glyph rules</h4>
-<p>It is quite intentional that the numbers 0, 1, 2, 3, 5, and 8 look
-quite similar to those we know and use daily. After that, the prime
-number glyphs follow certain patterns in how their gyphs are
-designed:</p>
+<p>It is quite intentional that the numbers 0, 1, 2, 3, 5, and 8 look quite similar to those we know and use daily. After that, the prime number glyphs follow certain patterns in how their gyphs are designed:</p>
 <ul>
-<li>Prime glyphs which represent <a
-href="https://en.wikipedia.org/wiki/Twin_prime">twin primes</a> must be
-vertically symmetrical to each other.</li>
-<li>Prime glyphs grow more complex respective to the order they appear
-in - the higher the prime number the more elaborate the glyph which
-represents it.</li>
+<li>Prime glyphs which represent <a href="https://en.wikipedia.org/wiki/Twin_prime">twin primes</a> must be vertically symmetrical to each other.</li>
+<li>Prime glyphs grow more complex respective to the order they appear in - the higher the prime number the more elaborate the glyph which represents it.</li>
 </ul>
 <h4 id="exceptional-glyphs">Exceptional glyphs</h4>
-<p>There are some notable exceptional glyphs - these are mostly for
-speed and ease-of-writing, as well as to give this number notation
-system some visual flair, similar to what a natural language might
-enjoy.</p>
+<p>There are some notable exceptional glyphs - these are mostly for speed and ease-of-writing, as well as to give this number notation system some visual flair, similar to what a natural language might enjoy.</p>
 <ul>
-<li>Square numbers (numbers with a natural integer square root,
-i.e. <code>n ∈ ℕ, √n ∈ ℕ</code>) have a special glyph, typically
-featuring n-partite symmetry.</li>
-<li>Cubic numbers (numbers with a natural integer cube root,
-i.e. <code>n ∈ ℕ, ∛n ∈ ℕ</code>)</li>
-<li>The number <code>4</code> is the first square number
-(<code>2×2</code>), as well as the first composite number, and it
-extremely common across the board - so it has a special glyph, borne of
-a conjoined concatenation of two <code>2</code>s - and so, its glyph
-resembles a mirrored <code>§</code> section symbol.</li>
-<li>The number <code>8</code> is the first cubic number
-(<code>2×2×2</code>), and so it also enjoys an exceptional glyph. This
-special glyph is chosen really just to look like the <code>8</code> we
-are all used to.</li>
+<li>Square numbers (numbers with a natural integer square root, i.e. <code>n ∈ ℕ, √n ∈ ℕ</code>) have a special glyph, typically featuring n-partite symmetry.</li>
+<li>Cubic numbers (numbers with a natural integer cube root, i.e. <code>n ∈ ℕ, ∛n ∈ ℕ</code>)</li>
+<li>The number <code>4</code> is the first square number (<code>2×2</code>), as well as the first composite number, and it extremely common across the board - so it has a special glyph, borne of a conjoined concatenation of two <code>2</code>s - and so, its glyph resembles a mirrored <code>§</code> section symbol.</li>
+<li>The number <code>8</code> is the first cubic number (<code>2×2×2</code>), and so it also enjoys an exceptional glyph. This special glyph is chosen really just to look like the <code>8</code> we are all used to.</li>
 </ul>
 <h4 id="multiplication-table">Multiplication table</h4>
-<p>And here is an (as of yet incomplete) multiplication table written in
-base-neutral number notation:</p>
+<p>And here is an (as of yet incomplete) multiplication table written in base-neutral number notation:</p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRT0n7SD_-wCBRO_Tz_vDCRAipDj_PBGaoDCqkplb4Bt-1EpBTn1gLdObA3QbECBF8b1wfsr5E6oqsr/pubhtml?gid=545017230&amp;single=true&amp;widget=true&amp;headers=false" style="width:100%;height:80vh;">
 </iframe>
-<p>Seeing this table makes it easy to understand the big advantage of
-this number system: it makes multiplication so simple as to be nearly
-trivial - and it also makes us recall the big disadvantage, which is
-that addition is notably less simple in this system than it would be
-with common integer bases. This makes intuitive sense, since we based
-our notation system on the very idea of multication, since prime numbers
-and the fundamental theorem of arithmetic are just the logical
-consequence of the notion of multiplication.</p>
-<p>So, I do not believe it would be very wise to begin using this
-notation system everywhere - but there are a select few areas where it
-can have its uses and merits. In particular, one thought that
-immediately comes to mind would be to use this to indicate the choice of
-a number base at the beginning of a mathematics document, in a totally
-unambiguous fashion.</p>
-	</section>
+<p>Seeing this table makes it easy to understand the big advantage of this number system: it makes multiplication so simple as to be nearly trivial - and it also makes us recall the big disadvantage, which is that addition is notably less simple in this system than it would be with common integer bases. This makes intuitive sense, since we based our notation system on the very idea of multication, since prime numbers and the fundamental theorem of arithmetic are just the logical consequence of the notion of multiplication.</p>
+<p>So, I do not believe it would be very wise to begin using this notation system everywhere - but there are a select few areas where it can have its uses and merits. In particular, one thought that immediately comes to mind would be to use this to indicate the choice of a number base at the beginning of a mathematics document, in a totally unambiguous fashion.</p>
+		</section>
 
-	<footer>
-		<div id="template_footer"></div>
-	</footer>
+		<footer>
+			<div id="template_footer"></div>
+		</footer>
+
+	</div>
+
 </body>
 
 <script type="text/javascript" src="/templates.js"></script>

@@ -15,73 +15,46 @@
 	<link rel="icon" href="/assets/favicon.png" type="image/png" />
 	<!-- website font -->
 	<link rel="stylesheet" type="text/css" href="/style.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sarpanch">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sarpanch">
 	<!-- website info -->
 	<div id="template_head"></div>
 </head>
 <body>
 	<div id="template_navbar"></div>
 
-	<header>
-		<div id="template_header"></div>
-	</header>
+	<div id="content">
 
-	<section>
+		<header>
+			<div id="template_header"></div>
+		</header>
+
+		<section>
 <h1 id="tactics-maker">Tactics Maker</h1>
 <p><strong>STATUS:</strong> In-progress</p>
-<p>This is more of a tool to make games, rather than a video game in and
-of itself. Tactics Maker is a highly customizable, modular,
-data-oriented game engine and toolset, which is specifically geared
-towards creating “tactics RPG” games - i.e. the kind of strategy games
-that play on some sort of grid, and that are typically turn-based.</p>
+<p>This is more of a tool to make games, rather than a video game in and of itself. Tactics Maker is a highly customizable, modular, data-oriented game engine and toolset, which is specifically geared towards creating “tactics RPG” games - i.e. the kind of strategy games that play on some sort of grid, and that are typically turn-based.</p>
 <hr />
-<p>Think of it like this: this engine allows one to implement games
-ranging from simple timeless games, like Go, Checkers, Chess, Shogi, to
-more complex modern SRPG/tactics games such as Fire Emblem, Advance
-Wars, Final Fantasy Tactics, XCOM, etc. In fact, reference
-implementations of public domain classic games like Chess and Shogi are
-provided by default with Tactics Maker, to serve as useful examples for
-developers.</p>
-<p>With <em>Tactics Maker</em>, the game code must be separated into 2
-distinct parts: - the core game logic (the backend) - how your game
-looks (the frontend) This allows various players to choose a frontend
-which suits them. For example, one chess player might like playing with
-a simple newspaper-like stylized 2D visualization, whereas another may
-prefer a 3D board and pieces, which is more similar to real life. Heck,
-one may prefer to use no frontend at all (for example, to quickly train
-up an artificial intelligence, using reinforcement learning, without
-wasting unnecessary computing power).</p>
+<p>Think of it like this: this engine allows one to implement games ranging from simple timeless games, like Go, Checkers, Chess, Shogi, to more complex modern SRPG/tactics games such as Fire Emblem, Advance Wars, Final Fantasy Tactics, XCOM, etc. In fact, reference implementations of public domain classic games like Chess and Shogi are provided by default with Tactics Maker, to serve as useful examples for developers.</p>
+<p>With <em>Tactics Maker</em>, the game code must be separated into 2 distinct parts: - the core game logic (the backend) - how your game looks (the frontend) This allows various players to choose a frontend which suits them. For example, one chess player might like playing with a simple newspaper-like stylized 2D visualization, whereas another may prefer a 3D board and pieces, which is more similar to real life. Heck, one may prefer to use no frontend at all (for example, to quickly train up an artificial intelligence, using reinforcement learning, without wasting unnecessary computing power).</p>
 <h3 id="the-backend">The backend</h3>
-<p>The backend code is supposed to be as data-driven as possible - all
-game data constants should generally be stored in the form of
-<code>.tsv</code> spreadsheets. The backend game code itself should be
-implemented in <a href="https://python.org/">Python</a> (this is
-generally no problem for optimization, since these are not physics-based
-games, all of the heavy computing work is done on the frontend
-side).</p>
+<p>The backend code is supposed to be as data-driven as possible - all game data constants should generally be stored in the form of <code>.tsv</code> spreadsheets. The backend game code itself should be implemented in <a href="https://python.org/">Python</a> (this is generally no problem for optimization, since these are not physics-based games, all of the heavy computing work is done on the frontend side).</p>
 <ul>
-<li>Check it out on <a
-href="https://github.com/LexouDuck/Tactics-Maker">Github</a></li>
+<li>Check it out on <a href="https://github.com/LexouDuck/Tactics-Maker">Github</a></li>
 </ul>
-<p>With just some <code>.tsv</code> spreadsheets, and a hundred lines of
-python code, you can have a working game - the tougher task is
-implementing your game’s frontend look &amp; feel.</p>
+<p>With just some <code>.tsv</code> spreadsheets, and a hundred lines of python code, you can have a working game - the tougher task is implementing your game’s frontend look &amp; feel.</p>
 <h3 id="the-frontend">The frontend</h3>
-<p>For now, there only exists one frontend, which is (by design) very
-basic and commandline-based, written directly in <a
-href="https://python.org/">Python</a>, using <a
-href="https://docs.python.org/3/howto/curses.html">curses</a>.</p>
+<p>For now, there only exists one frontend, which is (by design) very basic and commandline-based, written directly in <a href="https://python.org/">Python</a>, using <a href="https://docs.python.org/3/howto/curses.html">curses</a>.</p>
 <ul>
-<li><p>Here is what a game of chess looks like in it: <img
-src="gameplay_chess-balbo.gif" /></p></li>
-<li><p>Here is what a game of mock <em>Advance Wars</em> looks like:
-<img src="gameplay_advance-wars.gif" /></p></li>
+<li><p>Here is what a game of chess looks like in it: <img src="gameplay_chess-balbo.gif" /></p></li>
+<li><p>Here is what a game of mock <em>Advance Wars</em> looks like: <img src="gameplay_advance-wars.gif" /></p></li>
 </ul>
-	</section>
+		</section>
 
-	<footer>
-		<div id="template_footer"></div>
-	</footer>
+		<footer>
+			<div id="template_footer"></div>
+		</footer>
+
+	</div>
+
 </body>
 
 <script type="text/javascript" src="/templates.js"></script>

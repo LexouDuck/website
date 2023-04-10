@@ -1,6 +1,10 @@
 <div id="navbar">
-## ![](/pages/icon.png){.icon .png} [LEXOU DUCK](/pages/index.html)
 
+<input class="side-menu" type="checkbox" id="side-menu" />
+<label class="menu-icon" for="side-menu"><img src="/assets/icon_menu.svg" class="icon" ></img></label>
+<h2 id="lexou-duck"> ![](/pages/icon.png){.icon .png} [LEXOU DUCK](/pages/index.html) </h2>
+
+<nav>
 <ul class="treeview">
 	-   [▶]{.treeview_node} ![](/pages/art/icon.svg){.icon .svg} [Artwork](/pages/art/index.html)
 	<ul class="treeview nested">
@@ -53,4 +57,6 @@
 		-   [•]{.treeview_leaf} [Property Table of Algebraic Structures](/pages/maths/property_table/index.html)
 		-   [•]{.treeview_leaf} [++Clean](/pages/maths/ccclean/index.html)
 	-   [•]{.treeview_leaf} ![](/pages/contact/icon.svg){.icon .svg} [Contact](/pages/contact/index.html)
+</nav>
+
 </div>

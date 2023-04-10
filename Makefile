@@ -14,9 +14,10 @@ CONTENTS_HTML = $(CONTENTS:%.md=%.html)
 #! The list of source markdown files which become HTML template components
 TEMPLATES = \
 	./templates/head.md \
+	./templates/navbar.md \
 	./templates/header.md \
 	./templates/footer.md \
-	./templates/navbar.md \
+	./templates/content.md \
 
 TEMPLATES_HTML = $(TEMPLATES:%.md=%.html)
 
@@ -35,7 +36,7 @@ SCSS = sass
 #! The tool used to convert .md to .html
 PANDOC = pandoc
 #! The tool used to host a local test server
-PYTHON3 = python3
+PYTHON = python3
 
 
 
@@ -62,9 +63,9 @@ clean:
 .PHONY:\
 setup
 setup:
-	@$(PYTHON3) --version
+	@$(PYTHON) --version
 	@$(PANDOC) --version
-	@$(SCSS) --version
+	@$(SCSS)   --version
 
 
 
