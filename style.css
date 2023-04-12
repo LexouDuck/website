@@ -271,7 +271,7 @@ li.open > a
 
 #lexou-duck
 {
-	font-size: 6vw;
+	font-size: 6vmin;
 }
 
 nav
@@ -317,18 +317,18 @@ nav > ul.treeview
 }
 ul.treeview
 {
-	font-size: 5vw;
+	font-size: 5vmin;
 }
 
 li
 {
-	margin: 0 0 0 5vw;
+	margin: 0 0 0 5vmin;
 }
 
 img.icon
 {
-	width: 8vw;
-	height: 8vw;
+	width: 8vmin;
+	height: 8vmin;
 }
 
 .menu-icon
