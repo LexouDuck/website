@@ -55,7 +55,6 @@
 		-   [•]{.treeview_leaf} [Base-Neutral Number Notation](/pages/maths/bnnn/index.html)
 		-   [•]{.treeview_leaf} [Mathophilia](/pages/maths/mathophilia/index.html)
 		-   [•]{.treeview_leaf} [Property Table of Algebraic Structures](/pages/maths/property_table/index.html)
-		-   [•]{.treeview_leaf} [++Clean](/pages/maths/ccclean/index.html)
 	-   [•]{.treeview_leaf} ![](/pages/contact/icon.svg){.icon .svg} [Contact](/pages/contact/index.html)
 </nav>
 

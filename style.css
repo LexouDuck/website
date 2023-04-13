@@ -346,12 +346,13 @@ li.open > a
 nav
 {
 	max-height: 0;
+	transition: max-height .5s ease-out;
 }
 
 .side-menu:checked ~ nav
 {
-	max-height: 100%;
-	transition: max-height .5s ease-out;
+	max-height: 100vh;
+	overflow-y: auto;
 }
 
 .side-menu:checked ~ .menu-icon img
