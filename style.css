@@ -300,9 +300,34 @@ li.open > a
 }
 
 .bg-0 { transform: translateZ(-0px) scale(1); }
-.bg-1 { transform: translateZ(-1px) scale(2);	background-image: url("/pages/art/bg_1.svg");	right:  -400%; }
-.bg-2 { transform: translateZ(-2px) scale(3);	background-image: url("/pages/art/bg_2.svg");	right:  -800%; }
-.bg-3 { transform: translateZ(-3px) scale(4);	background-image: url("/pages/art/bg_3.svg");	right: -1200%; }
+.bg-1 { transform: translateZ(-1px) scale(2);	right:  -400%; }
+.bg-2 { transform: translateZ(-2px) scale(3);	right:  -800%; }
+.bg-3 { transform: translateZ(-3px) scale(4);	right: -1200%; }
+
+.bg-0.page-art { background-image: url("/pages/art/bg_0.svg"); }
+.bg-1.page-art { background-image: url("/pages/art/bg_1.svg"); }
+.bg-2.page-art { background-image: url("/pages/art/bg_2.svg"); }
+.bg-3.page-art { background-image: url("/pages/art/bg_3.svg"); }
+
+.bg-0.page-music { background-image: url("/pages/music/bg_0.svg"); }
+.bg-1.page-music { background-image: url("/pages/music/bg_1.svg"); }
+.bg-2.page-music { background-image: url("/pages/music/bg_2.svg"); }
+.bg-3.page-music { background-image: url("/pages/music/bg_3.svg"); }
+
+.bg-0.page-games { background-image: url("/pages/games/bg_0.svg"); }
+.bg-1.page-games { background-image: url("/pages/games/bg_1.svg"); }
+.bg-2.page-games { background-image: url("/pages/games/bg_2.svg"); }
+.bg-3.page-games { background-image: url("/pages/games/bg_3.svg"); }
+
+.bg-0.page-maths { background-image: url("/pages/maths/bg_0.svg"); }
+.bg-1.page-maths { background-image: url("/pages/maths/bg_1.svg"); }
+.bg-2.page-maths { background-image: url("/pages/maths/bg_2.svg"); }
+.bg-3.page-maths { background-image: url("/pages/maths/bg_3.svg"); }
+
+.bg-0.page-tools { background-image: url("/pages/tools/bg_0.svg"); }
+.bg-1.page-tools { background-image: url("/pages/tools/bg_1.svg"); }
+.bg-2.page-tools { background-image: url("/pages/tools/bg_2.svg"); }
+.bg-3.page-tools { background-image: url("/pages/tools/bg_3.svg"); }
 
 
 
@@ -381,6 +406,11 @@ img.icon
 	cursor: pointer;
 	float: right;
 	margin: 10px;
+}
+
+#parallax
+{
+	display: none;
 }
 
 }

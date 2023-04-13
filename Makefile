@@ -143,7 +143,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 	@# convert the markdown source to html (with pipe table syntax extension)
 	@$(PANDOC) --from markdown+pipe_tables $<.tmp --to html -o $@.tmp
 	@# insert the generated HTML into the <body> of a copy of the frame.html file
-	@awk -v filepath="$@.tmp" '\
+	@awk -v filepath="$@.tmp" -v cssclass="` dirname "$@" | sed 's|pages/|page-|g' | sed 's|/.*||g' `" '\
 	{\
 		if ($$1 == "%%%")\
 		{\
@@ -151,6 +151,11 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 			{\
 				print line;\
 			}\
+		}\
+		else if (/%pagekind%/)\
+		{\
+			gsub(/%pagekind%/, cssclass);\
+			print;\
 		}\
 		else { print; }\
 	}' $(HTML_FRAME) \
