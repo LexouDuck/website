@@ -20,15 +20,18 @@
 	<div id="template_head"></div>
 </head>
 <body>
+
 	<div id="template_navbar"></div>
 
-	<div id="content">
+	<content>
 
-		<header>
-			<div id="template_header"></div>
-		</header>
+		<div id="content">
 
-		<section>
+			<header>
+				<div id="template_header"></div>
+			</header>
+
+			<section>
 <h1 id="cccmk">cccmk</h1>
 <p>This project is one of 3 parts that make up the ++C language: this is the build system.</p>
 <p>The goal is to have a modern package manager tool, made up entirely of shell/makefile scripts. This means that unlike tools such as <a href="https://www.npmjs.com/">npm</a> (for the JavaScript ecosystem) or <a href="https://doc.rust-lang.org/cargo/">cargo</a> (for the Rust ecosystem), when using cccmk’s <code>mkfile</code>, the dev here can quite easily go ahead and customize the behavior of his build system.</p>
@@ -101,13 +104,21 @@
 <li><code>./project</code>: holds the template source files used when creating a new project with <code>cccmk new</code>.</li>
 <li><code>./scripts</code>: holds the source code sheel scripts which make up the <code>cccmk</code> toolchain.</li>
 </ul>
-		</section>
+			</section>
 
-		<footer>
-			<div id="template_footer"></div>
-		</footer>
+			<footer>
+				<div id="template_footer"></div>
+			</footer>
 
-	</div>
+		</div>
+
+		<div id="parallax">
+			<div class="parallax-layer bg-1"></div>
+			<div class="parallax-layer bg-2"></div>
+			<div class="parallax-layer bg-3"></div>
+		</div>
+
+	</content>
 
 </body>
 

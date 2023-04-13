@@ -20,15 +20,18 @@
 	<div id="template_head"></div>
 </head>
 <body>
+
 	<div id="template_navbar"></div>
 
-	<div id="content">
+	<content>
 
-		<header>
-			<div id="template_header"></div>
-		</header>
+		<div id="content">
 
-		<section>
+			<header>
+				<div id="template_header"></div>
+			</header>
+
+			<section>
 <h1 id="c">++C</h1>
 <p>This project is one of 3 parts that make up the ++C language: this is the transpiler.</p>
 <p>++C is a a superset language of C, which, in practice, is actually <em>transpiled</em> to C. It allows for various powerful extensions to the language, without the added complexity of C++.</p>
@@ -46,13 +49,21 @@
 <p>This project is written in C, and is built using a C compiler (by default, typically <code>clang</code> or <code>gcc</code>/<code>mingw</code>), and uses <code>make</code> for dependency management.</p>
 <h2 id="contributing">Contributing</h2>
 <p>Check <code>CONTRIBUTING.md</code>, which is the file that serves as a “contributions style guide” document. This style described in it was chosen because it allows for more efficient version control and code review.</p>
-		</section>
+			</section>
 
-		<footer>
-			<div id="template_footer"></div>
-		</footer>
+			<footer>
+				<div id="template_footer"></div>
+			</footer>
 
-	</div>
+		</div>
+
+		<div id="parallax">
+			<div class="parallax-layer bg-1"></div>
+			<div class="parallax-layer bg-2"></div>
+			<div class="parallax-layer bg-3"></div>
+		</div>
+
+	</content>
 
 </body>
 
