@@ -57,7 +57,7 @@ build: $(HTML_FINAL) $(CONTENTS_HTML)
 .PHONY:\
 clean
 clean:
-	@rm $(CONTENTS_HTML) $(TEMPLATES_HTML)
+	@-rm $(CONTENTS_HTML) $(TEMPLATES_HTML)
 
 #! This rule makes sure all prerequisite dev tools are installed
 .PHONY:\
@@ -66,6 +66,10 @@ setup:
 	@$(PYTHON) --version
 	@$(PANDOC) --version
 	@$(SCSS)   --version
+
+.PHONY:\
+re
+re: clean start
 
 
 
@@ -118,16 +122,18 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 		{\
 			if ($$2 == "folder")\
 			{\
-				split(command("find " currentdir " -type d -depth 1 "), folders, "\n");\
+				print "DEBUG[awk]: find " currentdir " -maxdepth 1 -type d " > "/dev/stderr";\
+				split(command("find " currentdir " -maxdepth 1 -type d "), folders, "\n");\
 				for (f in folders)\
 				{\
-					print "cat " folders[f] "/index.md" > "/dev/stderr";\
+					if (folders[f] == currentdir) { continue; }\
+					print "DEBUG[awk]: "currentdir" |  cat " folders[f] "/index.md" > "/dev/stderr";\
 					print "";\
 					print "---------";\
 					print "";\
 					content = command("cat " folders[f] "/index.md");\
 					print substr(content, 1, index(content, "\n\n---"));\
-					print "[Read more...](" folders[f] "index.html" ")";\
+					print "[Read more...](/" folders[f] "/index.html" ")";\
 				}\
 			}\
 			else if ($$2 ~ /https:(.*)/)\
