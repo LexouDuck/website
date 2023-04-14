@@ -138,8 +138,14 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 			}\
 			else if ($$2 ~ /https:(.*)/)\
 			{\
-				print "*This page was generated from [the github readme](" $$2 ")*";\
-				print "";\
+				if (/raw\.githubusercontent\.com/)\
+				{\
+					github_url = $$2;\
+					gsub(/raw\.githubusercontent\.com/, "github.com", github_url);\
+					gsub(/\/master\/.*/, "", github_url);\
+					print "*This page was generated from the readme file of [the github repo](" github_url ").*";\
+					print "";\
+				}\
 				print command("curl " $$2);\
 			}\
 		}\
