@@ -27,10 +27,19 @@ Here are some of the mockups that Sketchasaurus originally made, which made me w
 ![](mockup-1.gif){.screencap width="256" height="224"}
 ![](mockup-2.gif){.screencap width="256" height="224"}
 ![](mockup-3.gif){.screencap width="256" height="224"}
+![](mockup-4.gif){.screencap width="256" height="224"}
 :::
 
-Here are some clips of gameplay from the test builds of the game, as it was being developed:
+Here are some clips of gameplay from the early test builds of the game, as it was being developed (there may be some bugs displaying in the GIF here, because the GIF capture program I used had some issues):
 
 ::: {#screenshot}
-![](mockup-4.gif){.screencap width="256" height="224"}
+![](gameplay-1.gif){.screencap width="256" height="224"}
+![](gameplay-2.gif){.screencap width="256" height="224"}
+:::
+
+And here are some GIFs of later test builds, after we decided to have some more interesting maps in the game:
+
+::: {#screenshot}
+![](gameplay-3.gif){.screencap width="256" height="224"}
+![](gameplay-4.gif){.screencap width="256" height="224"}
 :::
