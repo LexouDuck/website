@@ -38,6 +38,7 @@
 			-   [•]{.treeview_leaf} [Sharkaiger](/pages/games/teamprojects/sharkaiger/index.html)
 		-   [▶]{.treeview_node} [Game Jams](/pages/games/gamejams/index.html)
 		<ul class="treeview nested">
+			-   [•]{.treeview_leaf} [Castle of the Cosmos](/pages/games/gamejams/castle_of_the_cosmos/index.html)
 			-   [•]{.treeview_leaf} [Lost Sword Citadel](/pages/games/gamejams/lost_sword_citadel/index.html)
 			-   [•]{.treeview_leaf} [Swap-em-up: Jutsu](/pages/games/gamejams/swap_jutsu/index.html)
 			-   [•]{.treeview_leaf} [Tiger Woods Golf Tour](/pages/games/gamejams/tiger_woods_golf_rush/index.html)
