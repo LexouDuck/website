@@ -3,7 +3,7 @@
 
 This project is, first and foremost, an exercise I did for myself - to better get a grasp of the many terms and concepts of group theory and category theory.
 
-The exercise is quite simple: to fill up some huge spreadsheets, mapping each and every algebraic structure, to each common property of algebra - with the relevant proofs in each cell.
+The exercise is quite simple: to fill up some huge spreadsheets, mapping each and every algebraic structure (for example, the natural numbers ℕ with the operator +) to each common property of algebra (for example, associativity). The goal is also to have the relevant proofs in each cell as extra annotations.
 
 ---
 
