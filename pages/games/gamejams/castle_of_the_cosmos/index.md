@@ -3,7 +3,7 @@
 
 ![](thumbnail.png)
 
-**STATUS:** ???
+**STATUS:** Done
 
 This game was made for the [11th GBJAM](https://itch.io/jam/gbjam-11) (Gameboy-themed gamejam), with a group of buddies I knew from my old forum-going days.
 

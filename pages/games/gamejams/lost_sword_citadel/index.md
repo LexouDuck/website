@@ -3,7 +3,7 @@
 
 ![](thumbnail.png)
 
-**STATUS:** ???
+**STATUS:** Done, but has bugs and would like to revisit
 
 This game was made for the [9th GBJAM](https://itch.io/jam/gbjam-9) (Gameboy-themed gamejam), with a group of buddies I knew from my old forum-going days. We managed to get 8th place overall, with **1st place** in graphics !
 
