@@ -23,6 +23,8 @@
         -   [•]{.treeview_leaf} [Castlevania: Symphony of Blood](/pages/games/fangames/castlevania/index.html)
         -   [•]{.treeview_leaf} [Kirby's 3D Dream Course](/pages/games/fangames/kirby_golf/index.html)
     -   [▶]{.treeview_node} [Game Jams](/pages/games/gamejams/index.html)
+        -   [•]{.treeview_leaf} [Mask of the Reaper](/pages/games/gamejams/mask_of_the_reaper/index.html)
+        -   [•]{.treeview_leaf} [Castle of the Cosmos](/pages/games/gamejams/castle_of_the_cosmos/index.html)
         -   [•]{.treeview_leaf} [Lost Sword Citadel](/pages/games/gamejams/lost_sword_citadel/index.html)
         -   [•]{.treeview_leaf} [Swap-em-up: Jutsu](/pages/games/gamejams/swap_jutsu/index.html)
         -   [•]{.treeview_leaf} [Tiger Woods Golf Tour](/pages/games/gamejams/tiger_woods_golf_rush/index.html)
