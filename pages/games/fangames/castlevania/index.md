@@ -112,7 +112,7 @@ having many sprites onscreen without flickering, background parallax scrolling, 
 Though, I still wished to be considerate of the NES purists out there, so I added a bunch of
 "NES fidelity options" to the game, for those who wish for the authentic, laggy, flickering experience.
 
-![](gameplay-nes_options.gif)
+![](gameplay-nes-options.gif)
 
 So, I started developing this (final) engine, and made good progress.
 I found the perfect tool for my needs, the [NES Screen Tool](https://shiru.untergrund.net/software.shtml), which is
