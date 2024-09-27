@@ -16,6 +16,13 @@ its user interface has made great progress since the early days when I first tri
 
 ---
 
+### Tools & Scripts
+
+Since I did quite a bit of model-ripping from commercial video games (for example, all the models from the [DS remake of Final Fantasy III](https://www.models-resource.com/ds_dsi/finalfantasyiii/)), I quickly realized most 3D programs have strange quirks when they import models from common interchange formats like `.obj`, `.dae`, and `.fbx`.
+To fix this issue, I created a fair amount of small scripts for Maya, which can be found on [my github](https://github.com/LexouDuck/MayaUtilities).
+
+---
+
 ### Lowpoly Models
 
 This model was made with heavy inspiration from [Kenneth Fejer](http://kennethfejer.com/3d.html)'s lowpoly modeling style.
@@ -79,12 +86,15 @@ roguelike indie game [*Nuclear Throne*](http://nuclearthrone.com/), with lowpoly
 
 ### Mid/Highpoly Models
 
-This is the character Tang Rou, from *The King's Avatar* (a.k.a. 全职高手 or *Quán zhí Gāo shǒu*).
-This was made to participate in a game project, where the objective was to re-create
-the MMO game *Glory*, which is the central focus of this story.
-The game was being built using *Unreal Engine* - though as you can imagine,
-the scope of a game like *Glory* is probably much too large for a fan labor of love.
-Unfortunately, it seems that the project has been abandoned...
-The extent of my participation was really just to make this model:
+Unfortunately, I haven't made much higer-polycount models that are cool to look at...
+Mostly all I've done is some boring mechanical pieces I needed to get 3D-printed.
 
-![](TangRou_icon-large.png){height="500"}
+
+
+---
+
+### Other
+
+I'm not sure if this really counts, but I've player thousands of hours in the physics simulator game called [Besiege](https://store.steampowered.com/app/346010/Besiege/).
+I created several machines in this game and uploaded them to my [Steam creator workshop](https://steamcommunity.com/id/lexouduck/myworkshopfiles/?appid=346010) - many of them are quite successful, with thousands of downloads.
+I've also programmed a mod which allows for [split-screen cameras](https://steamcommunity.com/sharedfiles/filedetails/?id=1525445027&searchtext=split+screen+camera), thus enabling local multiplayer - this was quite the programming challenge!

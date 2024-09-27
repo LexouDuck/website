@@ -33,7 +33,7 @@
 
 			<section>
 <h1 id="raytracer">Raytracer</h1>
-<p>This was the last project I did for the <a href="https://42.fr/en/homepage/">42 school</a>, along with my brother and 2 schoolmates.</p>
+<p>This was the final project I did for the <a href="https://42.fr/en/homepage/">42 school</a>, along with my brother and 2 schoolmates.</p>
 <p>It is a fully custom-made raytracing engine, with a scene-editor UI - built entirely in C, and using SDL2 for UI events, and OpenCL for GPU hardware acceleration.</p>
 <hr />
 <p><em>This page was generated from the readme file of <a href="https://github.com/LexouDuck/RT">the github repo</a>.</em></p>
@@ -47,11 +47,25 @@
 <img src="render_lego.bmp" alt="" /><figcaption>render_lego.bmp</figcaption>
 </figure>
 <p>Below are the features (current features are marked with ‘•’ and projected features are marked with ‘-’):</p>
+<h1 id="building">Building</h1>
+<p>Run <code>make</code>.</p>
+<ul>
+<li><p>Linux:</p>
+<ul>
+<li>If you get a compilation error of the kind <code>#include &lt;CL/cl.h&gt; not found</code>, check that <code>opencl-c-headers</code> are installed on your machine.</li>
+<li>If you get a linking error of the kind <code>cannot find -lSDL2: No such file or directory</code>, check that <code>libsdl2-dev</code> is installed on your machine</li>
+<li>If you get a linking error of the kind <code>cannot find -lOpenCL: No such file or directory</code>, check that <code>ocl-icd-opencl-dev</code> is installed on your machine.</li>
+<li>If you get a an “OpenCL error -1001”, you probably have an NVIDIA graphics card, and there’s probably an issue with how your GPU drivers are configured. Follow the guide <a href="https://askubuntu.com/questions/1270341/nvidia-driver-390-broken-dependencies-install-preventing-uninstall-or-new-instal">here</a>, but download the driver that’s actually recommended for your platform (as of writing this, it was <code>nvidia-driver-550-server-open</code> for mine).</li>
+</ul></li>
+<li><p>Mac OS: [TODO]</p></li>
+<li><p>Windows: [TODO]</p></li>
+</ul>
 <h1 id="features">Features:</h1>
 <ul>
 <li>Cross-platform (windows, mac, linux), using SDL2 and OpenCL</li>
-<li>Realtime (no unnecessary renders done, 60 fps - depending on the quality of render currently set and the GPU)</li>
+<li>Realtime (no unnecessary renders done, 60 fps - of course, this also depends on the quality of render currently set, and your GPU)</li>
 <li>OpenCL GPU acceleration, to lessen the usual lag of a raytracer (and maybe scale2x or hq2x if needed)</li>
+<li>Various render modes, for debug (normal map, bbox, etc) or quality.</li>
 <li>Fully controllable camera, with all 3 clicks and/or arrow keys</li>
 <li>A configuration file to store properties between program executions</li>
 <li>UI pane allowing the user to modify any of the camera’s properties</li>
@@ -67,10 +81,10 @@
 <ul>
 <li>Primitive-shaped lights</li>
 <li>Monte-Carlo path-tracing</li>
-<li>[TODO] Bi-directional path-tracing</li>
 <li>Reflection (mirror surfaces)</li>
 <li>Refraction (transparent surfaces)</li>
 <li>fresnel reflections (glassy surface highlighting)</li>
+<li>[TODO] Bi-directional path-tracing</li>
 <li>[TODO] caustic lights (refractions on shadows)</li>
 <li>[TODO] Black holes (ray curving)</li>
 </ul>
@@ -90,6 +104,11 @@
 <li>[TODO] Torus knot</li>
 <li>[TODO] 3D Epitrochoid/Hypocycloid</li>
 <li>[TODO] Fractals</li>
+<li>[TODO] Unions, intersections, and their negative counterparts</li>
+</ul>
+<h1 id="structure">Structure</h1>
+<ul>
+<li>[TODO] fix to go beyond the dumb structural requirements of 42</li>
 </ul>
 			</section>
 

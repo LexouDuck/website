@@ -46,7 +46,7 @@ These are some NES-style "demake" mockups, that I made to illustrate some of my 
 This piece was an experiment, to attempt to show how it might be possible
 to have some background graphics displayed on the original Gameboy *Pokemon* games.
 
-![](pokemon-critique.png)
+![](pokemon_critique.png)
 
 ---
 
