@@ -36,15 +36,6 @@ Unfortunately, this model uses a 48x48 texture - since the size is not a power o
 </iframe>
 </div>
 
-##### Crocotile3D
-
-![](darksouls.png)
-
-This model was made with an interesting program called [Crocotile3D](http://www.crocotile3d.com/),
-which is a 3D modeling program, with a special tile-based workflow, thought out for lowpoly-pixelart-style games.
-The textures are these very cool *Gameboy Color* style sprites of *Dark Souls* made by
-[Ryumaru, over at the Pixelation forums](https://pixelation.org/index.php?topic=17902.0).
-
 ##### Nuclear Throne
 
 This set of models was a for-fun project of mine to remake the popular
@@ -79,6 +70,15 @@ roguelike indie game [*Nuclear Throne*](http://nuclearthrone.com/), with lowpoly
 </div>
 
 ![](nt_enem03-BigWorm_icon-large.png){height="500"}
+
+##### Crocotile3D
+
+![](darksouls.png)
+
+This model was made with an interesting program called [Crocotile3D](http://www.crocotile3d.com/),
+which is a 3D modeling program, with a special tile-based workflow, thought out for lowpoly-pixelart-style games.
+The textures are these very cool *Gameboy Color* style sprites of *Dark Souls* made by
+[Ryumaru, over at the Pixelation forums](https://pixelation.org/index.php?topic=17902.0).
 
 
 

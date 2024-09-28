@@ -155,12 +155,18 @@ li
 
 pre
 {
+	padding: 10px;
 	border: 1px solid white;
 	border-radius: 5px;
-	padding: 10px;
 	background-color: #333;
 	color: white;
 	overflow: scroll;
+}
+code
+{
+	border-radius: 3px;
+	background-color: #333;
+	color: white;
 }
 
 figcaption
