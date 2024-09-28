@@ -37,7 +37,7 @@ This song plays in the overworld, during the beginning outside section of the ga
 
 ---
 
-I guess I should also mention [this fangame project](/pages/games/fangames/castlevania/index.html) which has a chiptune soundtrack.
+I guess I should also mention my [Castlevania demake fangame project](/pages/games/fangames/castlevania/index.html) which features an authentic NES chiptune soundtrack.
 The soundtrack was made in collboration with my friend, [Gorsal](https://www.youtube.com/watch?v=uNFBAXtNk6Q) - he did the songs from *Rondo of Blood*, while I did the songs from *Symphony of the Night*.
 
 ---

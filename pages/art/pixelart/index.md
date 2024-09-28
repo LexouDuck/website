@@ -13,6 +13,12 @@ and [GraphicGale](https://graphicsgale.com/us/), and more recently [aseprite](ht
 
 ---
 
+### Video Game assets
+
+I have made pixel art sprites for several video game projects, but the one most worthy of showing is definitely my [Castlevania demake fangame project](/pages/games/fangames/castlevania/index.html).
+
+---
+
 ### Original Pieces
 
 This was done for on contest on [Pixeljoint](https://pixeljoint.com/pixelart/96147.htm), constraints being a very limited 8-color palette (6 colors plus black and white) and a predetermined canvas size.
