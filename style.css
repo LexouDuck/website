@@ -46,14 +46,15 @@ hr
 
 h1
 {
-	color: #4C404C !important;
+	color: #825582 !important;
 	font-size: 200%;
 	font-weight: bolder;
 	margin: 30px 0;
+	text-align: center;
 }
 h2
 {
-	color: #4C404C !important;
+	color: #825582 !important;
 	font-size: 150%;
 	font-weight: normal;
 	margin-bottom: 20px;
@@ -68,14 +69,20 @@ h3
 h4
 {
 	color: white;
-	font-size: 90%;
+	font-size: 120%;
 	font-weight: bold;
-	text-align: center;
 }
 h5
 {
-	color: #9C909C;
-	font-size: 90%;
+	color: #825582;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+footer h5
+{
+	color: #825582;
+	font-size: 80%;
 	font-weight: bold;
 	text-align: center;
 }
@@ -88,7 +95,7 @@ p
 }
 a, a:link
 {
-	color: #9C909C;
+	color: #825582;
 	text-decoration: none;
 }
 a.current

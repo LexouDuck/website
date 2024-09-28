@@ -101,57 +101,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 ./pages/%.html: ./pages/%.md $(HTML_FRAME)
 	@echo "Building content: $@"
 	@# fetch any external README.md files referenced, for webpage content
-	@awk -v filepath="$@" -v currentdir="` dirname "$@" `" '\
-	function command(cmd)\
-	{\
-		stdout = "";\
-		stdout_line = "";\
-		while (( cmd | getline stdout_line ) > 0)\
-		{\
-			if (length(stdout) == 0)\
-			{ stdout = stdout_line; }\
-			else\
-			{ stdout = stdout "\n" stdout_line; }\
-		}\
-		close(cmd);\
-		return (stdout);\
-	}\
-	\
-	{\
-		if ($$1 == "%%%")\
-		{\
-			if ($$2 == "folder")\
-			{\
-				print "DEBUG[awk]: find " currentdir " -maxdepth 1 -type d " > "/dev/stderr";\
-				split(command("find " currentdir " -maxdepth 1 -type d "), folders, "\n");\
-				for (f in folders)\
-				{\
-					if (folders[f] == currentdir) { continue; }\
-					print "DEBUG[awk]: "currentdir" |  cat " folders[f] "/index.md" > "/dev/stderr";\
-					print "";\
-					print "---------";\
-					print "";\
-					content = command("cat " folders[f] "/index.md");\
-					print substr(content, 1, index(content, "\n\n---"));\
-					print "[Read more...](/" folders[f] "/index.html" ")";\
-				}\
-			}\
-			else if ($$2 ~ /https:(.*)/)\
-			{\
-				if (/raw\.githubusercontent\.com/)\
-				{\
-					github_url = $$2;\
-					gsub(/raw\.githubusercontent\.com/, "github.com", github_url);\
-					gsub(/\/master\/.*/, "", github_url);\
-					print "*This page was generated from the readme file of [the github repo](" github_url ").*";\
-					print "";\
-				}\
-				print command("curl " $$2);\
-			}\
-		}\
-		else { print; }\
-	}' $< \
-	> $<.tmp
+	@awk -v filepath="$@" -v currentdir="` dirname "$@" `" -f "./markdown_to_html.awk" "$<" > "$<.tmp"
 	@# convert the markdown source to html (with pipe table syntax extension)
 	@$(PANDOC) --from markdown+pipe_tables $<.tmp --to html -o $@.tmp
 	@# insert the generated HTML into the <body> of a copy of the frame.html file

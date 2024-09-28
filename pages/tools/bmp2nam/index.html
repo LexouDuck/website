@@ -34,11 +34,28 @@
 			<section>
 <h1 id="bmp2nam">bmp2nam</h1>
 <p>This is a simple commandline tool to process images, and reduce their color-count, such that the resulting color-reduced image fits within a certain tile-based set of constraints.</p>
-<p>In pretty much every old game console, background are drawn using tile-based graphics. This is a tool that can take in any bitmap image, and spit out a tile-conscient version of it.</p>
+<p>In pretty much every old game console, background are drawn using tile-based graphics. This is a tool that can take in any bitmap image, and spit out a color-reduced version which is tiled-graphics compatible.</p>
 <hr />
 <p><em>This page was generated from the readme file of <a href="https://github.com/LexouDuck/bmp2nam">the github repo</a>.</em></p>
 <h2 id="bmp2nam-1"># bmp2nam</h2>
-<p>color-reduces bitmap images to make them tilemap-friendly</p>
+<p>This is a tool which can color-reduce bitmap images to make them tilemap-friendly.</p>
+<p>NOTE: this tool is still quite experimental and incomplete, and has several quirky behaviors which need to be fixed.</p>
+<hr />
+<p>Here is an example of how it works, taking in a very restrictive set of limitations such as the <a href="https://nesrocks.com/blog/nes-graphics/">graphical limitations of the NES</a>:</p>
+<ul>
+<li>using as input the following image:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/LexouDuck/bmp2nam/master/ref/example-input.bmp" /></p>
+<ul>
+<li>it spits out the following image:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/LexouDuck/bmp2nam/master/ref/example-output.bmp" /></p>
+<ul>
+<li>and here is what the commandline output log looks like:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/LexouDuck/bmp2nam/master/ref/cli-log.png" /></p>
+<hr />
+<p>this tool was originally made for NES tile graphics in particular.</p>
 <p>Here is a quick but pretty detailed <a href="https://nesrocks.com/blog/nes-graphics/">summary of graphical limitations on the NES</a>:</p>
 <ul>
 <li>2 types of graphics: “sprites” (which can be freely placed anywhere onscreen or offscreen) and “tiles” (which must be positioned aligned to the background tile grid)</li>
