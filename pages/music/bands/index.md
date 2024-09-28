@@ -25,11 +25,42 @@ Here is a list of the band members of *Dynam Cross*:
 
 Many thanks to those who saw us play live, back in the day.
 
+![](dynam-cross/logo.png)
+
+Here are the unreleased songs (unfortunately, for many of them the vocal tracks were never recorded, these are marked as "instrumental"...):
+
+<figure>     <figcaption>Dynam Cross - 01 - Happy End</figcaption>
+<audio  src="dynam-cross/Dynam Cross - 01 - Happy End.mp3" controls style="width:100%;">
+	<a href="dynam-cross/Dynam Cross - 01 - Happy End.mp3">Download</a></audio>
+</figure>
+
+<figure>     <figcaption>Dynam Cross - 02 - Far From Satisfaction (instrumental)</figcaption>
+<audio  src="dynam-cross/Dynam Cross - 02 - Far From Satisfaction (instrumental).mp3" controls style="width:100%;">
+	<a href="dynam-cross/Dynam Cross - 02 - Far From Satisfaction (instrumental).mp3">Download</a></audio>
+</figure>
+
+<figure>     <figcaption>Dynam Cross - 03 - Fine By Myself (instrumental)</figcaption>
+<audio  src="dynam-cross/Dynam Cross - 03 - Fine By Myself (instrumental).mp3" controls style="width:100%;">
+	<a href="dynam-cross/Dynam Cross - 03 - Fine By Myself (instrumental).mp3">Download</a></audio>
+</figure>
+
+<figure>     <figcaption>Dynam Cross - 05 - No Pain No Gain (instrumental)</figcaption>
+<audio  src="dynam-cross/Dynam Cross - 05 - No Pain No Gain (instrumental).mp3" controls style="width:100%;">
+	<a href="dynam-cross/Dynam Cross - 05 - No Pain No Gain (instrumental).mp3">Download</a></audio>
+</figure>
+
+<figure>     <figcaption>Dynam Cross - 06 - Brotherhood</figcaption>
+<audio  src="dynam-cross/Dynam Cross - 06 - Brotherhood.mp3" controls style="width:100%;">
+	<a href="dynam-cross/Dynam Cross - 06 - Brotherhood.mp3">Download</a></audio>
+</figure>
+
 ---
 
 Afterwards some time passed, some people left, we found a drummer that was in the same mindset/taste as the rest of us, and so us remaining 4 core guys finally decided to orient our music more towards more of a jazz fusion style.
 
 To symbolize our change of personnel and direction, we changed the band name to become *Tukana* - this was back in 2016.
+
+---
 
 ### Tukana
 
@@ -49,26 +80,24 @@ This band will probably remain ultra-underground, but at least this page will al
 
 Again, many thanks to those precious few who saw us play live, back in the day.
 
----
-
 ![](tukana/cover.jpg)
 
-<figure>            <figcaption>01 - Take Off</figcaption>
-<audio controls src="tukana/Tukana - Take Off.mp3" style="width:100%;">
-			<a href="tukana/Tukana - Take Off.mp3">Download</a></audio>
+<figure><figcaption>Tukana - 01 - Take Off</figcaption>
+<audio  src="tukana/Tukana - 01 - Take Off.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 01 - Take Off.mp3">Download</a></audio>
 </figure>
 
-<figure>            <figcaption>02 - Bewavier</figcaption>
-<audio controls src="tukana/Tukana - Bewavier.mp3" style="width:100%;">
-			<a href="tukana/Tukana - Bewavier.mp3">Download</a></audio>
+<figure><figcaption>Tukana - 02 - Bewavier</figcaption>
+<audio  src="tukana/Tukana - 02 - Bewavier.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 02 - Bewavier.mp3">Download</a></audio>
 </figure>
 
-<figure>            <figcaption>03 - Beak</figcaption>
-<audio controls src="tukana/Tukana - Beak.mp3" style="width:100%;">
-			<a href="tukana/Tukana - Beak.mp3">Download</a></audio>
+<figure><figcaption>Tukana - 03 - Beak</figcaption>
+<audio  src="tukana/Tukana - 03 - Beak.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 03 - Beak.mp3">Download</a></audio>
 </figure>
 
-<figure>            <figcaption>04 - Purple Cloud</figcaption>
-<audio controls src="tukana/Tukana - Purple Cloud.mp3" style="width:100%;">
-			<a href="tukana/Tukana - Purple Cloud.mp3">Download</a></audio>
+<figure><figcaption>Tukana - 04 - Purple Cloud</figcaption>
+<audio  src="tukana/Tukana - 04 - Purple Cloud.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 04 - Purple Cloud.mp3">Download</a></audio>
 </figure>
