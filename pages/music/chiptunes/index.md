@@ -58,10 +58,9 @@ I made this with FamiTracker (using the Konami VRC6 extension module).
 The NES-style mockup image with was custom-made by me, using mspaint.
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/3s6zl2ohw4zenux/FF+VII+-+Birth+of+a+God.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/3s6zl2ohw4zenux/FF+VII+-+Birth+of+a+God.nsf)
 
 ---
 
@@ -76,10 +75,9 @@ I also made the mockup image using mspaint, showing what the level might be look
 This mockup was done using assets from *Sonic Advance*, *Sonic Advance 3* and *Sonic Battle*.
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/which8eme219ixt/Sonic_A2B_-_I%27m_A_Spy.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/which8eme219ixt/Sonic_A2B_-_I%27m_A_Spy.nsf)
 
 ---
 
@@ -93,10 +91,9 @@ I know the bell noise sounds pretty weird, but it is quite tough to make a convi
 I also made the N64-style mockup image using mspaint - the Mario sprite is from the original *Paper Mario*, the Doopliss sprite is a custom edit of the *Paper Mario* duplighost sprite, and the background was simply color-reduced to give the N64 lo-fi aesthetic.
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/2hfuh73fa2tnpa0/Paper_Mario_TTYD_-_Doopliss.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/2hfuh73fa2tnpa0/Paper_Mario_TTYD_-_Doopliss.nsf)
 
 ---
 
@@ -109,10 +106,9 @@ I made this with FamiTracker (using the Nintendo MMC5 extension module).
 for the mockup the dragon uses 4 colors as well as black (it doesn't make much sense to me, but the sprites in the other NES final fantasy games managed to do that so eh), also i chose to make the characters have 3 colors like regular sprites cause i imagined they would be animated like on the SNES.
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/m81dc7d4icxgdm8/FF_IV_-_Boss_Battle.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/m81dc7d4icxgdm8/FF_IV_-_Boss_Battle.nsf)
 
 ---
 
@@ -126,10 +122,9 @@ I also made some sprites to illustrate what starfox couldve looked like on the N
 After looking closer i noticed plenty of things on this mockup have too many colors so i made a version more loyal to the nes that you can see here http://i.imgur.com/LXYGMZv.png
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/jzef1eob8rq4gy0/Starfox_-_Fortuna.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/jzef1eob8rq4gy0/Starfox_-_Fortuna.nsf)
 
 ---
 
@@ -145,10 +140,9 @@ I also made a mockup of the game in NES restrictions to illustrate the video, wi
 This video (and its success) was the impetus for me to start making a NES-style demake of *Castlevania - Rondo of Blood* and *Castlevania - Symphony of the Night*, you can read more about this project of mine [here](/pages/games/fangames/castlevania/index.html).
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/j88vh5j64loxh9j/Castlevania_SotN_-_Wandering_Ghosts.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/j88vh5j64loxh9j/Castlevania_SotN_-_Wandering_Ghosts.nsf)
 
 ---
 
@@ -162,10 +156,9 @@ I also made a mockup to illustrate the video, portraying the fight against Kolok
 Now, I know it doesnt' make much sense, because the song abides to NES audio limitations whereas the mockup follows GBC graphics limitations - but I believe the folks that really care about this sort of technical detail will forgive me.
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/23as2ure0icq99r/Legend_of_Zelda_Skyward_Sword_-_Koloktos_Battle.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/23as2ure0icq99r/Legend_of_Zelda_Skyward_Sword_-_Koloktos_Battle.nsf)
 
 ---
 
@@ -178,7 +171,6 @@ I made this with FamiTracker (using the Konami VRC6 extension module).
 I also made an NES-style mockup, to illustrate the video (though I am pretty sure some parts of Kefka's sprite here has too many colors, so it wouldn't quite work on an actual NES).
 
 The song is available for download in the following formats:
-
-- [NSF](https://www.mediafire.com/file/jb86vmrxvc1ozq6/FF_VI_-_Dancing_Mad.nsf)
-- [WAV](#)
-- [MP3](#)
+[MP3](#),
+[WAV](#),
+[NSF](https://www.mediafire.com/file/jb86vmrxvc1ozq6/FF_VI_-_Dancing_Mad.nsf)

@@ -15,7 +15,7 @@ This is the first-ever drawing of the character which has become my mascot, the 
 
 ![](Ref_MantaRay.png)
 
-Here is some simple coloring put above some of my [sketches](/pages/art/sketches/index.html).
+Here is some simple monochrome coloring added to some of my character design sketches (you can find more such sketches [here](/pages/art/sketches/index.html)).
 Note that the large-headed zombie near the center is the only fan-art character here, the "Re-dead" from *The Legend of Zelda - Wind Waker*
 
 ![](Design_CharacterSketches.jpg)
