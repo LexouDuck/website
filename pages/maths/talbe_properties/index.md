@@ -14,12 +14,15 @@ Here are the (as-of-yet quite incomplete) tables in question:
 
 ### For unary operators
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwIZYBnuiZdCWO5VzbnC9OVYm4v6xjL5nXU2vswKrU-C0LfILXJhoDlz83Pbn9DtxNa5p6Bg8cXeL/pubhtml?gid=736842452&amp;single=true&amp;widget=true&amp;headers=false" style="width:100%;height:50vh;"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwIZYBnuiZdCWO5VzbnC9OVYm4v6xjL5nXU2vswKrU-C0LfILXJhoDlz83Pbn9DtxNa5p6Bg8cXeL/pubhtml?gid=736842452&amp;single=true&amp;widget=true&amp;headers=false"
+	style="width:100%;height:50vh;"></iframe>
 
 ### For binary operators
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwIZYBnuiZdCWO5VzbnC9OVYm4v6xjL5nXU2vswKrU-C0LfILXJhoDlz83Pbn9DtxNa5p6Bg8cXeL/pubhtml?gid=559179530&amp;single=true&amp;widget=true&amp;headers=false" style="width:100%;height:80vh;"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwIZYBnuiZdCWO5VzbnC9OVYm4v6xjL5nXU2vswKrU-C0LfILXJhoDlz83Pbn9DtxNa5p6Bg8cXeL/pubhtml?gid=559179530&amp;single=true&amp;widget=true&amp;headers=false"
+	style="width:100%;height:80vh;"></iframe>
 
 ### For endorelations
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwIZYBnuiZdCWO5VzbnC9OVYm4v6xjL5nXU2vswKrU-C0LfILXJhoDlz83Pbn9DtxNa5p6Bg8cXeL/pubhtml?gid=975478026&amp;single=true&amp;widget=true&amp;headers=false" style="width:100%;height:80vh;"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBwIZYBnuiZdCWO5VzbnC9OVYm4v6xjL5nXU2vswKrU-C0LfILXJhoDlz83Pbn9DtxNa5p6Bg8cXeL/pubhtml?gid=975478026&amp;single=true&amp;widget=true&amp;headers=false"
+	style="width:100%;height:80vh;"></iframe>

@@ -1,4 +1,6 @@
 bnnn
 mathophilia
-property_table
+table_axioms
+table_properties
+table_polyhedra
 ccclean

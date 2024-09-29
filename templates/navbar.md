@@ -62,6 +62,13 @@
 	-   [•]{.treeview_leaf} [Table of Algebraic Properties](/pages/maths/property_table/index.html)
 	-   [•]{.treeview_leaf} [Table of Axioms and Systems](/pages/maths/axioms_table/index.html)
 
+-   [▶]{.treeview_node} ![](/pages/data/icon.svg){.icon .svg} [Data](/pages/data/index.html)
+<ul class="treeview nested">
+    -   [•]{.treeview_leaf} [Physics](/pages/data/physics/index.html)
+    -   [•]{.treeview_leaf} [Chemistry](/pages/data/chemistry/index.html)
+    -   [•]{.treeview_leaf} [Musicology](/pages/data/musicology/index.html)
+    -   [•]{.treeview_leaf} [Linguistics](/pages/data/linguistics/index.html)
+
 -   [•]{.treeview_leaf} ![](/pages/contact/icon.svg){.icon .svg} [Contact](/pages/contact/index.html)
 
 </nav>

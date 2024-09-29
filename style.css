@@ -331,10 +331,10 @@ li.open > a
 .bg-2 { transform: translateZ(-2px) scale(3);	right:  -800%; }
 .bg-3 { transform: translateZ(-3px) scale(4);	right: -1200%; }
 
-.bg-0.pages { background-image: url("/pages/bg_0.svg"); }
-.bg-1.pages { background-image: url("/pages/bg_1.svg"); }
-.bg-2.pages { background-image: url("/pages/bg_2.svg"); }
-.bg-3.pages { background-image: url("/pages/bg_3.svg"); }
+.bg-0.page { background-image: url("/pages/bg_0.svg"); }
+.bg-1.page { background-image: url("/pages/bg_1.svg"); }
+.bg-2.page { background-image: url("/pages/bg_2.svg"); }
+.bg-3.page { background-image: url("/pages/bg_3.svg"); }
 
 .bg-0.page-art { background-image: url("/pages/art/bg_0.svg"); }
 .bg-1.page-art { background-image: url("/pages/art/bg_1.svg"); }
@@ -351,15 +351,20 @@ li.open > a
 .bg-2.page-games { background-image: url("/pages/games/bg_2.svg"); }
 .bg-3.page-games { background-image: url("/pages/games/bg_3.svg"); }
 
+.bg-0.page-tools { background-image: url("/pages/tools/bg_0.svg"); }
+.bg-1.page-tools { background-image: url("/pages/tools/bg_1.svg"); }
+.bg-2.page-tools { background-image: url("/pages/tools/bg_2.svg"); }
+.bg-3.page-tools { background-image: url("/pages/tools/bg_3.svg"); }
+
 .bg-0.page-maths { background-image: url("/pages/maths/bg_0.svg"); }
 .bg-1.page-maths { background-image: url("/pages/maths/bg_1.svg"); }
 .bg-2.page-maths { background-image: url("/pages/maths/bg_2.svg"); }
 .bg-3.page-maths { background-image: url("/pages/maths/bg_3.svg"); }
 
-.bg-0.page-tools { background-image: url("/pages/tools/bg_0.svg"); }
-.bg-1.page-tools { background-image: url("/pages/tools/bg_1.svg"); }
-.bg-2.page-tools { background-image: url("/pages/tools/bg_2.svg"); }
-.bg-3.page-tools { background-image: url("/pages/tools/bg_3.svg"); }
+.bg-0.page-data { background-image: url("/pages/data/bg_0.svg"); }
+.bg-1.page-data { background-image: url("/pages/data/bg_1.svg"); }
+.bg-2.page-data { background-image: url("/pages/data/bg_2.svg"); }
+.bg-3.page-data { background-image: url("/pages/data/bg_3.svg"); }
 
 .bg-0.page-contact { background-image: url("/pages/contact/bg_0.svg"); }
 .bg-1.page-contact { background-image: url("/pages/contact/bg_1.svg"); }
