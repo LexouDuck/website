@@ -9,7 +9,7 @@
       <stop style="stop-color: rgb(34, 157, 92);"/>
     </linearGradient>
     <linearGradient id="color-1" gradientUnits="userSpaceOnUse" bx:pinned="true">
-      <stop style="stop-color: rgb(255, 235, 125)"/>
+      <stop style="stop-color: rgb(255, 228, 78);"/>
     </linearGradient>
   </defs>
   <path style="fill: none; stroke-width: 22px; stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(34, 157, 92);" d="M 109.785 250.978 C 79.875 248.43 76.735 270.511 81.058 276.964" transform="matrix(0.932636, 0.360819, -0.360819, 0.932636, 0.000003, -0.000001)"/>

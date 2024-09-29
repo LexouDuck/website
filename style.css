@@ -7,6 +7,16 @@
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 }
 
+:root {
+	--darkbg:	#1F1B1F;
+	--purple:	#825582;
+	--darker:	#4C404C;
+	--turquo:	#229D5C;
+	--yellow:	#FFE44E;
+	--gray:	#303030;
+	--blue:	#4F8CFF;
+}
+
 html
 {
 	width: 100%;
@@ -20,7 +30,7 @@ body
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #1F1B1F;
+	background-color: var(--darkbg);
 	font-family: "Roboto", "Futura", "Calibri", "Rockwell", "Verdana", sans-serif;
 	font-size: 100%;
 	overflow: hidden;
@@ -35,7 +45,7 @@ h1, h2, h3, h4, h5
 
 h1
 {
-	color: #825582 !important;
+	color: var(--purple) !important;
 	font-size: 200%;
 	font-weight: bolder;
 	margin: 30px 0;
@@ -43,10 +53,10 @@ h1
 }
 h2
 {
-	color: #825582 !important;
+	color: var(--purple) !important;
 	font-size: 150%;
 	font-weight: normal;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 h3
 {
@@ -63,14 +73,14 @@ h4
 }
 h5
 {
-	color: #825582;
+	color: var(--purple);
 	font-size: 120%;
 	font-weight: bold;
 }
 
 hr
 {
-	color: #4C404C;
+	color: var(--darker);
 	margin: 30px 0;
 }
 
@@ -86,7 +96,7 @@ footer
 footer p
 {
 	font-family: "Myriad", "Sarpanch", sans-serif;
-	color: #825582;
+	color: var(--purple);
 	font-size: 90%;
 	font-weight: bold;
 	text-align: center;
@@ -94,7 +104,7 @@ footer p
 footer p#footer-lastupdate
 {
 	font-family: "Roboto", "Futura", "Calibri", "Rockwell", "Verdana", sans-serif;
-	color: #825582;
+	color: var(--purple);
 	font-size: 80%;
 	font-weight: regular;
 	font-style: italic;
@@ -109,19 +119,19 @@ p
 }
 a, a:link
 {
-	color: #825582;
+	color: var(--turquo);
 	text-decoration: none;
 }
 a.current
 {
-	color: #4C404C;
+	color: var(--darker);
 	text-decoration: none;
 	pointer-events: none;
 }
 a:hover
 {
 	text-decoration: underline;
-	color: #4F8CFF;
+	color: var(--yellow);
 }
 
 img
@@ -184,14 +194,14 @@ pre
 	padding: 10px;
 	border: 1px solid white;
 	border-radius: 5px;
-	background-color: #333;
+	background-color: var(--gray);
 	color: white;
 	overflow: scroll;
 }
 code
 {
 	border-radius: 3px;
-	background-color: #333;
+	background-color: var(--gray);
 	color: white;
 }
 
@@ -260,7 +270,7 @@ content
 }
 .treeview_leaf
 {
-	color: #4C404C;
+	color: var(--darker);
 	display: inline-block;
 	margin-right: 5px;
 }
@@ -416,7 +426,7 @@ nav
 	height: auto;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	background-color: #1F1B1F;
+	background-color: var(--darkbg);
 }
 
 #content
