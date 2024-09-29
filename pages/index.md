@@ -1,5 +1,5 @@
 
-# LEXOU DUCK
+# ![](logo.svg){.svg .logo} LEXOU DUCK
 
 Welcome to my website ! This is really just a place to show off all my works.
 

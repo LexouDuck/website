@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Capa_1" x="0px" y="0px" width="0px" height="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 479.79 479.79;" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="301.783" y1="30.732" x2="301.783" y2="163.69" id="gradient-0" gradientTransform="matrix(0.657438, 0.620912, -0.290667, 0.307766, 99.876557, -77.257349)">
+      <stop offset="0" style="stop-color: rgb(255, 228, 78);"/>
+      <stop offset="1" style="stop-color: rgb(34, 157, 92);"/>
+    </linearGradient>
+    <linearGradient id="color-0" gradientUnits="userSpaceOnUse" bx:pinned="true">
+      <stop style="stop-color: rgb(34, 157, 92);"/>
+    </linearGradient>
+    <linearGradient id="color-1" gradientUnits="userSpaceOnUse" bx:pinned="true">
+      <stop style="stop-color: rgb(255, 235, 125)"/>
+    </linearGradient>
+  </defs>
+  <path style="fill: none; stroke-width: 22px; stroke-linecap: round; stroke-linejoin: round; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(34, 157, 92);" d="M 109.785 250.978 C 79.875 248.43 76.735 270.511 81.058 276.964" transform="matrix(0.932636, 0.360819, -0.360819, 0.932636, 0.000003, -0.000001)"/>
+  <path style="fill: none; stroke-width: 22px; stroke-linecap: round; stroke-linejoin: round; transform-origin: 137.501px 306.084px; stroke: rgb(34, 157, 92);" d="M 152.648 318.974 C 122.738 321.522 119.598 299.441 123.921 292.988" transform="matrix(-0.302705, -0.953084, 0.953084, -0.302705, -0.000009, -0.000027)"/>
+  <path d="M -6.382 215.94 L 142.089 133.158 L 216.323 133.158 L 364.794 215.94 L 216.323 298.722 C 215.473 309.697 141.176 310.51 142.089 298.722 L -6.382 215.94 Z" style="stroke-width: 0px; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(34, 157, 92);" transform="matrix(0.713067, 0.701096, -0.701096, 0.713067, 0.000008, -0.000002)"/>
+  <ellipse style="stroke-width: 0px; fill: rgb(255, 228, 78);" cx="116.448" cy="235.368" rx="7.957" ry="7.957"/>
+  <ellipse style="stroke-width: 0px; fill: rgb(255, 228, 78);" cx="163.051" cy="282.981" rx="7.957" ry="7.957"/>
+  <path style="stroke-width: 0px; fill: url('#gradient-0');" d="M 213.765 132.123 C 238.436 137.551 293.89 103.804 292.126 103.416 L 260.3 94.576 L 334.308 63.759 L 307.786 91.293 L 329.005 103.164 C 328.476 101.682 259.304 163.441 266.706 184.165 C 263.868 187.791 209.539 137.524 213.765 132.123 Z"/>
+</svg>

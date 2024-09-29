@@ -148,6 +148,11 @@ img.icon.svg
 {
 	filter: invert(50%);
 }
+img.logo
+{
+	width: 100px;
+	height: 100px;
+}
 
 table
 {

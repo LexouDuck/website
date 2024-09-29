@@ -1,7 +1,7 @@
 <div id="navbar">
 <input class="side-menu" type="checkbox" id="side-menu" />
 <label class="menu-icon" for="side-menu"><img src="/assets/icon_menu.svg" class="icon" ></img></label>
-<h2 id="lexou-duck"> ![](/pages/icon.png){.icon .png} [LEXOU DUCK](/pages/index.html) </h2>
+<h2 id="lexou-duck"> ![](/pages/logo.png){.icon .png} [LEXOU DUCK](/pages/index.html) </h2>
 <nav>
 <ul class="treeview">
 
