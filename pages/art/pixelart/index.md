@@ -21,6 +21,8 @@ I have made pixel art sprites for several video game projects, but the one most 
 
 ### Original Pieces
 
+- `TODO: upload more recent pixelart pieces`
+
 This was done for on contest on [Pixeljoint](https://pixeljoint.com/pixelart/96147.htm), constraints being a very limited 8-color palette (6 colors plus black and white) and a predetermined canvas size.
 
 ![](gambit.png)
@@ -36,41 +38,6 @@ This one is a rather simple sprite I had at my beginnings, back in 2012.
 This is one of the first characters I ever designed, originally for a sprite constest on [the Spriters' Resource](https://www.vg-resource.com/thread-13273-page-2.html), way back in 2010.
 
 ![](advance-wars_CO.png)
-
----
-
-### Demake Mockups
-
-These are some NES-style "demake" mockups, that I made to illustrate some of my [chiptune covers](/pages/music/chiptunes/index.html).
-
-![](demake-starfox.png)
-
-![](demake-ff4.png)
-
-![](demake-ff7.png)
-
-This piece was an experiment, to attempt to show how it might be possible
-to have some background graphics displayed on the original Gameboy *Pokemon* games.
-
-![](pokemon_critique.png)
-
----
-
-### Fanart
-
-Here are a couple sprites done in the style of the Gameboy Advance *Fire Emblem* games.
-I have always been a big fan of these games, as you can tell from my
-[Emblem Magic](/pages/tools/emblem_magic/index.html) project.
-
-![](fire-emblem_balrog.gif)
-
-![](fire-emblem_marth.png)
-
-I was also always a big fan of the *Paper Mario* games, and so I created a couple of
-sprites edits, mostly to reproduce characters from *Paper Mario: The Thousand-Year Door*
-in the style of the original *Paper Mario* on the Nintendo 64.
-
-![](paper-mario-64_doopliss.png)
 
 ---
 
@@ -108,6 +75,41 @@ was to make a silly JRPG game about the wonderful wacky world of the Spriters's 
 
 The rightmost sprite here is the humanoid version of my mascot character, and was done by [VirtuaBoy123](https://www.vg-resource.com/user-18076.html) to be one of the enemies for the game. I decided to chip in & help out by creating the leftmost sprite - the mantaray version of my mascot.
 Seeing the two side-by-side, made me want to imagine a mid-level between the two, similar to a *Pokemon* evolution line - this is why I also created the larger darker manta ray in the middle.
+
+---
+
+### Demake Mockups
+
+These are some NES-style "demake" mockups, that I made to illustrate some of my [chiptune covers](/pages/music/chiptunes/index.html).
+
+![](demake-starfox.png)
+
+![](demake-ff4.png)
+
+![](demake-ff7.png)
+
+This piece was an experiment, to attempt to show how it might be possible
+to have some background graphics displayed on the original Gameboy *Pokemon* games.
+
+![](pokemon_critique.png)
+
+---
+
+### Fanart
+
+Here are a couple sprites done in the style of the Gameboy Advance *Fire Emblem* games.
+I have always been a big fan of these games, as you can tell from my
+[Emblem Magic](/pages/tools/emblem_magic/index.html) project.
+
+![](fire-emblem_balrog.gif)
+
+![](fire-emblem_marth.png)
+
+I was also always a big fan of the *Paper Mario* games, and so I created a couple of
+sprites edits, mostly to reproduce characters from *Paper Mario: The Thousand-Year Door*
+in the style of the original *Paper Mario* on the Nintendo 64.
+
+![](paper-mario-64_doopliss.png)
 
 ---
 

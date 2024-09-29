@@ -116,7 +116,7 @@ Though, I still wished to be considerate of the NES purists out there, so I adde
 
 So, I started developing this (final) engine, and made good progress.
 I found the perfect tool for my needs, the [NES Screen Tool](https://shiru.untergrund.net/software.shtml), which is
-experssly built to create tile-based 2bpp graphics for the NES - and it also
+expressly built to create tile-based 2bpp graphics for the NES - and it also
 features a nice interface to assemble meta-sprites from multiple 8x8 sprites.
 
 ![](workflow-nst-richter.png)

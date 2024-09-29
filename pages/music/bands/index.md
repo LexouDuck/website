@@ -56,7 +56,7 @@ Here are the unreleased songs (unfortunately, for many of them the vocal tracks 
 
 ---
 
-Afterwards some time passed, some people left, we found a drummer that was in the same mindset/taste as the rest of us, and so us remaining 4 core guys finally decided to orient our music more towards more of a jazz fusion style.
+Afterwards some time passed, some people left, we found a drummer that was in the same mindset/taste as the rest of us, and so us remaining 4 core guys finally decided to orient our musical style towards more of a jazz fusion style.
 
 To symbolize our change of personnel and direction, we changed the band name to become *Tukana* - this was back in 2016.
 

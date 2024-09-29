@@ -11,10 +11,6 @@ Also, these are mostly digital art for now, I ought to get my on-paper works sca
 
 ### Original works
 
-This is the first-ever drawing of the character which has become my mascot, the electric green mantaray:
-
-![](Ref_MantaRay.png)
-
 Here is some simple monochrome coloring added to some of my character design sketches (you can find more such sketches [here](/pages/art/sketches/index.html)).
 Note that the large-headed zombie near the center is the only fan-art character here, the "Re-dead" from *The Legend of Zelda - Wind Waker*
 
@@ -23,6 +19,10 @@ Note that the large-headed zombie near the center is the only fan-art character 
 This was an exercise done for a class in university - students were tasked with remaking/re-imagining an early renaissance painting: *The Annunciation, with St. Emidius* (1486) by [Carlo Crivelli](https://en.wikipedia.org/wiki/Carlo_Crivelli).
 
 ![](EVMAN_Annonciation.jpg)
+
+This is the first-ever drawing of the character which has become my mascot, the electric green mantaray, from around 2012:
+
+![](Ref_MantaRay.png)
 
 ---
 

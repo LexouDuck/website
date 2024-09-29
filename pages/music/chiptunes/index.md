@@ -11,7 +11,10 @@ I have been making chiptunes since a pretty young age (14-ish) - I have always f
 
 And also, I typically make at least one chiptune song for each GBJam I've participated in - here are some of them:
 
+---
+
 From the [9th GBJAM](https://itch.io/jam/gbjam-9) (in 2021), our entry was named [Lost Sword Citadel](/pages/games/gamejams/lost_sword_citadel/index.html).
+
 This song plays after the player has collected all the important orbs, thus opening the door to the witch's citadel.
 
 <figure><figcaption>[Lost Sword Citadel] Orb</figcaption>
@@ -19,7 +22,10 @@ This song plays after the player has collected all the important orbs, thus open
 	<a href="compo-gbjam-09_orb.mp3">Download</a></audio>
 </figure>
 
+---
+
 From the [11th GBJAM](https://itch.io/jam/gbjam-11) (in 2023), our entry was named [Castle of the Cosmos](/pages/games/gamejams/castle_of_the_cosmos/index.html)
+
 This song plays after the game boss, when the player discovers the alien hidden deep within the castle.
 
 <figure><figcaption>[Castle of the Cosmos] Space Jam</figcaption>
@@ -27,7 +33,10 @@ This song plays after the game boss, when the player discovers the alien hidden 
 	<a href="compo-gbjam-11_spacejam.mp3">Download</a></audio>
 </figure>
 
+---
+
 From the [12th GBJAM](https://itch.io/jam/gbjam-12) (in 2024), our entry was named [Mask of the Reaper](/pages/games/gamejams/mask_of_the_reaper/index.html)
+
 This song plays in the overworld, during the beginning outside section of the game.
 
 <figure><figcaption>[Mask of the Reaper] Adventure</figcaption>

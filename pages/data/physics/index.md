@@ -8,7 +8,7 @@ Here are are tables of data relating to various fields of physics.
 ### Table of particles
 
 This is a table listing all elementary (and compound) particles from the standard model of physics.
-If you want a more complete/detailed view of this, then the international collaborative database ["Particle Data Group"](https://pdg.lbl.gov/index.html)
+If you want a more complete/detailed view of this, then the international collaborative database ["Particle Data Group"](https://pdg.lbl.gov/index.html) is far mroe detailed and up-to-date. Nevertheless, I believe it is still nice to have all the important numbers visible in a simple table.
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4Ig5jkppmflvL25JRM1EexiQiXt_ZzB8VgJHHkTwUE0Y1VXL7OC8jmuGSF9FmIDtYapNoebt060If/pubhtml?widget=true&amp;headers=false"
 	style="width:100%;height:80vh;"></iframe>

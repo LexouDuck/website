@@ -7,7 +7,7 @@ Here are some tables for concepts of musicology, that I created for my own resea
 
 ### Table of chords
 
-- TODO
+- `TODO: finish and upload this`
 
 ### Table of scales
 
