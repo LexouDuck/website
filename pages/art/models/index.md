@@ -32,7 +32,7 @@ Unfortunately, this model uses a 48x48 texture - since the size is not a power o
 
 ![](monocarrier.gif)
 <div class="sketchfab-embed-wrapper">
-<iframe title="Mono-Carrier Gunship" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4c037028445846f1bc68a61cc4ed2834/embed?ui_theme=dark">
+<iframe title="Mono-Carrier Gunship" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4c037028445846f1bc68a61cc4ed2834/embed?ui_theme=dark" style="max-width:100%;">
 </iframe>
 </div>
 
@@ -41,35 +41,35 @@ Unfortunately, this model uses a 48x48 texture - since the size is not a power o
 This set of models was a for-fun project of mine to remake the popular
 roguelike indie game [*Nuclear Throne*](http://nuclearthrone.com/), with lowpoly 3D assets rather than 2D sprites.
 
-![](nt_char06-YV_icon-large.png){height="500"}
+![](nt_char06-YV_icon-large.png){max-height="500"}
 
-![](nt_char02-Crystal_icon-large.png){height="500"}
+![](nt_char02-Crystal_icon-large.png){max-height="500"}
 <div class="sketchfab-embed-wrapper">
-<iframe title="Nuclear Throne - Crystal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/ee9e3b983c484a9b80a6628c0e4c8f5f/embed?ui_theme=dark">
+<iframe title="Nuclear Throne - Crystal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/ee9e3b983c484a9b80a6628c0e4c8f5f/embed?ui_theme=dark" style="max-width:100%;">
 </iframe>
 </div>
 
-![](nt_enem01-Bandit_icon-large.png){height="500"}
+![](nt_enem01-Bandit_icon-large.png){max-height="500"}
 <div class="sketchfab-embed-wrapper">
-<iframe title="Nuclear Throne - Bandit" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4219ef9ea3a6427696007ff1dcfe93ae/embed?ui_theme=dark">
+<iframe title="Nuclear Throne - Bandit" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4219ef9ea3a6427696007ff1dcfe93ae/embed?ui_theme=dark" style="max-width:100%;">
 </iframe>
 </div>
 
-![](nt_enem05-Scorpion_icon-large.png){height="500"}
-![](nt_enem06-GoldenScorpion_icon-large.png){height="500"}
+![](nt_enem05-Scorpion_icon-large.png){max-height="500"}
+![](nt_enem06-GoldenScorpion_icon-large.png){max-height="500"}
 <div class="sketchfab-embed-wrapper">
-<iframe title="Nuclear Throne - Scorpion" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4b2448a164994b2288977e2d61e6c19d/embed?ui_theme=dark">
+<iframe title="Nuclear Throne - Scorpion" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4b2448a164994b2288977e2d61e6c19d/embed?ui_theme=dark" style="max-width:100%;">
 </iframe>
 </div>
 
-![](nt_enem18-Snowtank_icon-large.png){height="500"}
-![](nt_enem19-GoldenSnowtank_icon-large.png){height="500"}
+![](nt_enem18-Snowtank_icon-large.png){max-height="500"}
+![](nt_enem19-GoldenSnowtank_icon-large.png){max-height="500"}
 <div class="sketchfab-embed-wrapper">
-<iframe title="Nuclear Throne - Snow Tank" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1eb648c2a5f14a58baef7e17d4b1f4f4/embed?ui_theme=dark">
+<iframe title="Nuclear Throne - Snow Tank" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1eb648c2a5f14a58baef7e17d4b1f4f4/embed?ui_theme=dark" style="max-width:100%;">
 </iframe>
 </div>
 
-![](nt_enem03-BigWorm_icon-large.png){height="500"}
+![](nt_enem03-BigWorm_icon-large.png){max-height="500"}
 
 ##### Crocotile3D
 
