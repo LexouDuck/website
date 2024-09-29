@@ -59,8 +59,9 @@
 <ul class="treeview nested">
 	-   [•]{.treeview_leaf} [Base-Neutral Number Notation](/pages/maths/bnnn/index.html)
 	-   [•]{.treeview_leaf} [Mathophilia](/pages/maths/mathophilia/index.html)
-	-   [•]{.treeview_leaf} [Table of Algebraic Properties](/pages/maths/property_table/index.html)
-	-   [•]{.treeview_leaf} [Table of Axioms and Systems](/pages/maths/axioms_table/index.html)
+    -   [•]{.treeview_leaf} [Table of Axioms and Systems](/pages/maths/table_axioms/index.html)
+    -   [•]{.treeview_leaf} [Table of Algebraic Properties](/pages/maths/table_properties/index.html)
+    -   [•]{.treeview_leaf} [Table of 3D Polyhedra](/pages/maths/table_polyhedra/index.html)
 
 -   [▶]{.treeview_node} ![](/pages/data/icon.svg){.icon .svg} [Data](/pages/data/index.html)
 <ul class="treeview nested">
