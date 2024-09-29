@@ -13,11 +13,7 @@ CONTENTS_HTML = $(CONTENTS:%.md=%.html)
 
 #! The list of source markdown files which become HTML template components
 TEMPLATES = \
-	./templates/head.md \
 	./templates/navbar.md \
-	./templates/header.md \
-	./templates/footer.md \
-	./templates/content.md \
 
 TEMPLATES_HTML = $(TEMPLATES:%.md=%.html)
 
@@ -101,26 +97,19 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 ./pages/%.html: ./pages/%.md $(HTML_FRAME)
 	@echo "Building content: $@"
 	@# fetch any external README.md files referenced, for webpage content
-	@awk -v filepath="$@" -v currentdir="` dirname "$@" `" -f "./markdown_to_html.awk" "$<" > "$<.tmp"
+	@awk \
+		-v filepath="$@" \
+		-v currentdir="` dirname "$@" `" \
+		-f "./make_markdown-to-html.awk" "$<" > "$<.tmp"
 	@# convert the markdown source to html (with pipe table syntax extension)
 	@$(PANDOC) --from markdown+pipe_tables $<.tmp --to html -o $@.tmp
 	@# insert the generated HTML into the <body> of a copy of the frame.html file
-	@awk -v filepath="$@.tmp" -v cssclass="` dirname "$@" | sed 's|pages/|page-|g' | sed 's|/.*||g' `" '\
-	{\
-		if ($$1 == "%%%")\
-		{\
-			while (getline line < filepath)\
-			{\
-				print line;\
-			}\
-		}\
-		else if (/%pagekind%/)\
-		{\
-			gsub(/%pagekind%/, cssclass);\
-			print;\
-		}\
-		else { print; }\
-	}' $(HTML_FRAME) \
-	> $@
+	@awk \
+		-v filepath="$@.tmp" \
+		-v pageclass="` dirname "$@" | sed 's|pages/|page-|g' | sed 's|/.*||g' `" \
+		-v pagetitle="` grep -m 1   '^# ' $<.tmp | sed 's|^# ||g' `" \
+		-v pagedescr="` grep -m 1 '^[^#]' $<.tmp `" \
+		-v lastupdate="` date -r $< "+%Y-%m-%d %H:%M:%S" `" \
+		-f "./make_html-templates.awk" $(HTML_FRAME) > $@
 	@rm $<.tmp
 	@rm $@.tmp

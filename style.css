@@ -33,17 +33,6 @@ h1, h2, h3, h4, h5
 	font-family: "Myriad", "Sarpanch", sans-serif;
 }
 
-section
-{
-	padding: 30px;
-}
-
-hr
-{
-	color: #4C404C;
-	margin: 30px 0;
-}
-
 h1
 {
 	color: #825582 !important;
@@ -79,12 +68,37 @@ h5
 	font-weight: bold;
 }
 
-footer h5
+hr
 {
+	color: #4C404C;
+	margin: 30px 0;
+}
+
+section
+{
+	padding: 30px;
+}
+
+footer
+{
+	padding: 30px;
+}
+footer p
+{
+	font-family: "Myriad", "Sarpanch", sans-serif;
 	color: #825582;
-	font-size: 80%;
+	font-size: 90%;
 	font-weight: bold;
 	text-align: center;
+}
+footer p#footer-lastupdate
+{
+	font-family: "Roboto", "Futura", "Calibri", "Rockwell", "Verdana", sans-serif;
+	color: #825582;
+	font-size: 80%;
+	font-weight: regular;
+	font-style: italic;
+	text-align: right;
 }
 
 p
