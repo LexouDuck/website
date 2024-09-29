@@ -38,8 +38,7 @@ Unfortunately, this model uses a 48x48 texture - since the size is not a power o
 
 ##### Nuclear Throne
 
-This set of models was a for-fun project of mine to remake the popular
-roguelike indie game [*Nuclear Throne*](http://nuclearthrone.com/), with lowpoly 3D assets rather than 2D sprites.
+This set of models was a short-lived for-fun project of mine to remake the popular roguelike indie game [*Nuclear Throne*](http://nuclearthrone.com/), with lowpoly 3D assets rather than 2D sprites.
 
 ![](nt_char06-YV_icon-large.png){max-height="500"}
 

@@ -48,7 +48,7 @@ For several years now, I've had a hobby of making covers of video game music (an
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/Cwsuib-Kr1c"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Cwsuib-Kr1c" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of *Birth of a God*, from *Final Fantasy VII* (PS1).
 This is the song that plays during the \"Bizarro Sephiroth\" phase of the game's final boss.
@@ -64,7 +64,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/cMEKw2tOKMc"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/cMEKw2tOKMc" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of *I'm a Spy*, from *Sonic Adventure 2* (Dreamcast/Gamecube).
 This is the song that plays in the "Security Hall" level in the game., in which you play as Rouge the bat.
@@ -81,7 +81,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/tq7jLBu9oQg"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/tq7jLBu9oQg" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of the *Doopliss Battle* theme from *Paper Mario: The Thousand Year Door* (Gamecube).
 
@@ -97,7 +97,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/FehM-1AtSVQ"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/FehM-1AtSVQ" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of the *Boss Battle* theme, from *Final Fantasy IV* (SNES).
 
@@ -112,7 +112,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/8ZliqY6-lrQ"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/8ZliqY6-lrQ" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of the *Fortuna* planet music from *Starfox* (SNES).
 
@@ -128,7 +128,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/bIFMvhv_-Og"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/bIFMvhv_-Og" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of *Wandering Ghosts*, from *Castlevania - Symphony of the Night* (PS1).
 This is the song that plays in the "Colosseum" area in the game.
@@ -146,7 +146,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/NGxFFcdW7nA"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/NGxFFcdW7nA" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of the *Koloktos/Moldarach Battle* theme from *The Legend of Zelda - Skyward Sword*.
 
@@ -162,7 +162,7 @@ The song is available for download in the following formats:
 
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/YmIfv8dM5HA"></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YmIfv8dM5HA" style="max-width:100%;"></iframe>
 
 Here's my chiptune cover of Kefka's last boss theme, *Dancing Mad pt.4*, from *Final Fantasy VI* (SNES).
 
