@@ -3,11 +3,53 @@
 
 When I was a teenager, I played in several cover bands (rock throughout middle school, then went towards funk and jazz music going into high school).
 
+It was around the end of high school that I found a group of people who were serious about writing original songs as a band - the genre being a mix of funk, reggae, and jazz.
+
 ---
 
-I then found a group of people who were serious about writing original songs as a band, the genre being a mix of funk, reggae, and jazz.
+### Tukana (2016—2019)
 
-### Dynam Cross
+Here is the list of band members of *Tukana*:
+
+- **Bassist**: *myself*
+- **Drums**: Diego Fernandez Cerda
+- **Guitarist**: Maximilien Girault
+- **Keyboards**: Étienne Chassagnol
+- **Saxophone, Flute**: Tom Salguero
+
+We had written 6 tracks, and got 4 of those recorded - unfortunately, the mixes were never finalized, so they are a little rough on the edges.
+
+Since I am somewhat confident/afraid that these songs will stay forever unknown and unreleased, I am taking the liberty of sharing these 4 tracks here.
+
+This band will probably remain ultra-underground, but at least this page will allow it to not become "lost media".
+
+Many thanks to those precious few who saw us play live, back in the day.
+
+![](tukana/cover.jpg)
+
+<figure><figcaption>Tukana - 01 - Take Off</figcaption>
+<audio  src="tukana/Tukana - 01 - Take Off.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 01 - Take Off.mp3">Download</a></audio>
+</figure>
+
+<figure><figcaption>Tukana - 02 - Bewavier</figcaption>
+<audio  src="tukana/Tukana - 02 - Bewavier.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 02 - Bewavier.mp3">Download</a></audio>
+</figure>
+
+<figure><figcaption>Tukana - 03 - Beak</figcaption>
+<audio  src="tukana/Tukana - 03 - Beak.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 03 - Beak.mp3">Download</a></audio>
+</figure>
+
+<figure><figcaption>Tukana - 04 - Purple Cloud</figcaption>
+<audio  src="tukana/Tukana - 04 - Purple Cloud.mp3" controls style="width:100%;">
+	<a href="tukana/Tukana - 04 - Purple Cloud.mp3">Download</a></audio>
+</figure>
+
+---
+
+### Dynam Cross (2013—2016)
 
 The band we had was originally called *Dynam Cross*, and we did a couple of small gigs for 2-3 years.
 
@@ -27,7 +69,8 @@ Many thanks to those who saw us play live, back in the day.
 
 ![](dynam-cross/logo.png)
 
-Here are the unreleased songs (unfortunately, for many of them the vocal tracks were never recorded, these are marked as "instrumental"...):
+Here are the unreleased songs (unfortunately, for many of them the vocal tracks were never recorded, these are marked as "instrumental"...).
+I personally feel equal parts both proud and dissapointed of these songs - my favorite is definitely "Brotherhood" as it shows the style we ended up evolving towards.
 
 <figure>     <figcaption>Dynam Cross - 01 - Happy End</figcaption>
 <audio  src="dynam-cross/Dynam Cross - 01 - Happy End.mp3" controls style="width:100%;">
@@ -54,50 +97,6 @@ Here are the unreleased songs (unfortunately, for many of them the vocal tracks 
 	<a href="dynam-cross/Dynam Cross - 06 - Brotherhood.mp3">Download</a></audio>
 </figure>
 
----
-
 Afterwards some time passed, some people left, we found a drummer that was in the same mindset/taste as the rest of us, and so us remaining 4 core guys finally decided to orient our musical style towards more of a jazz fusion style.
 
 To symbolize our change of personnel and direction, we changed the band name to become *Tukana* - this was back in 2016.
-
----
-
-### Tukana
-
-Here is the list of band members of *Tukana*:
-
-- **Bassist**: *myself*
-- **Drums**: Diego Fernandez Cerda
-- **Guitarist**: Maximilien Girault
-- **Keyboards**: Étienne Chassagnol
-- **Saxophone, Flute**: Tom Salguero
-
-We had written 6 tracks, and got 4 of those recorded - unfortunately, the mixes were never finalized, so they are a little rough on the edges.
-
-Since I am somewhat confident/afraid that these songs will stay forever unknown and unreleased, I am taking the liberty of sharing these 4 tracks here.
-
-This band will probably remain ultra-underground, but at least this page will allow it to not become "lost media".
-
-Again, many thanks to those precious few who saw us play live, back in the day.
-
-![](tukana/cover.jpg)
-
-<figure><figcaption>Tukana - 01 - Take Off</figcaption>
-<audio  src="tukana/Tukana - 01 - Take Off.mp3" controls style="width:100%;">
-	<a href="tukana/Tukana - 01 - Take Off.mp3">Download</a></audio>
-</figure>
-
-<figure><figcaption>Tukana - 02 - Bewavier</figcaption>
-<audio  src="tukana/Tukana - 02 - Bewavier.mp3" controls style="width:100%;">
-	<a href="tukana/Tukana - 02 - Bewavier.mp3">Download</a></audio>
-</figure>
-
-<figure><figcaption>Tukana - 03 - Beak</figcaption>
-<audio  src="tukana/Tukana - 03 - Beak.mp3" controls style="width:100%;">
-	<a href="tukana/Tukana - 03 - Beak.mp3">Download</a></audio>
-</figure>
-
-<figure><figcaption>Tukana - 04 - Purple Cloud</figcaption>
-<audio  src="tukana/Tukana - 04 - Purple Cloud.mp3" controls style="width:100%;">
-	<a href="tukana/Tukana - 04 - Purple Cloud.mp3">Download</a></audio>
-</figure>
