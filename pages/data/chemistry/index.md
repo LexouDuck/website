@@ -23,4 +23,5 @@ This is the well-known table of isotope atoms.
 
 This is a table which lists well-known molecules and their properties.
 
-- `TODO: finish and upload this`
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZ2IBRmhF2QlEjIFJjBZeyUXjXPzzMnWn1rau_fUzBIawhYCgCTwUwxHSDL32ZRk_MCo9W46R5GgbV/pubhtml?widget=true&amp;headers=false"
+	style="width:100%;height:80vh;"></iframe>

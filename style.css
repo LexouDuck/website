@@ -9,8 +9,8 @@
 
 :root {
 	--darkbg:	#1F1B1F;
-	--purple:	#825582;
-	--darker:	#4C404C;
+	--purple:	#825582; /* #70566D */
+	--darker:	#4C404C; /* #42273B */
 	--turquo:	#229D5C;
 	--yellow:	#FFE44E;
 	--gray:	#303030;
