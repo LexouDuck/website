@@ -5,6 +5,17 @@ Here are all the various spreadsheets I have created, usually for the sake of my
 
 ---
 
+### Table of language qualifier terms
+
+This table compares ways to qualify/quantify differents kinds fo concepts/objects across multiple languages.
+
+This was originally made to understand [japanese ko-so-a-do words](https://www.tofugu.com/japanese-grammar/kosoado/) in particular, but has grown bigger and more complete over time.
+
+Also note: the first table shown here, [Iqglic](https://www.ostracodfiles.com/iqglic/iqglic.html), is a [conlang](https://en.wikipedia.org/wiki/Constructed_language) meant to be an overly logical simplified version of english.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT7csmXucTb3b2A1q534a1moquRsrS-4fC7XoN9xpPZbIHBoU67h6ZgDej4tAw7WRNhA0HNP1aL2vFQ/pubhtml?widget=true&amp;headers=false"
+	style="width:100%;height:80vh;"></iframe>
+
 ### Table of languages
 
 This is a table of all known languages, as classified by the [ISO 639-3 standard](https://en.wikipedia.org/wiki/ISO_639-3).
