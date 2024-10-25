@@ -60,7 +60,8 @@
     -   [•]{.treeview_leaf} [Mathophilia](/pages/maths/mathophilia/index.html)
     -   [•]{.treeview_leaf} [Table of Axioms and Systems](/pages/maths/table_axioms/index.html)
     -   [•]{.treeview_leaf} [Table of Algebraic Properties](/pages/maths/table_properties/index.html)
-    -   [•]{.treeview_leaf} [Table of 3D Polyhedra](/pages/maths/table_polyhedra/index.html)
+    -   [•]{.treeview_leaf} [Table of Polytopes](/pages/maths/table_polytopes/index.html)
+    -   [•]{.treeview_leaf} [Table of Tesselations](/pages/maths/table_tesselations/index.html)
 
 -   [▶]{.treeview_node} ![](/pages/data/icon.svg){.icon .svg} [Data](/pages/data/index.html)
 

@@ -2,5 +2,6 @@ bnnn
 mathophilia
 table_axioms
 table_properties
-table_polyhedra
+table_polytopes
+table_tesselations
 ccclean

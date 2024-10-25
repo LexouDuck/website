@@ -1,7 +1,7 @@
 
-# Table of Polyhedra
+# Table of Polytopes
 
-This is a simple table to list all of regular (interesting) polyhedra in 3 dimensions.
+This is a large multi-sheet table to list all of the convex polytopes in the common (known) dimensions.
 
 ---
 
