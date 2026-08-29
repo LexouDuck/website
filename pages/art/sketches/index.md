@@ -10,13 +10,47 @@ as much as I would like, ever since I learned to program, and got a job...
 
 ---
 
+### 2026
+
+![](2026-08-new-caledonia_whalegazing.jpg){width="650"}
+![](2026-08-new-caledonia_nakamal.jpg){width="650"}
+![](2026-07-sydney_opera-house.jpg){width="650"}
+![](2026-07-sydney_harbor-bridge.jpg){width="650"}
+![](2026-07-sydney_metal-concert.jpg){width="650"}
+![](2026-07-sydney_arcade-bar.jpg){width="650"}
+![](2026-07-sydney_seagull-beach.jpg){width="650"}
+![](2026-07-sydney_fish-skellys.jpg){width="650"}
+![](2026-06-nagano_togakushi-jinja.jpg){width="650"}
+
+### 2025
+
+![](2025-08-taipei_arch-of-freedom.jpg){width="650"}
+![](2025-08-taipei_park.jpg){width="650"}
+![](2025-08-taipei_temple.jpg){width="650"}
+![](2025-08-taipei_highway.jpg){width="650"}
+![](2025-08-taipei_birds.jpg){width="650"}
+![](2025-08_knight.jpg){width="650"}
+
+### 2024
+
+Moved to Japan and got back into drawing somewhat, after an 8 year break.
+
+![](2024-11_museum.jpg){width="650"}
+![](2024-10_nude-sepia-final.jpg){width="650"}
+![](2024-10_nude-sepia.jpg){width="650"}
+![](2024-10_nude-pastel.jpg){width="650"}
+
 ### 2019
+
+Just a single drawing that a friend asked me to make.
 
 ![](2019_strider.jpg){width="650"}
 
 ---
 
 ### 2016
+
+The last year I was in school, so the last year i could draw consistenly.
 
 ![](2016_dump_ETE-L2.png){width="650"}
 
@@ -52,11 +86,7 @@ as much as I would like, ever since I learned to program, and got a job...
 ### 2013
 
 ![](2013_dump_girls.png){width="650"}
-![](2013_Kiti.png){width="650"}
-![](2013_Virtuaboy.png){width="650"}
-![](2013_Chris2balls.png){width="650"}
-![](2013_CrappyBlueLuigi.png){width="650"}
-![](2013_Devicho.png){width="650"}
+![](2013_TSR.png){width="650"}
 ![](2013_Sketchasaurus.png){width="650"}
 ![](2013_batman.png){width="650"}
 ![](2013_demon.png){width="650"}
