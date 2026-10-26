@@ -1,0 +1,164 @@
+/* Interactive sheet music player (see /assets/sheetmusic.js) */
+
+details.sheetmusic
+{
+	margin: 10px 0;
+	border: 1px solid var(--darker);
+	border-radius: 5px;
+	background-color: rgba(31, 27, 31, 0.85);
+}
+details.sheetmusic[open]
+{
+	border-color: var(--purple);
+}
+details.sheetmusic.playing
+{
+	border-color: var(--yellow);
+}
+
+details.sheetmusic > summary
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0 10px;
+	padding: 10px 15px;
+	cursor: pointer;
+	user-select: none;
+	list-style: none;
+}
+details.sheetmusic > summary::-webkit-details-marker
+{
+	display: none;
+}
+details.sheetmusic > summary::before
+{
+	content: "▶";
+	color: white;
+	font-size: 80%;
+	display: inline-block;
+	transition: transform 0.15s;
+}
+details.sheetmusic[open] > summary::before
+{
+	transform: rotate(90deg);
+}
+details.sheetmusic > summary:hover .sheetmusic-title
+{
+	color: var(--yellow);
+}
+
+.sheetmusic-title
+{
+	color: white;
+	font-family: "Myriad", "Sarpanch", sans-serif;
+	font-weight: bold;
+	font-size: 110%;
+}
+.sheetmusic-info
+{
+	color: var(--purple);
+	font-style: italic;
+}
+
+/* toolbar */
+
+.sheetmusic-toolbar
+{
+	position: sticky;
+	top: var(--sheetmusic-sticky-top, 0);
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 15px;
+	padding: 8px 15px;
+	border-top: 1px solid var(--darker);
+	border-bottom: 1px solid var(--darker);
+	background-color: var(--darkbg);
+	color: white;
+	font-size: 90%;
+}
+.sheetmusic-toolbar button
+{
+	width: 36px;
+	height: 30px;
+	border: 1px solid var(--purple);
+	border-radius: 4px;
+	background-color: var(--darker);
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+}
+.sheetmusic-toolbar button:hover:enabled
+{
+	border-color: var(--yellow);
+	color: var(--yellow);
+}
+.sheetmusic-toolbar button:disabled
+{
+	opacity: 0.4;
+	cursor: wait;
+}
+.sheetmusic-toolbar select
+{
+	background-color: var(--darker);
+	color: white;
+	border: 1px solid var(--purple);
+	border-radius: 3px;
+}
+.sheetmusic-toolbar label
+{
+	cursor: pointer;
+	white-space: nowrap;
+}
+.sheetmusic-toolbar input[type="checkbox"]
+{
+	accent-color: var(--turquo);
+	vertical-align: middle;
+}
+.sheetmusic-time
+{
+	font-variant-numeric: tabular-nums;
+	min-width: 85px;
+}
+.sheetmusic-status
+{
+	color: var(--yellow);
+	font-style: italic;
+}
+.sheetmusic-links
+{
+	margin-left: auto;
+}
+
+/* score */
+
+.sheetmusic-score
+{
+	position: relative;
+	isolation: isolate; /* keeps alphaTab's cursors below the sticky toolbar */
+	padding: 10px 0;
+	min-height: 100px;
+}
+
+/* alphaTab playback cursors and highlights */
+
+.sheetmusic .at-cursor-bar
+{
+	background: rgba(255, 228, 78, 0.10);
+}
+.sheetmusic .at-cursor-beat
+{
+	background: var(--yellow);
+	width: 3px;
+}
+.sheetmusic .at-selection div
+{
+	background: rgba(79, 140, 255, 0.25);
+}
+.sheetmusic .at-highlight *
+{
+	fill: var(--yellow);
+	stroke: var(--yellow);
+}

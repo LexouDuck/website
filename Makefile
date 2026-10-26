@@ -28,11 +28,13 @@ HTML_FRAME = ./frame.html
 # Tools
 
 #! The tool used to convert .scss to .css
-SCSS = sass
+SCSS ?= sass
 #! The tool used to convert .md to .html
-PANDOC = pandoc
+PANDOC ?= pandoc
 #! The tool used to host a local test server
-PYTHON = python3
+PYTHON ?= python3
+#! The tool used to convert MuseScore .mscz files to .musicxml (override with `make sheetmusic MUSESCORE=...`)
+MUSESCORE ?= $(shell command -v mscore || command -v musescore || command -v mscore4portable || echo "flatpak run org.musescore.MuseScore" )
 
 
 
@@ -66,6 +68,19 @@ setup:
 .PHONY:\
 re
 re: clean start
+
+#! This rule converts every MuseScore .mscz file in ./pages to a .musicxml file (used by the sheet music player)
+.PHONY:\
+sheetmusic
+sheetmusic:
+	@find ./pages -name "*.mscz" | while IFS= read -r file ; do \
+		out="$${file%.mscz}.musicxml" ; \
+		if [ ! -f "$${out}" ] || [ "$${file}" -nt "$${out}" ] ; then \
+			echo "Converting sheet music: $${out}" ; \
+			$(MUSESCORE) -o "$${out}" "$${file}" || exit 1 ; \
+		fi ; \
+	done
+	@echo "All sheet music is up to date."
 
 
 
