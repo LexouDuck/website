@@ -1,4 +1,4 @@
 selfprojects
-fangames
 teamprojects
+fangames
 gamejams

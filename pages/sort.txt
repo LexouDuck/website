@@ -1,7 +1,7 @@
 art
 music
 games
-tools
+tools	Tools
 maths
 data
 contact

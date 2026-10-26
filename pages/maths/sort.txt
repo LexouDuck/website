@@ -1,7 +1,7 @@
 bnnn
 mathophilia
-table_axioms
-table_properties
+table_axioms	Table of Axioms and Systems
+table_properties	Table of Algebraic Properties
 table_polytopes
 table_tesselations
 ccclean

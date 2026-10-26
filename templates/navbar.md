@@ -60,17 +60,17 @@
 <ul class="treeview nested">
 	-   [•]{.treeview_leaf} [Base-Neutral Number Notation](/pages/maths/bnnn/index.html)
 	-   [•]{.treeview_leaf} [Mathophilia](/pages/maths/mathophilia/index.html)
-    -   [•]{.treeview_leaf} [Table of Axioms and Systems](/pages/maths/table_axioms/index.html)
-    -   [•]{.treeview_leaf} [Table of Algebraic Properties](/pages/maths/table_properties/index.html)
-    -   [•]{.treeview_leaf} [Table of Polytopes](/pages/maths/table_polytopes/index.html)
-    -   [•]{.treeview_leaf} [Table of Tesselations](/pages/maths/table_tesselations/index.html)
+	-   [•]{.treeview_leaf} [Table of Axioms and Systems](/pages/maths/table_axioms/index.html)
+	-   [•]{.treeview_leaf} [Table of Algebraic Properties](/pages/maths/table_properties/index.html)
+	-   [•]{.treeview_leaf} [Table of Polytopes](/pages/maths/table_polytopes/index.html)
+	-   [•]{.treeview_leaf} [Table of Tesselations](/pages/maths/table_tesselations/index.html)
 
 -   [▶]{.treeview_node} ![](/pages/data/icon.svg){.icon .svg} [Data](/pages/data/index.html)
 <ul class="treeview nested">
-    -   [•]{.treeview_leaf} [Physics](/pages/data/physics/index.html)
-    -   [•]{.treeview_leaf} [Chemistry](/pages/data/chemistry/index.html)
-    -   [•]{.treeview_leaf} [Musicology](/pages/data/musicology/index.html)
-    -   [•]{.treeview_leaf} [Linguistics](/pages/data/linguistics/index.html)
+	-   [•]{.treeview_leaf} [Physics](/pages/data/physics/index.html)
+	-   [•]{.treeview_leaf} [Chemistry](/pages/data/chemistry/index.html)
+	-   [•]{.treeview_leaf} [Musicology](/pages/data/musicology/index.html)
+	-   [•]{.treeview_leaf} [Linguistics](/pages/data/linguistics/index.html)
 
 -   [•]{.treeview_leaf} ![](/pages/contact/icon.svg){.icon .svg} [Contact](/pages/contact/index.html)
 

@@ -11,6 +11,13 @@ CONTENTS = \
 
 CONTENTS_HTML = $(CONTENTS:%.md=%.html)
 
+#! The list of files which define the order (and optional labels) of pages in the navigation menu
+SORTFILES = \
+	$(wildcard ./pages/sort.txt) \
+	$(wildcard ./pages/*/sort.txt) \
+	$(wildcard ./pages/*/*/sort.txt) \
+	$(wildcard ./pages/*/*/*/sort.txt) \
+
 #! The list of source markdown files which become HTML template components
 TEMPLATES = \
 	./templates/navbar.md \
@@ -94,7 +101,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 	done
 
 #! This rule automatically generates the website navigation menu, by looking through the ./pages folders
-./templates/navbar.md: ./navbar.sh
+./templates/navbar.md: ./navbar.sh $(CONTENTS) $(SORTFILES)
 	@echo "Generating navigation bar..."
 	@./navbar.sh
 

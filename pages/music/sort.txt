@@ -1,5 +1,6 @@
 originals
-parodies
-chiptunes
-covers
 bands
+covers
+guitar
+chiptunes
+parodies
