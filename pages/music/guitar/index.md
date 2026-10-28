@@ -19,8 +19,8 @@ Here are some solo guitar arrangements I have made, with interactive sheet music
 </details>
 
 <details class="sheetmusic"
-	data-file="classical/Edvard Grieg - [Peer Gynt] The Death of Åse.musicxml"
-	data-mscz="classical/Edvard Grieg - [Peer Gynt] The Death of Åse.mscz">
+	data-file="classical/Edvard Grieg - [Peer Gynt] The Death of Åse.wip.musicxml"
+	data-mscz="classical/Edvard Grieg - [Peer Gynt] The Death of Åse.wip.mscz">
 <summary><span class="sheetmusic-title">The Death of Åse (WIP)</span> <span class="sheetmusic-info">Edvard Grieg – [Peer Gynt]</span></summary>
 </details>
 
