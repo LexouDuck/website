@@ -153,6 +153,65 @@
 		return true;
 	}
 
+	// Time between two successive notes of an arpeggio (and the maximum fraction
+	// of the chord's duration that the whole arpeggio may take up).
+	const ARPEGGIO_NOTE_GAP_MS = 45;
+	const ARPEGGIO_MAX_SPREAD = 0.5;
+
+	// alphaTab's MusicXML importer reads <arpeggiate direction="..."> backwards: it follows
+	// the Guitar Pro convention, where a "down" arpeggio is a down-stroke (low string first,
+	// so the pitch goes UP), but maps MusicXML's direction="up" (pitch goes up) onto it.
+	// So, before importing, swap "up" and "down" (a plain arpeggio with no direction,
+	// which alphaTab treats as "down", correctly ends up being played upwards).
+	function fixArpeggioDirections(bytes)
+	{
+		const xml = new TextDecoder("utf-8").decode(bytes);
+		if (xml.indexOf("<arpeggiate") < 0)
+			return bytes;
+		const fixed = xml.replace(/<arpeggiate\b[^>]*>/g, function(tag)
+		{
+			return tag.replace(/direction="(up|down)"/, function(_, direction)
+			{
+				return 'direction="' + (direction === "up" ? "down" : "up") + '"';
+			});
+		});
+		return new TextEncoder().encode(fixed);
+	}
+
+	// alphaTab's MusicXML importer does not give arpeggios any duration, so all their
+	// notes would sound at once: spread the notes out, by a fixed amount of time per note.
+	function setArpeggioDurations(alphaTab, score)
+	{
+		const BrushType = alphaTab.model.BrushType;
+		const quarter = 960; // MIDI ticks per quarter note, in alphaTab
+		let tempo = score.tempo;
+		score.masterBars.forEach(function(masterBar)
+		{
+			if (masterBar.tempoAutomations && masterBar.tempoAutomations.length > 0)
+				tempo = masterBar.tempoAutomations[0].value;
+			const ticksPerMs = quarter * tempo / 60000;
+			score.tracks.forEach(function(track)
+			{
+				track.staves.forEach(function(staff)
+				{
+					staff.bars[masterBar.index].voices.forEach(function(voice)
+					{
+						voice.beats.forEach(function(beat)
+						{
+							if (beat.brushType !== BrushType.ArpeggioUp &&
+								beat.brushType !== BrushType.ArpeggioDown)
+								return;
+							if (beat.brushDuration > 0 || beat.notes.length < 2)
+								return;
+							const spread = (beat.notes.length - 1) * ARPEGGIO_NOTE_GAP_MS * ticksPerMs;
+							beat.brushDuration = Math.round(Math.min(spread, beat.playbackDuration * ARPEGGIO_MAX_SPREAD));
+						});
+					});
+				});
+			});
+		});
+	}
+
 	function formatTime(ms)
 	{
 		const s = Math.max(0, Math.floor(ms / 1000));
@@ -216,9 +275,10 @@
 			const response = await fetch(file);
 			if (!response.ok)
 				throw new Error("Could not download the score (HTTP " + response.status + ").");
-			const bytes = new Uint8Array(await response.arrayBuffer());
+			const bytes = fixArpeggioDirections(new Uint8Array(await response.arrayBuffer()));
 			let score = alphaTab.importer.ScoreLoader.loadScoreFromBytes(bytes, settings);
 			score = mergeLinkedTabStaves(alphaTab, score, settings);
+			setArpeggioDurations(alphaTab, score);
 
 			const api = new alphaTab.AlphaTabApi(container, settings);
 			api.sheetmusicToolbar = toolbar;
