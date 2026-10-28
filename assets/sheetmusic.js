@@ -85,9 +85,9 @@
 	// MuseScore exports a "standard staff + linked tablature staff" pair as two separate staves,
 	// which alphaTab would display separately AND play twice. This function merges each such
 	// pair into one staff which shows both notations (string/fret info is copied over).
-	function mergeLinkedTabStaves(alphaTab, score, settings)
+	// NB: refinishScore() must be called afterwards.
+	function mergeLinkedTabStaves(alphaTab, score)
 	{
-		let merged = 0;
 		score.tracks.forEach(function(track)
 		{
 			for (let i = 0; i + 1 < track.staves.length; i++)
@@ -103,12 +103,15 @@
 				std.capo = tab.capo;
 				std.showTablature = true;
 				track.staves.splice(i + 1, 1);
-				merged++;
 			}
 		});
-		if (merged === 0)
-			return score;
-		// round-trip through alphaTab's serializer, so that all internal lookups are rebuilt
+	}
+
+	// After the score model has been modified, it must be "finished" again, so that alphaTab
+	// recomputes everything which derives from it (internal lookups, let-ring durations, etc).
+	// This is done by round-tripping the score through alphaTab's serializer.
+	function refinishScore(alphaTab, score, settings)
+	{
 		const json = alphaTab.model.JsonConverter.scoreToJsObject(score);
 		return alphaTab.model.JsonConverter.jsObjectToScore(json, settings);
 	}
@@ -212,6 +215,293 @@
 		});
 	}
 
+	// parses the (uncompressed) MusicXML file, so that information which alphaTab ignores can be read
+	function parseMusicXml(bytes)
+	{
+		try
+		{
+			const doc = new DOMParser().parseFromString(new TextDecoder("utf-8").decode(bytes), "application/xml");
+			if (doc.getElementsByTagName("parsererror").length > 0 || !doc.querySelector("score-partwise"))
+				return null;
+			return doc;
+		}
+		catch (error) { return null; }
+	}
+
+	function childNumber(element, name)
+	{
+		const child = element.querySelector(":scope > " + name);
+		return child ? parseFloat(child.textContent) || 0 : 0;
+	}
+
+	// Calls `callback(element, measureIndex, position)` for every element inside every <measure> of
+	// the given <part>, where `position` is the time since the start of the measure, in quarter notes.
+	function forEachMeasureElement(part, callback)
+	{
+		let divisions = 1;
+		Array.from(part.children)
+			.filter(function(element) { return element.localName === "measure"; })
+			.forEach(function(measure, index)
+			{
+				let position = 0;
+				Array.from(measure.children).forEach(function(element)
+				{
+					if (element.localName === "attributes" && element.querySelector(":scope > divisions"))
+						divisions = childNumber(element, "divisions") || 1;
+					callback(element, index, position + childNumber(element, "offset") / divisions);
+					switch (element.localName)
+					{
+						case "note":
+							if (!element.querySelector(":scope > grace") && !element.querySelector(":scope > chord"))
+								position += childNumber(element, "duration") / divisions;
+							break;
+						case "backup":  position -= childNumber(element, "duration") / divisions; break;
+						case "forward": position += childNumber(element, "duration") / divisions; break;
+					}
+				});
+			});
+	}
+
+	const LET_RING_TEXT = /^\s*let[\s-]*ring\s*$/i;
+
+	// alphaTab's MusicXML importer only understands "let ring" when it is written like Guitar Pro's
+	// export ("LetRing" followed by <dashes>), but MuseScore exports it as "let ring" with a <bracket>,
+	// so it was only displayed as text, and not played. This finds the let-ring ranges in the
+	// MusicXML, and sets alphaTab's let-ring effect on all notes within those ranges.
+	// Returns the let-ring ranges found, for fixLetRingRests().
+	// NB: refinishScore() must be called afterwards.
+	function applyLetRing(alphaTab, score, xml)
+	{
+		const quarter = 960; // MIDI ticks per quarter note, in alphaTab
+		const rangesByTrack = [];
+		xml.querySelectorAll("score-partwise > part").forEach(function(part, partIndex)
+		{
+			const track = score.tracks[partIndex];
+			if (!track)
+				return;
+			const ranges = []; // [start, end) in MIDI ticks
+			const open = {}; // line number -> start tick, for let-ring lines which have not ended yet
+			forEachMeasureElement(part, function(element, measureIndex, position)
+			{
+				const masterBar = score.masterBars[measureIndex];
+				if (element.localName !== "direction" || !masterBar)
+					return;
+				const tick = masterBar.start + Math.round(position * quarter);
+				const isLetRing = Array.from(element.querySelectorAll("direction-type > words"))
+					.some(function(words) { return LET_RING_TEXT.test(words.textContent); });
+				const lines = element.querySelectorAll("direction-type > bracket, direction-type > dashes");
+				lines.forEach(function(line)
+				{
+					const number = line.getAttribute("number") || "1";
+					const type = line.getAttribute("type");
+					if (type === "start" && isLetRing)
+						open[number] = tick;
+					else if (type === "stop" && number in open)
+					{
+						ranges.push([ open[number], tick ]);
+						delete open[number];
+					}
+				});
+				// "let ring" text without a line: let ring until the end of the measure
+				if (isLetRing && lines.length === 0)
+					ranges.push([ tick, masterBar.start + masterBar.calculateDuration() ]);
+			});
+			Object.keys(open).forEach(function(number) { ranges.push([ open[number], Infinity ]); });
+			rangesByTrack[partIndex] = ranges;
+
+			track.staves.forEach(function(staff)
+			{
+				staff.bars.forEach(function(bar)
+				{
+					bar.voices.forEach(function(voice)
+					{
+						voice.beats.forEach(function(beat)
+						{
+							// alphaTab displays its own "let ring" line, so remove the plain text
+							if (beat.text && LET_RING_TEXT.test(beat.text))
+								beat.text = null;
+							if (isInRanges(ranges, beat.absolutePlaybackStart))
+								beat.notes.forEach(function(note) { note.isLetRing = true; });
+						});
+					});
+				});
+			});
+		});
+		return rangesByTrack;
+	}
+
+	function isInRanges(ranges, tick)
+	{
+		return ranges.some(function(range) { return tick >= range[0] && tick < range[1]; });
+	}
+
+	// alphaTab extends the let-ring effect over rests which are followed by more let-ring notes,
+	// which joins separate let-ring lines into one: remove it from rests outside of let-ring ranges.
+	// (This only changes the display: rests always stop the let-ring effect during playback.)
+	// NB: must be called after refinishScore().
+	function fixLetRingRests(score, rangesByTrack)
+	{
+		score.tracks.forEach(function(track, trackIndex)
+		{
+			const ranges = rangesByTrack[trackIndex] || [];
+			track.staves.forEach(function(staff)
+			{
+				staff.bars.forEach(function(bar)
+				{
+					bar.voices.forEach(function(voice)
+					{
+						voice.beats.forEach(function(beat)
+						{
+							if (beat.isRest && beat.isLetRing && !isInRanges(ranges, beat.absolutePlaybackStart))
+								beat.isLetRing = false;
+						});
+					});
+				});
+			});
+		});
+	}
+
+	// alphaTab's own let-ring playback stops a note at the next rest, and after at most one bar.
+	// Instead, make each let-ring note ring until either its string is played again, or the
+	// let-ring line ends (like a guitarist would): this edits the MIDI file generated by alphaTab,
+	// just before it is loaded into the synthesizer (see the `midiLoad` event).
+	function extendLetRingNotes(alphaTab, api, midiFile, rangesByTrack)
+	{
+		const MidiEventType = alphaTab.midi.MidiEventType;
+		const lookup = api.tickCache;
+		const score = api.score;
+		if (!lookup || !score || !rangesByTrack.some(function(ranges) { return ranges && ranges.length > 0; }))
+			return;
+		const shift = midiFile.tickShift || 0;
+		midiFile.tracks.forEach(function(midiTrack)
+		{
+			const events = midiTrack.events;
+			if (events.length === 0)
+				return;
+			// 1. find the score note which corresponds to each MIDI note
+			const notes = [];
+			const waitingForOff = new Map();
+			let barIndex = 0;
+			events.forEach(function(event)
+			{
+				const key = event.channel * 128 + event.noteKey;
+				if (event.type === MidiEventType.NoteOn)
+				{
+					const tick = event.tick - shift;
+					while (barIndex + 1 < lookup.masterBars.length && lookup.masterBars[barIndex + 1].start <= tick)
+						barIndex++;
+					const barLookup = lookup.masterBars[barIndex];
+					const entry = {
+						on: event,
+						off: null,
+						note: barLookup ? findNote(score, event.track, barLookup.masterBar, tick - barLookup.start, event.noteKey) : null,
+					};
+					notes.push(entry);
+					if (!waitingForOff.has(key))
+						waitingForOff.set(key, []);
+					waitingForOff.get(key).push(entry);
+				}
+				else if (event.type === MidiEventType.NoteOff)
+				{
+					const waiting = waitingForOff.get(key);
+					if (waiting && waiting.length > 0)
+						waiting.shift().off = event;
+				}
+			});
+			const lastTick = events[events.length - 1].tick;
+			// 2. make let-ring notes ring until the end of their let-ring range, or until
+			//    the next note on the same string (or with the same pitch, as MIDI can't overlap those)
+			let changed = false;
+			notes.forEach(function(entry, i)
+			{
+				const note = entry.note;
+				if (!note || !note.isLetRing || !entry.off)
+					return;
+				const scoreTick = note.beat.absolutePlaybackStart;
+				const range = (rangesByTrack[entry.on.track] || []).find(function(range)
+				{
+					return scoreTick >= range[0] && scoreTick < range[1];
+				});
+				if (!range)
+					return;
+				let end = (range[1] === Infinity) ? lastTick : entry.on.tick + (range[1] - scoreTick);
+				for (let j = i + 1; j < notes.length && notes[j].on.tick < end; j++)
+				{
+					const other = notes[j];
+					if (other.on.track !== entry.on.track)
+						continue;
+					const sameString = other.note && note.isStringed && other.note.string === note.string &&
+						other.note.beat.voice.bar.staff.index === note.beat.voice.bar.staff.index;
+					const samePitch = other.on.noteKey === entry.on.noteKey && other.on.channel === entry.on.channel;
+					if (sameString || samePitch)
+					{
+						end = other.on.tick;
+						break;
+					}
+				}
+				// never shorten a note below its written length (nor a tied note at all)
+				const writtenEnd = entry.on.tick + note.beat.playbackDuration;
+				end = note.isTieOrigin ? Math.max(end, entry.off.tick) : Math.max(end, writtenEnd);
+				if (entry.off.tick !== end)
+				{
+					entry.off.tick = end;
+					changed = true;
+				}
+			});
+			// 3. keep the events sorted by time (stable sort, so that same-tick ordering is kept)
+			if (changed)
+			{
+				const sorted = events.map(function(event, index) { return [ event, index ]; })
+					.sort(function(a, b) { return (a[0].tick - b[0].tick) || (a[1] - b[1]); })
+					.map(function(pair) { return pair[0]; });
+				events.length = 0;
+				Array.prototype.push.apply(events, sorted);
+			}
+		});
+	}
+
+	// finds the note of the score which was played at the given time (relative to the start of
+	// the given bar, in MIDI ticks) with the given MIDI key, in the given track
+	function findNote(score, trackIndex, masterBar, tick, key)
+	{
+		const track = score.tracks[trackIndex];
+		if (!track)
+			return null;
+		for (const staff of track.staves)
+		{
+			for (const voice of staff.bars[masterBar.index].voices)
+			{
+				for (const beat of voice.beats)
+				{
+					// notes of an arpeggio start a bit after their beat
+					if (tick < beat.playbackStart - 1 || tick > beat.playbackStart + beat.brushDuration + 1)
+						continue;
+					for (const note of beat.notes)
+					{
+						if (note.calculateRealValue(false, true) === key)
+							return note;
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	// alphaTab labels the let-ring line "LetRing" (as in Guitar Pro): show "let ring" instead,
+	// like MuseScore does. The score is rendered in parts, so this watches for new SVG elements.
+	function relabelLetRing(container)
+	{
+		function relabel()
+		{
+			container.querySelectorAll("text").forEach(function(text)
+			{
+				if (text.textContent === "LetRing")
+					text.textContent = "let ring";
+			});
+		}
+		new MutationObserver(relabel).observe(container, { childList: true, subtree: true });
+	}
+
 	function formatTime(ms)
 	{
 		const s = Math.max(0, Math.floor(ms / 1000));
@@ -267,6 +557,7 @@
 		const container = el("div", { class: "sheetmusic-score" });
 		details.appendChild(toolbar);
 		details.appendChild(container);
+		relabelLetRing(container);
 
 		try
 		{
@@ -276,12 +567,17 @@
 			if (!response.ok)
 				throw new Error("Could not download the score (HTTP " + response.status + ").");
 			const bytes = fixArpeggioDirections(new Uint8Array(await response.arrayBuffer()));
+			const xml = parseMusicXml(bytes);
 			let score = alphaTab.importer.ScoreLoader.loadScoreFromBytes(bytes, settings);
-			score = mergeLinkedTabStaves(alphaTab, score, settings);
+			mergeLinkedTabStaves(alphaTab, score);
 			setArpeggioDurations(alphaTab, score);
+			const letRingRanges = xml ? applyLetRing(alphaTab, score, xml) : [];
+			score = refinishScore(alphaTab, score, settings);
+			fixLetRingRests(score, letRingRanges);
 
 			const api = new alphaTab.AlphaTabApi(container, settings);
 			api.sheetmusicToolbar = toolbar;
+			api.midiLoad.on(function(midiFile) { extendLetRingNotes(alphaTab, api, midiFile, letRingRanges); });
 			players.push(api);
 			details._alphaTab = api;
 			updateStickyOffset();
