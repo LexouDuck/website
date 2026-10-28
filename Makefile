@@ -88,6 +88,7 @@ sheetmusic:
 		fi ; \
 	done
 	@echo "All sheet music is up to date."
+	@touch ./pages/music/guitar/index.md
 
 
 
