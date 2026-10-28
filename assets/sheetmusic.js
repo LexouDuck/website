@@ -262,6 +262,29 @@
 			masterBar.isAnacrusis = true;
 	}
 
+	// MuseScore exports the staccato of a chord on only one of its notes, so alphaTab played only that
+	// note staccato and let the others ring: the staccato of any note of a chord applies to the whole chord.
+	function applyChordStaccato(score)
+	{
+		score.tracks.forEach(function(track)
+		{
+			track.staves.forEach(function(staff)
+			{
+				staff.bars.forEach(function(bar)
+				{
+					bar.voices.forEach(function(voice)
+					{
+						voice.beats.forEach(function(beat)
+						{
+							if (beat.notes.some(function(note) { return note.isStaccato; }))
+								beat.notes.forEach(function(note) { note.isStaccato = true; });
+						});
+					});
+				});
+			});
+		});
+	}
+
 	// Time between two successive notes of an arpeggio (and the maximum fraction
 	// of the chord's duration that the whole arpeggio may take up).
 	const ARPEGGIO_NOTE_GAP_MS = 45;
@@ -620,7 +643,8 @@
 			notes.forEach(function(entry, i)
 			{
 				const note = entry.note;
-				if (!note || !note.isLetRing || !entry.off)
+				// staccato takes precedence over let-ring (as in alphaTab's own playback)
+				if (!note || !note.isLetRing || note.isStaccato || !entry.off)
 					return;
 				const scoreTick = note.beat.absolutePlaybackStart;
 				const range = (rangesByTrack[entry.on.track] || []).find(function(range)
@@ -776,6 +800,7 @@
 			let score = alphaTab.importer.ScoreLoader.loadScoreFromBytes(bytes, settings);
 			mergeLinkedTabStaves(alphaTab, score);
 			detectAnacrusis(score);
+			applyChordStaccato(score);
 			setArpeggioDurations(alphaTab, score);
 			const letRingRanges = xml ? applyLetRing(alphaTab, score, xml) : [];
 			score = refinishScore(alphaTab, score, settings);
