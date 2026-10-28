@@ -239,6 +239,29 @@
 		});
 	}
 
+	// A score which starts with a partial measure (a pickup / anacrusis) is not marked as such in the
+	// MuseScore MusicXML export, so alphaTab played it as a full measure, with silence after its notes.
+	// If the first measure is shorter than its time signature, mark it as an anacrusis, so that the next
+	// measure starts right after it.
+	// NB: refinishScore() must be called afterwards.
+	function detectAnacrusis(score)
+	{
+		const masterBar = score.masterBars[0];
+		if (!masterBar || masterBar.isAnacrusis || score.masterBars.length < 2)
+			return;
+		let duration = 0;
+		score.tracks.forEach(function(track)
+		{
+			track.staves.forEach(function(staff)
+			{
+				if (staff.bars.length > 0)
+					duration = Math.max(duration, staff.bars[0].calculateDuration());
+			});
+		});
+		if (duration > 0 && duration < masterBar.calculateDuration(false))
+			masterBar.isAnacrusis = true;
+	}
+
 	// Time between two successive notes of an arpeggio (and the maximum fraction
 	// of the chord's duration that the whole arpeggio may take up).
 	const ARPEGGIO_NOTE_GAP_MS = 45;
@@ -752,6 +775,7 @@
 			const xml = parseMusicXml(bytes);
 			let score = alphaTab.importer.ScoreLoader.loadScoreFromBytes(bytes, settings);
 			mergeLinkedTabStaves(alphaTab, score);
+			detectAnacrusis(score);
 			setArpeggioDurations(alphaTab, score);
 			const letRingRanges = xml ? applyLetRing(alphaTab, score, xml) : [];
 			score = refinishScore(alphaTab, score, settings);
