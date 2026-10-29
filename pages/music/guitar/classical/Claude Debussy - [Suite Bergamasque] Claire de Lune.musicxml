@@ -605,6 +605,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -1986,6 +1987,7 @@
         <duration>24</duration>
         <voice>5</voice>
         <type>half</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -4140,6 +4142,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -7852,6 +7855,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -10655,6 +10659,7 @@
         <voice>5</voice>
         <type>quarter</type>
         <dot/>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -11482,6 +11487,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -11501,6 +11507,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -11520,6 +11527,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -11972,6 +11980,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -11991,6 +12000,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -12010,6 +12020,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -12587,6 +12598,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -12626,6 +12638,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -14018,6 +14031,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -14755,6 +14769,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -14774,6 +14789,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -14793,6 +14809,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -15233,6 +15250,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -15252,6 +15270,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -15271,6 +15290,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -16161,6 +16181,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -16447,6 +16468,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -16612,6 +16634,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -16921,6 +16944,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -16956,6 +16980,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -16990,6 +17015,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -17024,6 +17050,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -17470,7 +17497,6 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
-        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -17508,7 +17534,6 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
-        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -18304,6 +18329,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -21761,6 +21787,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -21780,6 +21807,7 @@
         <duration>12</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -22231,6 +22259,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -23606,6 +23635,7 @@
         <duration>24</duration>
         <voice>5</voice>
         <type>half</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -24575,6 +24605,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -25117,6 +25148,7 @@
         <duration>6</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -27748,6 +27780,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -27765,6 +27798,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -27782,6 +27816,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -28797,6 +28832,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -28814,6 +28850,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -28831,6 +28868,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29050,6 +29088,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29067,6 +29106,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29084,6 +29124,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29299,6 +29340,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29316,6 +29358,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29333,6 +29376,7 @@
         <duration>3</duration>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -29428,6 +29472,7 @@
         <voice>5</voice>
         <type>quarter</type>
         <dot/>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>

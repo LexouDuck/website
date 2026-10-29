@@ -9,7 +9,7 @@
     <creator type="composer">Johnny Mandel</creator>
     <encoding>
       <software>MuseScore Studio 4.7.5</software>
-      <encoding-date>2026-10-26</encoding-date>
+      <encoding-date>2026-10-29</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -497,6 +497,7 @@
         <voice>5</voice>
         <type>half</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -626,6 +627,7 @@
         <voice>5</voice>
         <type>half</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -665,6 +667,7 @@
         <voice>5</voice>
         <type>half</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -965,6 +968,7 @@
         <voice>5</voice>
         <type>quarter</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -2297,6 +2301,7 @@
         <duration>2</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -2681,6 +2686,7 @@
         <duration>4</duration>
         <voice>5</voice>
         <type>half</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -2916,6 +2922,7 @@
         <voice>5</voice>
         <type>half</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3202,6 +3209,7 @@
         <duration>2</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3220,6 +3228,7 @@
         <duration>2</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3449,6 +3458,7 @@
         <duration>8</duration>
         <voice>5</voice>
         <type>whole</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3631,6 +3641,7 @@
         <voice>5</voice>
         <type>quarter</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3670,6 +3681,7 @@
         <voice>5</voice>
         <type>quarter</type>
         <dot/>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>

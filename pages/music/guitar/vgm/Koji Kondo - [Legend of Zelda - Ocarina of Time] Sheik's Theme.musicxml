@@ -87,16 +87,16 @@
       <group-symbol>none</group-symbol>
       </part-group>
     <score-part id="P1">
-      <part-name print-object="no">Acoustic Guitar</part-name>
+      <part-name print-object="no">Classical Guitar</part-name>
       <part-abbreviation print-object="no">Guit.</part-abbreviation>
       <score-instrument id="P1-I1">
-        <instrument-name>Acoustic Guitar</instrument-name>
-        <instrument-sound>pluck.guitar.acoustic</instrument-sound>
+        <instrument-name>Classical Guitar</instrument-name>
+        <instrument-sound>pluck.guitar.nylon-string</instrument-sound>
         </score-instrument>
       <midi-device id="P1-I1" port="1"></midi-device>
       <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
-        <midi-program>26</midi-program>
+        <midi-program>25</midi-program>
         <volume>78.7402</volume>
         <pan>0</pan>
         </midi-instrument>
@@ -1931,6 +1931,7 @@
         <duration>4</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -1966,6 +1967,7 @@
         <duration>2</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -2770,6 +2772,7 @@
         <tie type="start"/>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3312,6 +3315,7 @@
         <duration>4</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3347,6 +3351,7 @@
         <duration>2</duration>
         <voice>5</voice>
         <type>eighth</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -4151,6 +4156,7 @@
         <tie type="start"/>
         <voice>5</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -4605,6 +4611,7 @@
         <duration>4</duration>
         <voice>5</voice>
         <type>quarter</type>
+        <accidental>natural</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
