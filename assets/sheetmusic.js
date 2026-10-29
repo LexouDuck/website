@@ -67,7 +67,7 @@
 			},
 			player: {
 				playerMode: "EnabledAutomatic",
-				soundFont: ALPHATAB_URL + "soundfont/sonivox.sf3",
+				soundFont: ALPHATAB_URL + "soundfont/generaluser-gs-guitars.sf2",
 				scrollElement: document.querySelector("content") || "html,body",
 				scrollOffsetY: -100, // updated in updateStickyOffset()
 			},
