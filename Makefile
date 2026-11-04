@@ -30,6 +30,14 @@ HTML_FINAL = ./templates.html
 #! The file which contains the generic HTML code which is present on all pages
 HTML_FRAME = ./frame.html
 
+#! The list of musescore sheet files
+MUSICSHEETS = \
+	$(wildcard ./pages/music/guitar/*.mscz) \
+	$(wildcard ./pages/music/guitar/*/*.mscz) \
+	$(wildcard ./pages/music/guitar/*/*/*.mscz) \
+
+MUSICSHEETS_XML = $(MUSICSHEETS:%.mscz=%.musicxml)
+
 
 
 # Tools
@@ -55,7 +63,7 @@ start: build
 #! This rule builds the HTML code for the website
 .PHONY:\
 build
-build: $(HTML_FINAL) $(CONTENTS_HTML)
+build: $(HTML_FINAL) $(CONTENTS_HTML) $(MUSICSHEETS_XML)
 	@echo "Successfully generated all HTML files."
 
 #! This rule deletes all generated files
@@ -75,20 +83,6 @@ setup:
 .PHONY:\
 re
 re: clean start
-
-#! This rule converts every MuseScore .mscz file in ./pages to a .musicxml file (used by the sheet music player)
-.PHONY:\
-sheetmusic
-sheetmusic:
-	@find ./pages -name "*.mscz" | while IFS= read -r file ; do \
-		out="$${file%.mscz}.musicxml" ; \
-		if [ ! -f "$${out}" ] || [ "$${file}" -nt "$${out}" ] ; then \
-			echo "Converting sheet music: $${out}" ; \
-			$(MUSESCORE) -o "$${out}" "$${file}" || exit 1 ; \
-		fi ; \
-	done
-	@echo "All sheet music is up to date."
-	@touch ./pages/music/guitar/index.md
 
 
 
@@ -110,10 +104,10 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 ./templates/%.html: ./templates/%.md
 	@echo "Building template: $@"
 	@# convert the markdown source to html (with pipe table syntax extension)
-	@$(PANDOC) --from markdown+pipe_tables $< --to html -o $@
+	@$(PANDOC) --from markdown+pipe_tables "$<" --to html -o "$@"
 	@# post-processing to fix the navbar html since it has a peculiar <ul> list
 	@if [ "$(basename $(notdir $@))" = "navbar" ] ;\
-	then awk '{ gsub(/<ul>/, ""); if (length($0)) { print; } }' $@ > $@.tmp && mv $@.tmp $@ ;\
+	then awk '{ gsub(/<ul>/, ""); if (length($0)) { print; } }' "$@" > "$@.tmp" && mv "$@.tmp" "$@" ;\
 	fi
 
 #! This rule automatically generates an .html file from its corresponding .md file
@@ -125,7 +119,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 		-v currentdir="` dirname "$@" `" \
 		-f "./make_markdown-to-html.awk" "$<" > "$<.tmp"
 	@# convert the markdown source to html (with pipe table syntax extension)
-	@$(PANDOC) --from markdown+pipe_tables $<.tmp --to html -o $@.tmp
+	@$(PANDOC) --from markdown+pipe_tables "$<.tmp" --to html -o "$@.tmp"
 	@# insert the generated HTML into the <body> of a copy of the frame.html file
 	@awk \
 		-v filepath="$@.tmp" \
@@ -133,6 +127,20 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 		-v pagetitle="` grep -m 1   '^# ' $<.tmp | sed 's|^# ||g' `" \
 		-v pagedescr="` grep -m 1 '^[^#]' $<.tmp `" \
 		-v lastupdate="` date -r $< "+%Y-%m-%d %H:%M:%S" `" \
-		-f "./make_html-templates.awk" $(HTML_FRAME) > $@
+		-f "./make_html-templates.awk" $(HTML_FRAME) > "$@"
 	@rm $<.tmp
 	@rm $@.tmp
+
+
+
+#! This rule converts every MuseScore .mscz file in ./pages to a .musicxml file (used by the sheet music player)
+.PHONY:\
+sheetmusic
+sheetmusic: $(MUSICSHEETS_XML)
+	@echo "All sheet music is up to date."
+	@touch ./pages/music/guitar/index.md
+
+#! This rule automatically generates a .musicxml file from its corresponding .mscz file
+./pages/%.musicxml: ./pages/%.mscz
+	@echo "Converting sheet music: $@"
+	@$(MUSESCORE) -o "$@" "$<"
