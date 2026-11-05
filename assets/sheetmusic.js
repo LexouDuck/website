@@ -391,6 +391,100 @@
 			});
 	}
 
+	// alphaTab doesn't read the vertical position of rests from MusicXML (<display-step>/<display-octave>,
+	// which MuseScore exports for rests that were moved), and in measures with several voices it places
+	// rests in the middle of the staff, or moves the rests of the 2nd voice *above* the notes.
+	// This sets the position of each rest of the notation staff (alphaTab >= 1.9 can display it):
+	// - rests with a position in the MusicXML are displayed there
+	// - other rests, in measures with several voices: the 1st voice's above, the 2nd voice's below
+	// NB: refinishScore() must be called afterwards.
+	function applyRestPositions(alphaTab, score, xml)
+	{
+		const quarter = 960; // MIDI ticks per quarter note, in alphaTab
+		const TONES = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
+		const STEPS = [ 0, 2, 4, 5, 7, 9, 11 ]; // diatonic step -> tone
+		const Clef = alphaTab.model.Clef;
+		const Ottavia = alphaTab.model.Ottavia;
+		// the (written) diatonic step of the middle line of the staff, for each clef (octave * 7 + step)
+		const MIDDLE_LINE = {};
+		MIDDLE_LINE[Clef.G2] = 4 * 7 + 6; // B4
+		MIDDLE_LINE[Clef.F4] = 3 * 7 + 1; // D3
+		MIDDLE_LINE[Clef.C3] = 4 * 7 + 0; // C4
+		MIDDLE_LINE[Clef.C4] = 3 * 7 + 5; // A3
+		// alphaTab expects the sounding pitch: the octave of the written pitch, corrected for octave clefs
+		const OCTAVE_SHIFT = {};
+		OCTAVE_SHIFT[Ottavia._15ma] = 2;
+		OCTAVE_SHIFT[Ottavia._8va] = 1;
+		OCTAVE_SHIFT[Ottavia._8vb] = -1;
+		OCTAVE_SHIFT[Ottavia._15mb] = -2;
+
+		xml.querySelectorAll("score-partwise > part").forEach(function(part, partIndex)
+		{
+			const track = score.tracks[partIndex];
+			if (!track || track.staves.length === 0)
+				return;
+			const staff = track.staves[0];
+			// alphaTab numbers the voices of a staff by order of their MusicXML voice numbers
+			const rests = [];
+			const voices = [];
+			forEachMeasureElement(part, function(element, measureIndex, position)
+			{
+				if (element.localName !== "note")
+					return;
+				const staffNumber = element.querySelector(":scope > staff");
+				if (staffNumber && staffNumber.textContent.trim() !== "1")
+					return;
+				const voiceElement = element.querySelector(":scope > voice");
+				const voice = voiceElement ? voiceElement.textContent.trim() : "1";
+				if (voices.indexOf(voice) < 0)
+					voices.push(voice);
+				const rest = element.querySelector(":scope > rest");
+				if (!rest || element.querySelector(":scope > chord"))
+					return;
+				const step = rest.querySelector("display-step");
+				const octave = rest.querySelector("display-octave");
+				if (step && octave)
+					rests.push({ measure: measureIndex, voice: voice, tick: Math.round(position * quarter),
+						tone: TONES[step.textContent.trim()], octave: parseInt(octave.textContent, 10) });
+			});
+			voices.sort(function(a, b) { return parseInt(a, 10) - parseInt(b, 10); });
+
+			// rests with a position in the MusicXML
+			const positioned = new Set();
+			rests.forEach(function(rest)
+			{
+				const bar = staff.bars[rest.measure];
+				const voice = bar ? bar.voices[voices.indexOf(rest.voice)] : null;
+				const beat = voice ? voice.beats.find(function(b) { return b.isRest && b.displayStart === rest.tick; }) : null;
+				if (!beat || rest.tone === undefined || Number.isNaN(rest.octave))
+					return;
+				beat.restDisplayTone = rest.tone;
+				beat.restDisplayOctave = rest.octave;
+				positioned.add(beat);
+			});
+
+			// other rests, in measures with several voices: above / below the middle line, like MuseScore does
+			staff.bars.forEach(function(bar)
+			{
+				if (!bar.isMultiVoice || !(bar.clef in MIDDLE_LINE))
+					return;
+				bar.voices.forEach(function(voice)
+				{
+					if (voice.index > 1)
+						return;
+					const step = MIDDLE_LINE[bar.clef] + (voice.index === 0 ? 2 : -4);
+					voice.beats.forEach(function(beat)
+					{
+						if (!beat.isRest || beat.isEmpty || positioned.has(beat))
+							return;
+						beat.restDisplayTone = STEPS[step % 7];
+						beat.restDisplayOctave = Math.floor(step / 7) + (OCTAVE_SHIFT[bar.clefOttava] || 0);
+					});
+				});
+			});
+		});
+	}
+
 	const LET_RING_TEXT = /^\s*let[\s-]*ring\s*$/i;
 
 	// alphaTab's MusicXML importer only understands "let ring" when it is written like Guitar Pro's
@@ -800,6 +894,8 @@
 			let score = alphaTab.importer.ScoreLoader.loadScoreFromBytes(bytes, settings);
 			mergeLinkedTabStaves(alphaTab, score);
 			detectAnacrusis(score);
+			if (xml)
+				applyRestPositions(alphaTab, score, xml);
 			applyChordStaccato(score);
 			setArpeggioDurations(alphaTab, score);
 			const letRingRanges = xml ? applyLetRing(alphaTab, score, xml) : [];
