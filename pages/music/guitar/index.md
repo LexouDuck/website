@@ -1,7 +1,7 @@
 # Guitar arrangements
 
 Here are some solo guitar arrangements I have made, with interactive sheet music (standard notation and tablature).
-You_can_also_download_the_files_in_either_MusicXML_format,_or_MuseScore_4_(.mscz) format.
+You can also download each sheet in either MusicXML format, or MuseScore 4 (.mscz) format.
 
 ---
 
