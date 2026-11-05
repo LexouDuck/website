@@ -1,7 +1,7 @@
 # alphaTab (self-hosted)
 
 Runtime files for the sheet music player (`/assets/sheetmusic.js`), copied from the
-[`@coderline/alphatab`](https://www.npmjs.com/package/@coderline/alphatab) npm package, version **1.8.4**:
+[`@coderline/alphatab`](https://www.npmjs.com/package/@coderline/alphatab) npm package, version **1.9.0**:
 
 - `alphaTab.min.js`         ← `dist/alphaTab.min.js`            (MPL-2.0, see `LICENSE`)
 - `font/Bravura.woff2`      ← `dist/font/Bravura.woff2`         (SIL OFL, see `font/Bravura-OFL.txt`)

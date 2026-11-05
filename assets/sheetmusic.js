@@ -15,7 +15,7 @@
 (function()
 {
 	// alphaTab is self-hosted (see /assets/alphatab/README.md)
-	const ALPHATAB_VERSION = "1.8.4";
+	const ALPHATAB_VERSION = "1.9.0";
 	const ALPHATAB_URL = new URL("/assets/alphatab/", window.location.href).href; // absolute, for web workers
 
 	const players = []; // every alphaTab API instance created on this page
