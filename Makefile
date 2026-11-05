@@ -32,9 +32,10 @@ HTML_FRAME = ./frame.html
 
 #! The list of musescore sheet files
 MUSICSHEETS = \
-	$(wildcard ./pages/music/guitar/*.mscz) \
-	$(wildcard ./pages/music/guitar/*/*.mscz) \
-	$(wildcard ./pages/music/guitar/*/*/*.mscz) \
+	$(wildcard ./pages/music/guitar/classical/*.mscz) \
+	$(wildcard ./pages/music/guitar/jazz/*.mscz) \
+	$(wildcard ./pages/music/guitar/anime/*.mscz) \
+	$(wildcard ./pages/music/guitar/vgm/*.mscz) \
 
 MUSICSHEETS_XML = $(MUSICSHEETS:%.mscz=%.musicxml)
 
@@ -63,7 +64,7 @@ start: build
 #! This rule builds the HTML code for the website
 .PHONY:\
 build
-build: $(HTML_FINAL) $(CONTENTS_HTML) $(MUSICSHEETS_XML)
+build: $(MUSICSHEETS_XML) $(HTML_FINAL) $(CONTENTS_HTML)
 	@echo "Successfully generated all HTML files."
 
 #! This rule deletes all generated files
@@ -95,12 +96,12 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 		cat  "$${file}" >> $(HTML_FINAL) ; \
 	done
 
-#! This rule automatically generates the website navigation menu, by looking through the ./pages folders
+#! This rule generates the website navigation menu, by looking through the ./pages folders
 ./templates/navbar.md: ./navbar.sh $(CONTENTS) $(SORTFILES)
 	@echo "Generating navigation bar..."
 	@./navbar.sh
 
-#! This rule automatically generates a template .html file from its corresponding .md file
+#! This rule generates a template .html file from its corresponding .md file
 ./templates/%.html: ./templates/%.md
 	@echo "Building template: $@"
 	@# convert the markdown source to html (with pipe table syntax extension)
@@ -110,7 +111,7 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 	then awk '{ gsub(/<ul>/, ""); if (length($0)) { print; } }' "$@" > "$@.tmp" && mv "$@.tmp" "$@" ;\
 	fi
 
-#! This rule automatically generates an .html file from its corresponding .md file
+#! This rule generates a .html file from its corresponding .md file
 ./pages/%.html: ./pages/%.md $(HTML_FRAME)
 	@echo "Building content: $@"
 	@# fetch any external README.md files referenced, for webpage content
@@ -133,14 +134,28 @@ $(HTML_FINAL): $(TEMPLATES_HTML)
 
 
 
-#! This rule converts every MuseScore .mscz file in ./pages to a .musicxml file (used by the sheet music player)
-.PHONY:\
-sheetmusic
-sheetmusic: $(MUSICSHEETS_XML)
-	@echo "All sheet music is up to date."
-	@touch ./pages/music/guitar/index.md
-
-#! This rule automatically generates a .musicxml file from its corresponding .mscz file
+#! This rule generates a .musicxml file from its corresponding .mscz file
 ./pages/%.musicxml: ./pages/%.mscz
 	@echo "Converting sheet music: $@"
 	@$(MUSESCORE) -o "$@" "$<"
+
+#! This rule converts every MuseScore .mscz file in ./pages to a .musicxml file (used by the sheet music player)
+.PHONY:\
+sheetmusic
+sheetmusic: sheetmusic_copy $(MUSICSHEETS_XML)
+	@echo "All sheet music is up to date."
+	@touch ./pages/music/guitar/index.md
+
+#! This rule copies the latest MuseScore .mscz files in the user folder to ./pages
+.PHONY:\
+sheetmusic_copy
+sheetmusic_copy:
+	@find "/home/lexou/Projects/Music/Sheet Music/Guitar/" -name "*.mscz" -not -path "*/_*/*" | \
+	while IFS= read -r file ; do \
+		dir="./pages/music/guitar/$$( basename "$$( dirname "$$file" )" )" ; \
+		out="$$( basename "$$( echo "$$file" | tr ' ' '_' )" )" ; \
+		if [ ! -f "$$dir/$$out" ] || [ "$$file" -nt "$$dir/$$out" ] ; \
+		then cp "$$file" "$$dir/$$out" || exit 1 ; \
+		fi ; \
+	done
+	@touch ./pages/music/guitar/index.md

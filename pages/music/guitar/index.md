@@ -104,21 +104,27 @@ You_can_also_download_the_files_in_either_MusicXML_format,_or_MuseScore_4_(.mscz
 ## Video game soundtracks
 
 <details class="sheetmusic"
-	data-file="vgm/Koji_Kondo_-_[Legend_of_Zelda_-_Ocarina_of_Time]_Sheik's_Theme.musicxml"
-	data-mscz="vgm/Koji_Kondo_-_[Legend_of_Zelda_-_Ocarina_of_Time]_Sheik's_Theme.mscz">
-<summary><span class="sheetmusic-title">Sheik's Theme</span> <span class="sheetmusic-info">Koji Kondo – [Legend of Zelda - Ocarina of Time]</span></summary>
-</details>
-
-<details class="sheetmusic"
 	data-file="vgm/Koji_Kondo_-_[Super_Mario_Galaxy]_Rosalina_in_the_Observatory.musicxml"
 	data-mscz="vgm/Koji_Kondo_-_[Super_Mario_Galaxy]_Rosalina_in_the_Observatory.mscz">
 <summary><span class="sheetmusic-title">Rosalina in the Observatory</span> <span class="sheetmusic-info">Koji Kondo – [Super Mario Galaxy]</span></summary>
 </details>
 
 <details class="sheetmusic"
+	data-file="vgm/Koji_Kondo_-_[Legend_of_Zelda_-_Ocarina_of_Time]_Sheik's_Theme.musicxml"
+	data-mscz="vgm/Koji_Kondo_-_[Legend_of_Zelda_-_Ocarina_of_Time]_Sheik's_Theme.mscz">
+<summary><span class="sheetmusic-title">Sheik's Theme</span> <span class="sheetmusic-info">Koji Kondo – [Legend of Zelda - Ocarina of Time]</span></summary>
+</details>
+
+<details class="sheetmusic"
 	data-file="vgm/Toru_Minegishi_-_[Legend_of_Zelda_-_Twilight_Princess]_Midna's_Theme.musicxml"
 	data-mscz="vgm/Toru_Minegishi_-_[Legend_of_Zelda_-_Twilight_Princess]_Midna's_Theme.mscz">
 <summary><span class="sheetmusic-title">Midna's Theme</span> <span class="sheetmusic-info">Toru Minegishi – [Legend of Zelda - Twilight Princess]</span></summary>
+</details>
+
+<details class="sheetmusic"
+	data-file="vgm/Kazumi_Totaka_-_Wii_Shop_Channel.musicxml"
+	data-mscz="vgm/Kazumi_Totaka_-_Wii_Shop_Channel.mscz">
+<summary><span class="sheetmusic-title">Wii Shop Channel</span> <span class="sheetmusic-info">Kazumi Totaka – [Wii]</span></summary>
 </details>
 
 <details class="sheetmusic"
