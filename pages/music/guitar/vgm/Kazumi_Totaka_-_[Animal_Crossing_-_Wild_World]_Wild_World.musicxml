@@ -9,7 +9,7 @@
     <creator type="composer">Kazumi Totaka</creator>
     <encoding>
       <software>MuseScore Studio 4.7.5</software>
-      <encoding-date>2026-11-05</encoding-date>
+      <encoding-date>2026-11-06</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -9274,6 +9274,7 @@
         <staff>1</staff>
         <notations>
           <fermata type="upright" default-y="19.28" relative-y="5"/>
+          <arpeggiate direction="up" number="1" default-x="-20.02" default-y="20.3"/>
           </notations>
         </note>
       <note default-x="57.13" default-y="-25">
@@ -9287,6 +9288,9 @@
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
+        <notations>
+          <arpeggiate direction="up" number="1" default-x="-20.02" default-y="20.3"/>
+          </notations>
         </note>
       <note default-x="57.13" default-y="-10">
         <chord/>
@@ -9299,6 +9303,9 @@
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
+        <notations>
+          <arpeggiate direction="up" number="1" default-x="-20.02" default-y="20.3"/>
+          </notations>
         </note>
       <note default-x="57.13" default-y="0">
         <chord/>
@@ -9312,6 +9319,9 @@
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
+        <notations>
+          <arpeggiate direction="up" number="1" default-x="-20.02" default-y="20.3"/>
+          </notations>
         </note>
       <note default-x="57.13" default-y="15">
         <chord/>
@@ -9324,6 +9334,9 @@
         <type>half</type>
         <stem>down</stem>
         <staff>1</staff>
+        <notations>
+          <arpeggiate direction="up" number="1" default-x="-20.02" default-y="20.3"/>
+          </notations>
         </note>
       <backup>
         <duration>8</duration>
@@ -9456,6 +9469,7 @@
             <string>5</string>
             <fret>7</fret>
             </technical>
+          <arpeggiate direction="up" number="2" default-x="-18.72" default-y="5.3"/>
           </notations>
         </note>
       <note default-x="58.58" default-y="-160.8">
@@ -9474,6 +9488,7 @@
             <string>4</string>
             <fret>7</fret>
             </technical>
+          <arpeggiate direction="up" number="2" default-x="-18.72" default-y="5.3"/>
           </notations>
         </note>
       <note default-x="58.58" default-y="-145.8">
@@ -9492,6 +9507,7 @@
             <string>3</string>
             <fret>7</fret>
             </technical>
+          <arpeggiate direction="up" number="2" default-x="-18.72" default-y="5.3"/>
           </notations>
         </note>
       <note default-x="58.58" default-y="-130.8">
@@ -9511,6 +9527,7 @@
             <string>2</string>
             <fret>7</fret>
             </technical>
+          <arpeggiate direction="up" number="2" default-x="-18.72" default-y="5.3"/>
           </notations>
         </note>
       <note default-x="58.58" default-y="-115.8">
@@ -9529,6 +9546,7 @@
             <string>1</string>
             <fret>7</fret>
             </technical>
+          <arpeggiate direction="up" number="2" default-x="-18.72" default-y="5.3"/>
           </notations>
         </note>
       <barline location="right">

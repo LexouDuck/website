@@ -9,7 +9,7 @@
     <creator type="composer">Bronisław Kaper</creator>
     <encoding>
       <software>MuseScore Studio 4.7.5</software>
-      <encoding-date>2026-11-05</encoding-date>
+      <encoding-date>2026-11-06</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -3543,7 +3543,7 @@
             </technical>
           </notations>
         </note>
-      <note default-x="178.9" default-y="-117.44">
+      <note default-x="178.9" default-y="-102.44">
         <pitch>
           <step>G</step>
           <octave>4</octave>
@@ -3555,8 +3555,8 @@
         <staff>2</staff>
         <notations>
           <technical>
-            <string>2</string>
-            <fret>8</fret>
+            <string>1</string>
+            <fret>3</fret>
             </technical>
           </notations>
         </note>
@@ -7245,7 +7245,7 @@
             </technical>
           </notations>
         </note>
-      <note default-x="218.26" default-y="-119.21">
+      <note default-x="218.26" default-y="-104.21">
         <pitch>
           <step>G</step>
           <octave>4</octave>
@@ -7257,8 +7257,8 @@
         <staff>2</staff>
         <notations>
           <technical>
-            <string>2</string>
-            <fret>8</fret>
+            <string>1</string>
+            <fret>3</fret>
             </technical>
           </notations>
         </note>

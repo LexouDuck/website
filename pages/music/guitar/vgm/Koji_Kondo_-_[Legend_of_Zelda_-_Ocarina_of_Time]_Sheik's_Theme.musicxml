@@ -9,7 +9,7 @@
     <creator type="composer">Koji Kondo</creator>
     <encoding>
       <software>MuseScore Studio 4.7.5</software>
-      <encoding-date>2026-11-05</encoding-date>
+      <encoding-date>2026-11-06</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -1793,16 +1793,16 @@
         <stem>up</stem>
         <staff>1</staff>
         </note>
-      <note default-x="179.33" default-y="-35">
+      <note default-x="179.33" default-y="-30">
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>3</octave>
           </pitch>
         <duration>4</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <accidental>sharp</accidental>
+        <accidental>flat</accidental>
         <stem>up</stem>
         <staff>1</staff>
         </note>
@@ -1826,7 +1826,6 @@
         <duration>2</duration>
         <voice>1</voice>
         <type>eighth</type>
-        <accidental>natural</accidental>
         <stem>up</stem>
         <staff>1</staff>
         <beam number="1">begin</beam>
@@ -1932,14 +1931,13 @@
         </note>
       <note default-x="180.78" default-y="-163.07">
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>3</octave>
           </pitch>
         <duration>4</duration>
         <voice>5</voice>
         <type>quarter</type>
-        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -2343,21 +2341,21 @@
         <stem>down</stem>
         <staff>1</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           </notations>
         </note>
-      <note default-x="341.56" default-y="0">
+      <note default-x="341.56" default-y="5">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
-        <accidental>sharp</accidental>
+        <accidental>flat</accidental>
         <stem>down</stem>
         <staff>1</staff>
         <notations>
@@ -2762,7 +2760,7 @@
         <stem>none</stem>
         <staff>2</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           <technical>
             <string>4</string>
             <fret>10</fret>
@@ -2772,15 +2770,14 @@
       <note default-x="337.98" default-y="-133.07">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
         <tie type="start"/>
         <voice>5</voice>
         <type>16th</type>
-        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -2805,7 +2802,7 @@
         <stem>none</stem>
         <staff>2</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           <technical>
             <string>2</string>
             <fret>11</fret>
@@ -2845,11 +2842,11 @@
           <tied type="stop"/>
           </notations>
         </note>
-      <note default-x="16.09" default-y="0">
+      <note default-x="16.09" default-y="5">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -2928,6 +2925,7 @@
         <duration>8</duration>
         <voice>1</voice>
         <type>half</type>
+        <accidental>natural</accidental>
         <stem>down</stem>
         <staff>1</staff>
         </note>
@@ -2995,8 +2993,8 @@
       <note default-x="12.5" default-y="-133.07">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -3171,16 +3169,16 @@
         <stem>up</stem>
         <staff>1</staff>
         </note>
-      <note default-x="175.09" default-y="-35">
+      <note default-x="175.09" default-y="-30">
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>3</octave>
           </pitch>
         <duration>4</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <accidental>sharp</accidental>
+        <accidental>flat</accidental>
         <stem>up</stem>
         <staff>1</staff>
         </note>
@@ -3204,7 +3202,6 @@
         <duration>2</duration>
         <voice>1</voice>
         <type>eighth</type>
-        <accidental>natural</accidental>
         <stem>up</stem>
         <staff>1</staff>
         <beam number="1">begin</beam>
@@ -3310,14 +3307,13 @@
         </note>
       <note default-x="176.55" default-y="-163.07">
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>3</octave>
           </pitch>
         <duration>4</duration>
         <voice>5</voice>
         <type>quarter</type>
-        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -3721,21 +3717,21 @@
         <stem>down</stem>
         <staff>1</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           </notations>
         </note>
-      <note default-x="326.69" default-y="0">
+      <note default-x="326.69" default-y="5">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
         <tie type="start"/>
         <voice>1</voice>
         <type>16th</type>
-        <accidental>sharp</accidental>
+        <accidental>flat</accidental>
         <stem>down</stem>
         <staff>1</staff>
         <notations>
@@ -4140,7 +4136,7 @@
         <stem>none</stem>
         <staff>2</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           <technical>
             <string>4</string>
             <fret>10</fret>
@@ -4150,15 +4146,14 @@
       <note default-x="323.11" default-y="-133.07">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
         <tie type="start"/>
         <voice>5</voice>
         <type>16th</type>
-        <accidental>sharp</accidental>
         <stem>none</stem>
         <staff>2</staff>
         <notations>
@@ -4223,11 +4218,11 @@
           <tied type="stop"/>
           </notations>
         </note>
-      <note default-x="16.09" default-y="0">
+      <note default-x="16.09" default-y="5">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -4310,6 +4305,7 @@
         <voice>1</voice>
         <type>quarter</type>
         <dot default-x="93.05" default-y="5"/>
+        <accidental>natural</accidental>
         <stem>down</stem>
         <staff>1</staff>
         </note>
@@ -4370,7 +4366,6 @@
         <duration>4</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <accidental>natural</accidental>
         <stem>down</stem>
         <staff>1</staff>
         </note>
@@ -4419,8 +4414,8 @@
       <note default-x="12.5" default-y="-133.07">
         <chord/>
         <pitch>
-          <step>F</step>
-          <alter>1</alter>
+          <step>G</step>
+          <alter>-1</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -4685,7 +4680,7 @@
         <stem>down</stem>
         <staff>1</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           </notations>
         </note>
       <note default-x="108.77" default-y="-10">
@@ -4877,7 +4872,7 @@
         <stem>down</stem>
         <staff>1</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           </notations>
         </note>
       <note default-x="360.75" default-y="-10">
@@ -5075,7 +5070,7 @@
         <stem>none</stem>
         <staff>2</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           <technical>
             <string>4</string>
             <fret>8</fret>
@@ -5327,7 +5322,7 @@
         <stem>none</stem>
         <staff>2</staff>
         <notations>
-          <tied type="start"/>
+          <tied type="start" orientation="over" placement="above"/>
           <technical>
             <string>4</string>
             <fret>8</fret>

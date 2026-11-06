@@ -9,7 +9,7 @@
     <creator type="composer">Keiichi Okabe</creator>
     <encoding>
       <software>MuseScore Studio 4.7.5</software>
-      <encoding-date>2026-11-05</encoding-date>
+      <encoding-date>2026-11-06</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -1271,33 +1271,7 @@
         <stem>up</stem>
         <staff>1</staff>
         </note>
-      <note default-x="147.88" default-y="-40">
-        <pitch>
-          <step>E</step>
-          <octave>3</octave>
-          </pitch>
-        <duration>1</duration>
-        <voice>1</voice>
-        <type>eighth</type>
-        <stem>up</stem>
-        <staff>1</staff>
-        <beam number="1">continue</beam>
-        </note>
-      <note default-x="147.88" default-y="-25">
-        <chord/>
-        <pitch>
-          <step>A</step>
-          <alter>1</alter>
-          <octave>3</octave>
-          </pitch>
-        <duration>1</duration>
-        <voice>1</voice>
-        <type>eighth</type>
-        <stem>up</stem>
-        <staff>1</staff>
-        </note>
       <note default-x="147.88" default-y="-10">
-        <chord/>
         <pitch>
           <step>D</step>
           <octave>4</octave>
@@ -1307,6 +1281,7 @@
         <type>eighth</type>
         <stem>up</stem>
         <staff>1</staff>
+        <beam number="1">continue</beam>
         </note>
       <note default-x="171.46" default-y="-15">
         <pitch>
@@ -1538,44 +1513,7 @@
             </technical>
           </notations>
         </note>
-      <note default-x="149.33" default-y="-197.03">
-        <pitch>
-          <step>E</step>
-          <octave>3</octave>
-          </pitch>
-        <duration>1</duration>
-        <voice>5</voice>
-        <type>eighth</type>
-        <stem>none</stem>
-        <staff>2</staff>
-        <notations>
-          <technical>
-            <string>4</string>
-            <fret>2</fret>
-            </technical>
-          </notations>
-        </note>
-      <note default-x="149.33" default-y="-182.03">
-        <chord/>
-        <pitch>
-          <step>A</step>
-          <alter>1</alter>
-          <octave>3</octave>
-          </pitch>
-        <duration>1</duration>
-        <voice>5</voice>
-        <type>eighth</type>
-        <stem>none</stem>
-        <staff>2</staff>
-        <notations>
-          <technical>
-            <string>3</string>
-            <fret>3</fret>
-            </technical>
-          </notations>
-        </note>
       <note default-x="149.33" default-y="-167.03">
-        <chord/>
         <pitch>
           <step>D</step>
           <octave>4</octave>
