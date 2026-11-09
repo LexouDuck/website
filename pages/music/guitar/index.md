@@ -77,6 +77,12 @@ You can also download each sheet in either MusicXML format, or MuseScore 4 (.msc
 <summary><span class="sheetmusic-title">SUPER-REFLEX (WIP)</span> <span class="sheetmusic-info">Yousuke Yasui – [Megalomachia2]</span></summary>
 </details>
 
+<details class="sheetmusic"
+	data-file="jazz/Jazz_Funk_Soul_-_Swingette.musicxml"
+	data-mscz="jazz/Jazz_Funk_Soul_-_Swingette.mscz">
+<summary><span class="sheetmusic-title">Swingette</span> <span class="sheetmusic-info">Jeff Lorber, Chuck Loeb, Everette Harp</span></summary>
+</details>
+
 ---
 
 ## Anime soundtracks
